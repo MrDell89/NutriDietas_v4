@@ -1,0 +1,14 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(Get-ChildItem -Path \"C:\\\\Users\\\\marco\\\\Downloads\\\\NutriDietas_v4 \\(2\\)\\\\NutriDietas_v4\" -Recurse -File)",
+      "Bash(Select-Object FullName)",
+      "Bash(Sort-Object FullName)",
+      "PowerShell(Get-ChildItem -Path \"C:\\\\Users\\\\marco\\\\Downloads\\\\NutriDietas_v4 \\(2\\)\\\\NutriDietas_v4\" -Recurse -File | Select-Object FullName | ForEach-Object {$_.FullName})",
+      "PowerShell(New-Item -ItemType Directory -Force \"C:\\\\Users\\\\marco\\\\Downloads\\\\NutriDietas_v4 \\(2\\)\\\\NutriDietas_v4\\\\plantillas\")",
+      "Bash(python -m py_compile gui.pyw)",
+      "Bash(python -m py_compile atajos.py)",
+      "Bash(python -m py_compile tabla_dieta.py)"
+    ]
+  }
+}

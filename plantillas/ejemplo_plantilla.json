@@ -1,0 +1,13 @@
+{
+  "nombre": "Plan base ejemplo",
+  "descripcion": "Plantilla de ejemplo — edita este archivo o crea nuevos en la misma carpeta.",
+  "celdas": {
+    "Lunes":     [{}, {}, {}, {}, {}],
+    "Martes":    [{}, {}, {}, {}, {}],
+    "Miércoles": [{}, {}, {}, {}, {}],
+    "Jueves":    [{}, {}, {}, {}, {}],
+    "Viernes":   [{}, {}, {}, {}, {}],
+    "Sábado":    [{}, {}, {}, {}, {}],
+    "Domingo":   [{}, {}, {}, {}, {}]
+  }
+}

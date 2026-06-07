@@ -1,0 +1,6599 @@
+{
+  "platillos": [
+    {
+      "id": "huevo_con_zanahoria",
+      "nombre": "Huevo con zanahoria",
+      "tiempo": "desayuno",
+      "video": false,
+      "nota": null,
+      "ingredientes": [
+        {
+          "nombre": "Huevo entero",
+          "cantidad": 1,
+          "unidad": "pieza"
+        },
+        {
+          "nombre": "Clara de huevo",
+          "cantidad": 1,
+          "unidad": "piezas"
+        },
+        {
+          "nombre": "Aceite de oliva",
+          "cantidad": 1,
+          "unidad": "Cc"
+        },
+        {
+          "nombre": "Zanahoria rallada",
+          "cantidad": 0.5,
+          "unidad": "taza"
+        },
+        {
+          "nombre": "Pan integral cero",
+          "cantidad": 1,
+          "unidad": "pieza"
+        },
+        {
+          "nombre": "Aguacate",
+          "cantidad": 0.375,
+          "unidad": "pieza"
+        },
+        {
+          "nombre": "Tomar un vasito de agua con chía",
+          "cantidad": null,
+          "unidad": ""
+        }
+      ]
+    },
+    {
+      "id": "paletas_de_hielo_caseras",
+      "nombre": "Paletas de hielo caseras",
+      "tiempo": "colacion",
+      "video": false,
+      "nota": null,
+      "ingredientes": [
+        {
+          "nombre": "(1 o 2 pieza)",
+          "cantidad": null,
+          "unidad": ""
+        }
+      ]
+    },
+    {
+      "id": "pechugas_de_pollo_en_crema",
+      "nombre": "Pechugas de pollo en crema",
+      "tiempo": "comida",
+      "video": false,
+      "nota": null,
+      "ingredientes": [
+        {
+          "nombre": "Pechuga de pollo (90 gr) + sal, pimienta y ajo en polvo",
+          "cantidad": null,
+          "unidad": ""
+        },
+        {
+          "nombre": "Aceite de oliva",
+          "cantidad": 1,
+          "unidad": "Cc"
+        },
+        {
+          "nombre": "Leche semidescre.",
+          "cantidad": 1,
+          "unidad": "taza"
+        },
+        {
+          "nombre": "Mostaza, ajo, pimienta y sal",
+          "cantidad": null,
+          "unidad": ""
+        },
+        {
+          "nombre": "Maizena",
+          "cantidad": 3,
+          "unidad": "cucharadas"
+        },
+        {
+          "nombre": "Queso y espinacas",
+          "cantidad": null,
+          "unidad": ""
+        },
+        {
+          "nombre": "Tortilla de maíz",
+          "cantidad": 1,
+          "unidad": "pieza"
+        },
+        {
+          "nombre": "Arroz cocido",
+          "cantidad": 0.5,
+          "unidad": "taza"
+        }
+      ]
+    },
+    {
+      "id": "ensalada_de_atun",
+      "nombre": "Ensalada de atún",
+      "tiempo": "cena",
+      "video": false,
+      "nota": null,
+      "ingredientes": [
+        {
+          "nombre": "Atún en agua",
+          "cantidad": 1,
+          "unidad": "lata"
+        },
+        {
+          "nombre": "Zanahoria rallada",
+          "cantidad": 0.5,
+          "unidad": "taza"
+        },
+        {
+          "nombre": "Espinaca picada",
+          "cantidad": 1,
+          "unidad": "taza"
+        },
+        {
+          "nombre": "Pepino",
+          "cantidad": 0.5,
+          "unidad": "taza"
+        },
+        {
+          "nombre": "Mayonesa",
+          "cantidad": 1,
+          "unidad": "Cc"
+        },
+        {
+          "nombre": "Tostadas horneadas",
+          "cantidad": 2,
+          "unidad": "pz"
+        }
+      ]
+    },
+    {
+      "id": "huevo_a_la_mexicana",
+      "nombre": "Huevo a la mexicana",
+      "tiempo": "desayuno",
+      "video": false,
+      "nota": null,
+      "ingredientes": [
+        {
+          "nombre": "Huevo entero (1 pieza)\n• Clara de huevo (1 piezas)",
+          "cantidad": null,
+          "unidad": ""
+        },
+        {
+          "nombre": "Aceite de oliva",
+          "cantidad": 1,
+          "unidad": "Cc"
+        },
+        {
+          "nombre": "Tortilla de maíz",
+          "cantidad": 2,
+          "unidad": "piezas"
+        },
+        {
+          "nombre": "Tomate, chile y espinaca",
+          "cantidad": 1,
+          "unidad": "taza"
+        }
+      ]
+    },
+    {
+      "id": "papaya_picada",
+      "nombre": "Papaya picada",
+      "tiempo": "colacion",
+      "video": false,
+      "nota": null,
+      "ingredientes": [
+        {
+          "nombre": "(1 taza)",
+          "cantidad": null,
+          "unidad": ""
+        }
+      ]
+    },
+    {
+      "id": "nuez",
+      "nombre": "Nueces",
+      "tiempo": "colacion",
+      "video": false,
+      "nota": null,
+      "ingredientes": [
+        {
+          "nombre": "Nuez",
+          "cantidad": 6.0,
+          "unidad": "piezas"
+        }
+      ]
+    },
+    {
+      "id": "tostadas_de_carne_deshebrada",
+      "nombre": "Tostadas de carne deshebrada",
+      "tiempo": "comida",
+      "video": false,
+      "nota": null,
+      "ingredientes": [
+        {
+          "nombre": "Carne deshebrada",
+          "cantidad": 0.5,
+          "unidad": "tz"
+        },
+        {
+          "nombre": "Tostadas horneadas",
+          "cantidad": 3,
+          "unidad": "pz"
+        },
+        {
+          "nombre": "Pico de gallo al gusto",
+          "cantidad": null,
+          "unidad": ""
+        },
+        {
+          "nombre": "Aguacate",
+          "cantidad": 0.375,
+          "unidad": "pieza"
+        }
+      ]
+    },
+    {
+      "id": "molletes",
+      "nombre": "Molletes ()",
+      "tiempo": "cena",
+      "video": true,
+      "nota": null,
+      "ingredientes": [
+        {
+          "nombre": "Pan tipo bolillo",
+          "cantidad": 2,
+          "unidad": "piezas"
+        },
+        {
+          "nombre": "Frijoles molidos",
+          "cantidad": 0.5,
+          "unidad": "taza"
+        },
+        {
+          "nombre": "Queso rallado",
+          "cantidad": 60,
+          "unidad": "gr"
+        },
+        {
+          "nombre": "Aguacate",
+          "cantidad": 0.5,
+          "unidad": "pieza"
+        }
+      ]
+    },
+    {
+      "id": "brownie_con_un_vaso_de_leche",
+      "nombre": "Brownie con un vaso de leche",
+      "tiempo": "desayuno",
+      "video": false,
+      "nota": null,
+      "ingredientes": [
+        {
+          "nombre": "Avena en hojuelas",
+          "cantidad": 0.5,
+          "unidad": "taza"
+        },
+        {
+          "nombre": "Huevo entero",
+          "cantidad": 1,
+          "unidad": "pieza"
+        },
+        {
+          "nombre": "Vainilla",
+          "cantidad": 1,
+          "unidad": "cucharadita"
+        },
+        {
+          "nombre": "Cacao en polvo",
+          "cantidad": 1,
+          "unidad": "cc"
+        },
+        {
+          "nombre": "Leche",
+          "cantidad": 0.25,
+          "unidad": "taza"
+        },
+        {
+          "nombre": "Endulzar con Stevia",
+          "cantidad": null,
+          "unidad": ""
+        },
+        {
+          "nombre": "Leche semidescremada",
+          "cantidad": null,
+          "unidad": ""
+        }
+      ]
+    },
+    {
+      "id": "manzana_mediana_1_pieza",
+      "nombre": "Manzana mediana (1 pieza)",
+      "tiempo": "colacion",
+      "video": false,
+      "nota": null,
+      "ingredientes": []
+    },
+    {
+      "id": "pechugas_de_pollo_con_chile_chipotle",
+      "nombre": "Pechugas de pollo con chile chipotle",
+      "tiempo": "comida",
+      "video": true,
+      "nota": null,
+      "ingredientes": [
+        {
+          "nombre": "Pechuga de pollo (90 gr) + sal, pimienta, ajo en polvo, chile chipotle.",
+          "cantidad": null,
+          "unidad": ""
+        },
+        {
+          "nombre": "Aceite de oliva",
+          "cantidad": 1.0,
+          "unidad": "Cc"
+        },
+        {
+          "nombre": "Tostada horneada",
+          "cantidad": 3.0,
+          "unidad": "piezas"
+        },
+        {
+          "nombre": "Lechuga al gusto",
+          "cantidad": null,
+          "unidad": ""
+        },
+        {
+          "nombre": "Cilantro y cebolla morada",
+          "cantidad": null,
+          "unidad": ""
+        },
+        {
+          "nombre": "Limón y trocitos de piña",
+          "cantidad": null,
+          "unidad": ""
+        }
+      ]
+    },
+    {
+      "id": "brochetas_de_queso_pepino_y_jamon",
+      "nombre": "Brochetas de queso, pepino y jamón",
+      "tiempo": "cena",
+      "video": false,
+      "nota": null,
+      "ingredientes": [
+        {
+          "nombre": "Queso en cuadritos",
+          "cantidad": 3,
+          "unidad": "pz"
+        },
+        {
+          "nombre": "Jamón",
+          "cantidad": 3,
+          "unidad": "piezas"
+        },
+        {
+          "nombre": "Pepino",
+          "cantidad": 0.5,
+          "unidad": "pieza"
+        },
+        {
+          "nombre": "Pollo desmenuzado (1/2 taza) Opcional si se queda con hambre",
+          "cantidad": null,
+          "unidad": ""
+        }
+      ]
+    },
+    {
+      "id": "enchiladas_suizas_de_pollo",
+      "nombre": "Enchiladas suizas de pollo",
+      "tiempo": "comida",
+      "video": false,
+      "nota": null,
+      "ingredientes": [
+        {
+          "nombre": "Tortillas de maíz",
+          "cantidad": 3,
+          "unidad": "piezas"
+        },
+        {
+          "nombre": "Pollo desmenuzado",
+          "cantidad": 0.5,
+          "unidad": "tz"
+        },
+        {
+          "nombre": "Queso amarillo",
+          "cantidad": 3,
+          "unidad": "piezas"
+        },
+        {
+          "nombre": "Salsa verde casera",
+          "cantidad": null,
+          "unidad": ""
+        }
+      ]
+    },
+    {
+      "id": "salmon_pure_de_papa",
+      "nombre": "Salmón + Pure de papa",
+      "tiempo": "comida",
+      "video": false,
+      "nota": null,
+      "ingredientes": [
+        {
+          "nombre": "Salmón",
+          "cantidad": 90,
+          "unidad": "gr"
+        },
+        {
+          "nombre": "Miel",
+          "cantidad": 1,
+          "unidad": "Cc"
+        },
+        {
+          "nombre": "Salsa soya",
+          "cantidad": 1,
+          "unidad": "cc"
+        },
+        {
+          "nombre": "Pimienta y chile al gusto",
+          "cantidad": null,
+          "unidad": ""
+        },
+        {
+          "nombre": "Calabacita",
+          "cantidad": 0.5,
+          "unidad": "pieza"
+        },
+        {
+          "nombre": "Pure de papa",
+          "cantidad": 0.5,
+          "unidad": "taza"
+        },
+        {
+          "nombre": "Tortilla de maíz",
+          "cantidad": 1,
+          "unidad": "pieza"
+        }
+      ]
+    },
+    {
+      "id": "espagueti_ensalada",
+      "nombre": "Espagueti + Ensalada",
+      "tiempo": "comida",
+      "video": false,
+      "nota": null,
+      "ingredientes": [
+        {
+          "nombre": "Pasta cocida",
+          "cantidad": 1,
+          "unidad": "taza"
+        },
+        {
+          "nombre": "Carne molida",
+          "cantidad": 60,
+          "unidad": "gr"
+        },
+        {
+          "nombre": "Queso panela rallado",
+          "cantidad": 30,
+          "unidad": "gr"
+        },
+        {
+          "nombre": "Mantequilla",
+          "cantidad": 1,
+          "unidad": "cucharadita"
+        },
+        {
+          "nombre": "Verduras mixtas al gusto.",
+          "cantidad": null,
+          "unidad": ""
+        }
+      ]
+    },
+    {
+      "id": "comida_libre",
+      "nombre": "Comida libre",
+      "tiempo": "comida",
+      "video": false,
+      "nota": null,
+      "ingredientes": []
+    },
+    {
+      "id": "huevo_con_jamon",
+      "nombre": "Huevo con jamón",
+      "tiempo": "desayuno",
+      "video": false,
+      "nota": null,
+      "ingredientes": [
+        {
+          "nombre": "Huevo entero",
+          "cantidad": 1,
+          "unidad": "pieza"
+        },
+        {
+          "nombre": "Clara de huevo",
+          "cantidad": 1,
+          "unidad": "piezas"
+        },
+        {
+          "nombre": "Jamón de pavo",
+          "cantidad": 3,
+          "unidad": "piezas"
+        },
+        {
+          "nombre": "Tortilla de maíz",
+          "cantidad": 2,
+          "unidad": "pieza"
+        },
+        {
+          "nombre": "Aceite de oliva",
+          "cantidad": 1,
+          "unidad": "Cc"
+        }
+      ]
+    },
+    {
+      "id": "bowl_de_pollo_con_pico_de_gallo",
+      "nombre": "Bowl de pollo con pico de gallo ()",
+      "tiempo": "comida",
+      "video": true,
+      "nota": null,
+      "ingredientes": [
+        {
+          "nombre": "Pechuga de pollo (90 gr) + sal, pimienta, comino, ajo, limón y yogurt griego.",
+          "cantidad": null,
+          "unidad": ""
+        },
+        {
+          "nombre": "Aceite de oliva",
+          "cantidad": 2,
+          "unidad": "cc"
+        },
+        {
+          "nombre": "Tomate picado",
+          "cantidad": 0.5,
+          "unidad": "pieza"
+        },
+        {
+          "nombre": "Cilantro",
+          "cantidad": 0.5,
+          "unidad": "taza"
+        },
+        {
+          "nombre": "Cebolla morada",
+          "cantidad": 0.5,
+          "unidad": "pieza"
+        },
+        {
+          "nombre": "Aguacate",
+          "cantidad": 0.5,
+          "unidad": "pieza"
+        },
+        {
+          "nombre": "Limón y sal",
+          "cantidad": null,
+          "unidad": ""
+        },
+        {
+          "nombre": "Aceite de oliva",
+          "cantidad": 1,
+          "unidad": "cc"
+        }
+      ]
+    },
+    {
+      "id": "tortitas_de_brocoli_con_ensalada",
+      "nombre": "Tortitas de brócoli con ensalada ()",
+      "tiempo": "cena",
+      "video": true,
+      "nota": null,
+      "ingredientes": [
+        {
+          "nombre": "Brócoli cocido (1 taza) + Ajo en polvo",
+          "cantidad": null,
+          "unidad": ""
+        },
+        {
+          "nombre": "Huevos",
+          "cantidad": 2,
+          "unidad": "piezas"
+        },
+        {
+          "nombre": "Harina",
+          "cantidad": 0.5,
+          "unidad": "taza"
+        },
+        {
+          "nombre": "Queso rallado",
+          "cantidad": 60,
+          "unidad": "gr"
+        },
+        {
+          "nombre": "Aceite",
+          "cantidad": 2,
+          "unidad": "cc"
+        },
+        {
+          "nombre": "Espinaca",
+          "cantidad": 0.5,
+          "unidad": "taza"
+        },
+        {
+          "nombre": "Tomate",
+          "cantidad": 0.5,
+          "unidad": "pieza"
+        },
+        {
+          "nombre": "Zanahoria rallada",
+          "cantidad": 0.5,
+          "unidad": "taza"
+        }
+      ]
+    },
+    {
+      "id": "licuado_de_fresas",
+      "nombre": "Licuado de fresas",
+      "tiempo": "desayuno",
+      "video": false,
+      "nota": null,
+      "ingredientes": [
+        {
+          "nombre": "Fresa natural o congeladas",
+          "cantidad": 0.5,
+          "unidad": "taza"
+        },
+        {
+          "nombre": "Leche semidescremada",
+          "cantidad": 1,
+          "unidad": "taza"
+        },
+        {
+          "nombre": "Endulzar con poquita Stevia",
+          "cantidad": null,
+          "unidad": ""
+        },
+        {
+          "nombre": "Galleta de arroz inflado",
+          "cantidad": 1,
+          "unidad": "o 2 piezas"
+        },
+        {
+          "nombre": "Crema de cacahuate",
+          "cantidad": 1,
+          "unidad": "o 2 cucharadas"
+        }
+      ]
+    },
+    {
+      "id": "manzana_grande_1_pieza",
+      "nombre": "Manzana grande (1 pieza)",
+      "tiempo": "colacion",
+      "video": false,
+      "nota": null,
+      "ingredientes": []
+    },
+    {
+      "id": "quesadillas_de_atun_guacamole",
+      "nombre": "Quesadillas de atún + Guacamole ()",
+      "tiempo": "comida",
+      "video": true,
+      "nota": null,
+      "ingredientes": [
+        {
+          "nombre": "Atún (1 lata) + Tomate, ajo, chipotle",
+          "cantidad": null,
+          "unidad": ""
+        },
+        {
+          "nombre": "Cebolla",
+          "cantidad": 0.5,
+          "unidad": "taza"
+        },
+        {
+          "nombre": "Zanahoria",
+          "cantidad": 0.5,
+          "unidad": "taza"
+        },
+        {
+          "nombre": "Aguacate (1/2 pieza) + cebolla, ajo, cilantro, limón y sal",
+          "cantidad": null,
+          "unidad": ""
+        },
+        {
+          "nombre": "Tortilla de maíz",
+          "cantidad": 3,
+          "unidad": "piezas"
+        },
+        {
+          "nombre": "Queso rallado",
+          "cantidad": 60,
+          "unidad": "gr"
+        }
+      ]
+    },
+    {
+      "id": "batido_de_amaranto",
+      "nombre": "Batido de amaranto",
+      "tiempo": "cena",
+      "video": false,
+      "nota": null,
+      "ingredientes": [
+        {
+          "nombre": "Amaranto",
+          "cantidad": 0.5,
+          "unidad": "taza"
+        },
+        {
+          "nombre": "Coco rallado",
+          "cantidad": 3,
+          "unidad": "Cc"
+        },
+        {
+          "nombre": "Leche baja en grasa",
+          "cantidad": 1,
+          "unidad": "tz"
+        },
+        {
+          "nombre": "Cacahuate natural",
+          "cantidad": 13,
+          "unidad": "pz"
+        },
+        {
+          "nombre": "Endulzar con Stevia al gusto",
+          "cantidad": null,
+          "unidad": ""
+        }
+      ]
+    },
+    {
+      "id": "omelette_con_esparragos",
+      "nombre": "Omelette con espárragos",
+      "tiempo": "desayuno",
+      "video": false,
+      "nota": null,
+      "ingredientes": [
+        {
+          "nombre": "Huevo entero",
+          "cantidad": 1,
+          "unidad": "pieza"
+        },
+        {
+          "nombre": "Clara de huevo",
+          "cantidad": 2,
+          "unidad": "piezas"
+        },
+        {
+          "nombre": "Aceite de oliva",
+          "cantidad": 1,
+          "unidad": "Cc"
+        },
+        {
+          "nombre": "Tortillas de maíz",
+          "cantidad": 2,
+          "unidad": "pieza"
+        },
+        {
+          "nombre": "Espárragos",
+          "cantidad": 5,
+          "unidad": "piezas"
+        },
+        {
+          "nombre": "Mantequilla",
+          "cantidad": 2,
+          "unidad": "cc"
+        }
+      ]
+    },
+    {
+      "id": "palomitas_naturales",
+      "nombre": "Palomitas naturales",
+      "tiempo": "colacion",
+      "video": false,
+      "nota": null,
+      "ingredientes": [
+        {
+          "nombre": "(1 ½ taza)",
+          "cantidad": null,
+          "unidad": ""
+        }
+      ]
+    },
+    {
+      "id": "pechugas_de_pollo_en_limon",
+      "nombre": "Pechugas de pollo en limón ()",
+      "tiempo": "comida",
+      "video": true,
+      "nota": null,
+      "ingredientes": [
+        {
+          "nombre": "Pechuga de pollo (90 gr) + 5 piezas de limón, ajo molido, sal y pimienta.",
+          "cantidad": null,
+          "unidad": ""
+        },
+        {
+          "nombre": "Aceite de oliva",
+          "cantidad": 1,
+          "unidad": "Cc"
+        },
+        {
+          "nombre": "Puré de papas",
+          "cantidad": 0.5,
+          "unidad": "taza"
+        },
+        {
+          "nombre": "Espinaca",
+          "cantidad": 0.5,
+          "unidad": "taza"
+        },
+        {
+          "nombre": "Tomate",
+          "cantidad": 0.5,
+          "unidad": "pieza"
+        },
+        {
+          "nombre": "Zanahoria rallada",
+          "cantidad": 0.5,
+          "unidad": "taza"
+        }
+      ]
+    },
+    {
+      "id": "sincronizadas",
+      "nombre": "Sincronizadas ()",
+      "tiempo": "cena",
+      "video": true,
+      "nota": null,
+      "ingredientes": [
+        {
+          "nombre": "Tortilla de harina integral",
+          "cantidad": 1,
+          "unidad": "pieza"
+        },
+        {
+          "nombre": "Espinaca",
+          "cantidad": 1,
+          "unidad": "taza"
+        },
+        {
+          "nombre": "Queso mozzarella",
+          "cantidad": 45,
+          "unidad": "gramos"
+        },
+        {
+          "nombre": "Jamón",
+          "cantidad": 2,
+          "unidad": "piezas"
+        }
+      ]
+    },
+    {
+      "id": "teriyaki_de_pollo",
+      "nombre": "Teriyaki de pollo",
+      "tiempo": "comida",
+      "video": false,
+      "nota": null,
+      "ingredientes": [
+        {
+          "nombre": "Pechuga de pollo picada en cuadritos",
+          "cantidad": 90,
+          "unidad": "gramos"
+        },
+        {
+          "nombre": "Champiñones",
+          "cantidad": 0.5,
+          "unidad": "taza"
+        },
+        {
+          "nombre": "Cebolla y tomate picados",
+          "cantidad": 0.5,
+          "unidad": "taza"
+        },
+        {
+          "nombre": "Brócoli",
+          "cantidad": 0.5,
+          "unidad": "taza"
+        },
+        {
+          "nombre": "Calabacita",
+          "cantidad": 0.5,
+          "unidad": "taza"
+        },
+        {
+          "nombre": "Cacahuates (12 piezas) (opcional)",
+          "cantidad": null,
+          "unidad": ""
+        },
+        {
+          "nombre": "Salsa soya",
+          "cantidad": 1,
+          "unidad": "cc"
+        }
+      ]
+    },
+    {
+      "id": "taquitos_de_tortillas_de_zanahoria",
+      "nombre": "Taquitos de tortillas de zanahoria ()",
+      "tiempo": "comida",
+      "video": true,
+      "nota": null,
+      "ingredientes": [
+        {
+          "nombre": "Zanahoria rallada",
+          "cantidad": 1,
+          "unidad": "taza"
+        },
+        {
+          "nombre": "Huevo",
+          "cantidad": 2,
+          "unidad": "piezas"
+        },
+        {
+          "nombre": "Aceite de oliva",
+          "cantidad": 1,
+          "unidad": "Cc"
+        },
+        {
+          "nombre": "Queso rallado",
+          "cantidad": 0.5,
+          "unidad": "taza"
+        },
+        {
+          "nombre": "Sal, pimienta",
+          "cantidad": null,
+          "unidad": ""
+        },
+        {
+          "nombre": "Aguacate",
+          "cantidad": 0.375,
+          "unidad": "pieza"
+        },
+        {
+          "nombre": "Jamón, espinaca y tomate",
+          "cantidad": null,
+          "unidad": ""
+        }
+      ]
+    },
+    {
+      "id": "albondigas",
+      "nombre": "Albóndigas",
+      "tiempo": "comida",
+      "video": false,
+      "nota": null,
+      "ingredientes": [
+        {
+          "nombre": "Carne molida (90 gramos) 3 bolitas",
+          "cantidad": null,
+          "unidad": ""
+        },
+        {
+          "nombre": "Aguacate",
+          "cantidad": 0.5,
+          "unidad": "pieza"
+        },
+        {
+          "nombre": "Zanahoria picada",
+          "cantidad": 0.5,
+          "unidad": "tz"
+        },
+        {
+          "nombre": "Calabacitas",
+          "cantidad": 0.5,
+          "unidad": "taza"
+        },
+        {
+          "nombre": "Papa",
+          "cantidad": 0.5,
+          "unidad": "pieza"
+        },
+        {
+          "nombre": "Aceite de oliva",
+          "cantidad": 1,
+          "unidad": "Cc"
+        },
+        {
+          "nombre": "Tortilla de maíz",
+          "cantidad": 1,
+          "unidad": "pieza"
+        },
+        {
+          "nombre": "Arroz blanco",
+          "cantidad": 0.5,
+          "unidad": "taza"
+        }
+      ]
+    },
+    {
+      "id": "yogurt_con_papaya_y_granola_de_platano",
+      "nombre": "Yogurt con papaya y granola de Plátano",
+      "tiempo": "desayuno",
+      "video": false,
+      "nota": null,
+      "ingredientes": [
+        {
+          "nombre": "Yogurt griego sin azúcar",
+          "cantidad": 1,
+          "unidad": "taza"
+        },
+        {
+          "nombre": "Papaya picada",
+          "cantidad": 1,
+          "unidad": "taza"
+        },
+        {
+          "nombre": "Granola casera (5 cucharaditas) Video",
+          "cantidad": null,
+          "unidad": ""
+        }
+      ]
+    },
+    {
+      "id": "zanahoria_rallada_3_4_taza",
+      "nombre": "Zanahoria rallada  \n(3/4 taza)",
+      "tiempo": "colacion",
+      "video": false,
+      "nota": null,
+      "ingredientes": []
+    },
+    {
+      "id": "ensalada_verde_pollo_y_aguacate",
+      "nombre": "Ensalada verde (pollo y aguacate)",
+      "tiempo": "comida",
+      "video": false,
+      "nota": null,
+      "ingredientes": [
+        {
+          "nombre": "Pollo desmenuzado (>1 taza)\n• Aguacate (1/2 pieza)",
+          "cantidad": null,
+          "unidad": ""
+        },
+        {
+          "nombre": "Yogurt griego",
+          "cantidad": 1,
+          "unidad": "cc"
+        },
+        {
+          "nombre": "Pan integral cero",
+          "cantidad": 1,
+          "unidad": "piezas"
+        },
+        {
+          "nombre": "Espinaca picada",
+          "cantidad": 0.5,
+          "unidad": "taza"
+        },
+        {
+          "nombre": "Cilantro (Al gusto)",
+          "cantidad": null,
+          "unidad": ""
+        },
+        {
+          "nombre": "Arroz blanco",
+          "cantidad": 0.5,
+          "unidad": "taza"
+        },
+        {
+          "nombre": "Limón + Pimienta + Chile verde",
+          "cantidad": null,
+          "unidad": ""
+        }
+      ]
+    },
+    {
+      "id": "bistec_a_la_mexicana",
+      "nombre": "Bistec a la mexicana",
+      "tiempo": "cena",
+      "video": false,
+      "nota": null,
+      "ingredientes": [
+        {
+          "nombre": "Bistec",
+          "cantidad": 90,
+          "unidad": "gr"
+        },
+        {
+          "nombre": "Tomate",
+          "cantidad": 0.5,
+          "unidad": "taza"
+        },
+        {
+          "nombre": "Cebolla",
+          "cantidad": 0.5,
+          "unidad": "taza"
+        },
+        {
+          "nombre": "Aceite de oliva",
+          "cantidad": null,
+          "unidad": ""
+        },
+        {
+          "nombre": "Arroz blanco",
+          "cantidad": 0.5,
+          "unidad": "taza"
+        }
+      ]
+    },
+    {
+      "id": "licuado_de_platano",
+      "nombre": "Licuado de Plátano",
+      "tiempo": "desayuno",
+      "video": false,
+      "nota": null,
+      "ingredientes": [
+        {
+          "nombre": "Plátano chico",
+          "cantidad": 1,
+          "unidad": "pieza"
+        },
+        {
+          "nombre": "Leche semidescremada",
+          "cantidad": 1,
+          "unidad": "taza"
+        },
+        {
+          "nombre": "Endulzar con poquita Stevia",
+          "cantidad": null,
+          "unidad": ""
+        },
+        {
+          "nombre": "Galleta de arroz inflado",
+          "cantidad": 1,
+          "unidad": "o 2 piezas"
+        },
+        {
+          "nombre": "Crema de cacahuate",
+          "cantidad": 1,
+          "unidad": "o 2 cucharadas"
+        }
+      ]
+    },
+    {
+      "id": "manzana_picada_1_taza",
+      "nombre": "Manzana picada\n(1 taza)",
+      "tiempo": "colacion",
+      "video": false,
+      "nota": null,
+      "ingredientes": []
+    },
+    {
+      "id": "guisado_de_nopales_y_frijoles",
+      "nombre": "Guisado de nopales y frijoles ()",
+      "tiempo": "comida",
+      "video": true,
+      "nota": null,
+      "ingredientes": [
+        {
+          "nombre": "Nopales picados",
+          "cantidad": 0.5,
+          "unidad": "taza"
+        },
+        {
+          "nombre": "Frijoles graneados",
+          "cantidad": 0.5,
+          "unidad": "taza"
+        },
+        {
+          "nombre": "Carne molida",
+          "cantidad": 90,
+          "unidad": "gramos"
+        },
+        {
+          "nombre": "Salsa roja al gusto",
+          "cantidad": null,
+          "unidad": ""
+        },
+        {
+          "nombre": "Cebolla y ajo",
+          "cantidad": null,
+          "unidad": ""
+        },
+        {
+          "nombre": "Tortilla de maíz",
+          "cantidad": 1,
+          "unidad": "o 2 piezas"
+        }
+      ]
+    },
+    {
+      "id": "lentejas",
+      "nombre": "Lentejas",
+      "tiempo": "cena",
+      "video": false,
+      "nota": null,
+      "ingredientes": [
+        {
+          "nombre": "Lentejas cocidas",
+          "cantidad": 1,
+          "unidad": "½ taza"
+        },
+        {
+          "nombre": "Aceite de oliva",
+          "cantidad": 1,
+          "unidad": "Cc"
+        }
+      ]
+    },
+    {
+      "id": "gelatina_sin_azucar_1_taza",
+      "nombre": "Gelatina sin azúcar \n(1 taza)",
+      "tiempo": "colacion",
+      "video": false,
+      "nota": null,
+      "ingredientes": []
+    },
+    {
+      "id": "taquitos_de_pescado",
+      "nombre": "Taquitos de pescado",
+      "tiempo": "comida",
+      "video": false,
+      "nota": null,
+      "ingredientes": []
+    },
+    {
+      "id": "_1",
+      "nombre": "Filete de Pescado",
+      "tiempo": "comida",
+      "video": true,
+      "nota": null,
+      "ingredientes": [
+        {
+          "nombre": "Filete de pescado",
+          "cantidad": 2.0,
+          "unidad": "piezas"
+        },
+        {
+          "nombre": "Aceite de oliva",
+          "cantidad": 1.0,
+          "unidad": "cc"
+        },
+        {
+          "nombre": "Sal, pimienta, paprika",
+          "cantidad": 3.0,
+          "unidad": "Cc"
+        },
+        {
+          "nombre": "Tortillas de maíz",
+          "cantidad": 3.0,
+          "unidad": "piezas"
+        },
+        {
+          "nombre": "Salsa casera y limón al gusto",
+          "cantidad": null,
+          "unidad": ""
+        },
+        {
+          "nombre": "Cebolla, cilantro y poquita piña",
+          "cantidad": null,
+          "unidad": ""
+        }
+      ]
+    },
+    {
+      "id": "tortitas_de_papa_y_atun_ensalada",
+      "nombre": "Tortitas de papa y atún + Ensalada ()",
+      "tiempo": "cena",
+      "video": true,
+      "nota": null,
+      "ingredientes": [
+        {
+          "nombre": "Papa cocida",
+          "cantidad": 2,
+          "unidad": "piezas"
+        },
+        {
+          "nombre": "Huevo",
+          "cantidad": 2,
+          "unidad": "piezas"
+        },
+        {
+          "nombre": "Atún",
+          "cantidad": 1,
+          "unidad": "lata"
+        },
+        {
+          "nombre": "Queso rallado",
+          "cantidad": 60,
+          "unidad": "gr"
+        },
+        {
+          "nombre": "Aceite de oliva",
+          "cantidad": 1,
+          "unidad": "Cc"
+        },
+        {
+          "nombre": "Verduras mixtas",
+          "cantidad": null,
+          "unidad": ""
+        }
+      ]
+    },
+    {
+      "id": "crema_de_huevo",
+      "nombre": "Crema de huevo",
+      "tiempo": "desayuno",
+      "video": false,
+      "nota": null,
+      "ingredientes": [
+        {
+          "nombre": "Huevos cocido",
+          "cantidad": 2,
+          "unidad": "piezas"
+        },
+        {
+          "nombre": "Aguacate",
+          "cantidad": 0.5,
+          "unidad": "pieza"
+        },
+        {
+          "nombre": "Apio, cilantro y cebolla picados finamente",
+          "cantidad": 0.5,
+          "unidad": "taza"
+        },
+        {
+          "nombre": "Pan integral",
+          "cantidad": 1,
+          "unidad": "Pieza"
+        },
+        {
+          "nombre": "Aderezo casero (Yogurt griego + mostaza + sal y pimienta)",
+          "cantidad": null,
+          "unidad": ""
+        }
+      ]
+    },
+    {
+      "id": "chilaquiles_saludables",
+      "nombre": "Chilaquiles saludables ()",
+      "tiempo": "comida",
+      "video": true,
+      "nota": null,
+      "ingredientes": [
+        {
+          "nombre": "Pechuga de pollo (90 gr) + Salsa verde.",
+          "cantidad": null,
+          "unidad": ""
+        },
+        {
+          "nombre": "Tostadas horneadas",
+          "cantidad": 4,
+          "unidad": "pz"
+        },
+        {
+          "nombre": "Queso rallado",
+          "cantidad": 30,
+          "unidad": "gramos"
+        },
+        {
+          "nombre": "Cebolla",
+          "cantidad": 0.5,
+          "unidad": "taza"
+        },
+        {
+          "nombre": "Crema",
+          "cantidad": 2,
+          "unidad": "cucharadas"
+        },
+        {
+          "nombre": "Aguacate",
+          "cantidad": 0.5,
+          "unidad": "pieza"
+        }
+      ]
+    },
+    {
+      "id": "tinga_de_atun",
+      "nombre": "Tinga de Atún",
+      "tiempo": "comida",
+      "video": false,
+      "nota": null,
+      "ingredientes": [
+        {
+          "nombre": "Atún en lata (1 lata)\n• Tomate cocido (1 pieza)",
+          "cantidad": null,
+          "unidad": ""
+        },
+        {
+          "nombre": "Cebolla",
+          "cantidad": 0.5,
+          "unidad": "pieza"
+        },
+        {
+          "nombre": "Lechuga picada",
+          "cantidad": 0.5,
+          "unidad": "taza"
+        },
+        {
+          "nombre": "Chile chipotle",
+          "cantidad": 2,
+          "unidad": "cucharadas"
+        },
+        {
+          "nombre": "Aceite de oliva",
+          "cantidad": 1,
+          "unidad": "cc"
+        },
+        {
+          "nombre": "Aguacate",
+          "cantidad": 0.5,
+          "unidad": "pieza"
+        },
+        {
+          "nombre": "Tostadas horneadas",
+          "cantidad": 3,
+          "unidad": "piezas"
+        }
+      ]
+    },
+    {
+      "id": "lonche_de_pechuga_de_pollo",
+      "nombre": "Lonche de pechuga de pollo",
+      "tiempo": "comida",
+      "video": false,
+      "nota": null,
+      "ingredientes": [
+        {
+          "nombre": "Pechuga de pollo",
+          "cantidad": 90,
+          "unidad": "gr"
+        },
+        {
+          "nombre": "Pan integral",
+          "cantidad": 2,
+          "unidad": "pz"
+        },
+        {
+          "nombre": "Aguacate",
+          "cantidad": 0.5,
+          "unidad": "pieza"
+        },
+        {
+          "nombre": "Espinaca picada",
+          "cantidad": 0.5,
+          "unidad": "taza"
+        },
+        {
+          "nombre": "Tomate",
+          "cantidad": 0.5,
+          "unidad": "pieza"
+        },
+        {
+          "nombre": "Chile al gusto",
+          "cantidad": null,
+          "unidad": ""
+        }
+      ]
+    },
+    {
+      "id": "jicama_picada_1_taza",
+      "nombre": "Jícama picada  \n(1 taza)",
+      "tiempo": "colacion",
+      "video": false,
+      "nota": null,
+      "ingredientes": []
+    },
+    {
+      "id": "pechugas_de_pollo_ensalada",
+      "nombre": "Pechugas de pollo + Ensalada",
+      "tiempo": "comida",
+      "video": false,
+      "nota": null,
+      "ingredientes": [
+        {
+          "nombre": "Pechuga de pollo",
+          "cantidad": 90,
+          "unidad": "gr"
+        },
+        {
+          "nombre": "Aceite de oliva",
+          "cantidad": 1,
+          "unidad": "Cc"
+        },
+        {
+          "nombre": "Aguacate",
+          "cantidad": 0.5,
+          "unidad": "pieza"
+        },
+        {
+          "nombre": "Zanahoria rallada",
+          "cantidad": 0.5,
+          "unidad": "taza"
+        },
+        {
+          "nombre": "Espinaca picada",
+          "cantidad": 1,
+          "unidad": "taza"
+        },
+        {
+          "nombre": "Tomate picado",
+          "cantidad": 0.5,
+          "unidad": "pieza"
+        },
+        {
+          "nombre": "Arroz blanco",
+          "cantidad": 0.5,
+          "unidad": "taza"
+        }
+      ]
+    },
+    {
+      "id": "tostadas_de_frijoles",
+      "nombre": "Tostadas de Frijoles",
+      "tiempo": "cena",
+      "video": false,
+      "nota": null,
+      "ingredientes": [
+        {
+          "nombre": "Frijol molido",
+          "cantidad": 0.5,
+          "unidad": "pieza"
+        },
+        {
+          "nombre": "Tostada horneada",
+          "cantidad": 3,
+          "unidad": "piezas"
+        },
+        {
+          "nombre": "Zanahoria rallada",
+          "cantidad": 0.5,
+          "unidad": "taza"
+        },
+        {
+          "nombre": "Queso panela rallado",
+          "cantidad": 30,
+          "unidad": "gr"
+        },
+        {
+          "nombre": "Tomate",
+          "cantidad": 0.5,
+          "unidad": "taza"
+        }
+      ]
+    },
+    {
+      "id": "licuado_de_papaya",
+      "nombre": "Licuado de Papaya",
+      "tiempo": "desayuno",
+      "video": false,
+      "nota": null,
+      "ingredientes": [
+        {
+          "nombre": "Papaya picada",
+          "cantidad": 0.5,
+          "unidad": "taza"
+        },
+        {
+          "nombre": "Leche semidescremada",
+          "cantidad": 1,
+          "unidad": "taza"
+        },
+        {
+          "nombre": "Endulzar con poquita Stevia",
+          "cantidad": null,
+          "unidad": ""
+        },
+        {
+          "nombre": "Galleta de arroz inflado",
+          "cantidad": 1,
+          "unidad": "o 2 piezas"
+        },
+        {
+          "nombre": "Crema de cacahuate",
+          "cantidad": 1,
+          "unidad": "o 2 cucharadas"
+        }
+      ]
+    },
+    {
+      "id": "mini_tortitas_de_yogurt",
+      "nombre": "Tortitas de yogurt",
+      "tiempo": "colacion",
+      "video": true,
+      "nota": "Mini",
+      "ingredientes": [
+        {
+          "nombre": "yogurt",
+          "cantidad": null,
+          "unidad": "pz"
+        }
+      ]
+    },
+    {
+      "id": "quesadilla_verduras_cocidas",
+      "nombre": "Quesadilla + Verduras cocidas",
+      "tiempo": "cena",
+      "video": false,
+      "nota": null,
+      "ingredientes": [
+        {
+          "nombre": "Tortilla de maíz",
+          "cantidad": 2,
+          "unidad": "piezas"
+        },
+        {
+          "nombre": "Queso panela",
+          "cantidad": 30,
+          "unidad": "gramos"
+        },
+        {
+          "nombre": "Brócoli",
+          "cantidad": 0.5,
+          "unidad": "taza"
+        },
+        {
+          "nombre": "Espinaca",
+          "cantidad": 0.5,
+          "unidad": "taza"
+        },
+        {
+          "nombre": "Zanahoria picada",
+          "cantidad": 0.5,
+          "unidad": "taza"
+        }
+      ]
+    },
+    {
+      "id": "huevo_con_brocoli",
+      "nombre": "Huevo con brócoli",
+      "tiempo": "desayuno",
+      "video": false,
+      "nota": null,
+      "ingredientes": [
+        {
+          "nombre": "Huevo entero",
+          "cantidad": 1,
+          "unidad": "pieza"
+        },
+        {
+          "nombre": "Clara de huevo",
+          "cantidad": 1,
+          "unidad": "piezas"
+        },
+        {
+          "nombre": "Brócoli rallado",
+          "cantidad": 0.5,
+          "unidad": "taza"
+        },
+        {
+          "nombre": "Aceite de oliva",
+          "cantidad": 1,
+          "unidad": "Cc"
+        },
+        {
+          "nombre": "Tortilla de maíz",
+          "cantidad": 1,
+          "unidad": "o 2 piezas"
+        }
+      ]
+    },
+    {
+      "id": "pechugas_de_pollo_en_crema_1",
+      "nombre": "Pechugas de pollo en crema ()",
+      "tiempo": "comida",
+      "video": true,
+      "nota": null,
+      "ingredientes": [
+        {
+          "nombre": "Pechuga de pollo (90 gr) + sal, pimienta y ajo en polvo",
+          "cantidad": null,
+          "unidad": ""
+        },
+        {
+          "nombre": "Aceite de oliva",
+          "cantidad": 1,
+          "unidad": "Cc"
+        },
+        {
+          "nombre": "Leche semidescre.",
+          "cantidad": 1,
+          "unidad": "taza"
+        },
+        {
+          "nombre": "Mostaza, ajo, pimienta y sal",
+          "cantidad": null,
+          "unidad": ""
+        },
+        {
+          "nombre": "Maizena",
+          "cantidad": 3,
+          "unidad": "cucharadas"
+        },
+        {
+          "nombre": "Queso y espinacas",
+          "cantidad": null,
+          "unidad": ""
+        },
+        {
+          "nombre": "Quínoa",
+          "cantidad": 0.5,
+          "unidad": "taza"
+        }
+      ]
+    },
+    {
+      "id": "crema_de_elote_verduras",
+      "nombre": "Crema de elote + verduras",
+      "tiempo": "comida",
+      "video": false,
+      "nota": null,
+      "ingredientes": [
+        {
+          "nombre": "Pechuga de pollo",
+          "cantidad": 120,
+          "unidad": "gr"
+        },
+        {
+          "nombre": "Crema ácida",
+          "cantidad": 3,
+          "unidad": "Cc"
+        },
+        {
+          "nombre": "Elote",
+          "cantidad": 0.25,
+          "unidad": "taza"
+        },
+        {
+          "nombre": "Arroz blanco",
+          "cantidad": 0.5,
+          "unidad": "taza"
+        },
+        {
+          "nombre": "Espinaca picada",
+          "cantidad": 1,
+          "unidad": "taza"
+        },
+        {
+          "nombre": "Tomate",
+          "cantidad": 1,
+          "unidad": "pieza"
+        },
+        {
+          "nombre": "Tortilla de maíz",
+          "cantidad": 1,
+          "unidad": "pieza"
+        }
+      ]
+    },
+    {
+      "id": "tostadas_de_carnitas_de_atun",
+      "nombre": "Tostadas de Carnitas de atún",
+      "tiempo": "comida",
+      "video": false,
+      "nota": null,
+      "ingredientes": [
+        {
+          "nombre": "Tostada horneada (4 pieza)\n• Atún (1 lata) + aceite en Spray",
+          "cantidad": null,
+          "unidad": ""
+        },
+        {
+          "nombre": "Cebolla + cilantro picado",
+          "cantidad": null,
+          "unidad": ""
+        },
+        {
+          "nombre": "Salsa (Chile, ajo en polvo, paprika, pimienta, aceite de oliva, comino)",
+          "cantidad": null,
+          "unidad": ""
+        },
+        {
+          "nombre": "Limón al gusto",
+          "cantidad": null,
+          "unidad": ""
+        },
+        {
+          "nombre": "Aguacate",
+          "cantidad": 0.5,
+          "unidad": "pieza"
+        }
+      ]
+    },
+    {
+      "id": "pechugas_de_pollo_en_crema_de_champinones",
+      "nombre": "Pechugas de pollo en crema de champiñones ()",
+      "tiempo": "comida",
+      "video": true,
+      "nota": null,
+      "ingredientes": [
+        {
+          "nombre": "Pechuga de pollo",
+          "cantidad": 90,
+          "unidad": "gr"
+        },
+        {
+          "nombre": "Cebolla y champiñones",
+          "cantidad": 1,
+          "unidad": "taza"
+        },
+        {
+          "nombre": "Crema filadelfia",
+          "cantidad": 2,
+          "unidad": "cucharadas"
+        },
+        {
+          "nombre": "Leche",
+          "cantidad": 0.5,
+          "unidad": "taza"
+        },
+        {
+          "nombre": "Aceite de oliva",
+          "cantidad": 1,
+          "unidad": "cc"
+        },
+        {
+          "nombre": "Arroz",
+          "cantidad": 0.5,
+          "unidad": "taza"
+        }
+      ]
+    },
+    {
+      "id": "wrap_de_tortilla",
+      "nombre": "Wrap de tortilla",
+      "tiempo": "desayuno",
+      "video": true,
+      "nota": null,
+      "ingredientes": [
+        {
+          "nombre": "Huevo entero",
+          "cantidad": 1.0,
+          "unidad": "pieza"
+        },
+        {
+          "nombre": "Clara de huevo",
+          "cantidad": 1.0,
+          "unidad": "piezas"
+        },
+        {
+          "nombre": "Jamón de pavo",
+          "cantidad": 2.0,
+          "unidad": "piezas"
+        },
+        {
+          "nombre": "Queso rallado",
+          "cantidad": 0.5,
+          "unidad": "taza"
+        },
+        {
+          "nombre": "Aguacate",
+          "cantidad": 0.375,
+          "unidad": "pieza"
+        },
+        {
+          "nombre": "Aceite de oliva",
+          "cantidad": 1.0,
+          "unidad": "Cc"
+        }
+      ]
+    },
+    {
+      "id": "fresas",
+      "nombre": "Fresas",
+      "tiempo": "colacion",
+      "video": false,
+      "nota": "picada",
+      "ingredientes": [
+        {
+          "nombre": "(3/4 de taza)",
+          "cantidad": null,
+          "unidad": ""
+        }
+      ]
+    },
+    {
+      "id": "taquitos_de_pollo",
+      "nombre": "Taquitos de pollo",
+      "tiempo": "comida",
+      "video": false,
+      "nota": null,
+      "ingredientes": [
+        {
+          "nombre": "Pollo desmenuzado",
+          "cantidad": 0.75,
+          "unidad": "taza"
+        },
+        {
+          "nombre": "Tortilla de maíz",
+          "cantidad": 2,
+          "unidad": "o 3 pieza"
+        },
+        {
+          "nombre": "Aceite de oliva",
+          "cantidad": 1,
+          "unidad": "Cc"
+        },
+        {
+          "nombre": "Espinaca",
+          "cantidad": 0.25,
+          "unidad": "taza"
+        },
+        {
+          "nombre": "Tomate (1/2 pieza)\n• Zanahoria rallada (1/4 taza)",
+          "cantidad": null,
+          "unidad": ""
+        }
+      ]
+    },
+    {
+      "id": "enrollado_de_jamon_y_queso",
+      "nombre": "Enrollado de jamón y queso ()",
+      "tiempo": "cena",
+      "video": true,
+      "nota": null,
+      "ingredientes": [
+        {
+          "nombre": "Lechuga",
+          "cantidad": 2,
+          "unidad": "hojas grandes"
+        },
+        {
+          "nombre": "Queso philadelphia",
+          "cantidad": 3,
+          "unidad": "Cc"
+        },
+        {
+          "nombre": "Tocino",
+          "cantidad": 3,
+          "unidad": "tiritas"
+        },
+        {
+          "nombre": "Queso amarrillo",
+          "cantidad": 1,
+          "unidad": "pieza"
+        },
+        {
+          "nombre": "Jamón",
+          "cantidad": 3,
+          "unidad": "piezas"
+        }
+      ]
+    },
+    {
+      "id": "cereal_con_almendras",
+      "nombre": "Cereal con almendras",
+      "tiempo": "desayuno",
+      "video": false,
+      "nota": null,
+      "ingredientes": [
+        {
+          "nombre": "Cereal sin azúcar",
+          "cantidad": 1,
+          "unidad": "taza"
+        },
+        {
+          "nombre": "Leche Semidescremada",
+          "cantidad": 1,
+          "unidad": "taza"
+        },
+        {
+          "nombre": "Almendras",
+          "cantidad": 10,
+          "unidad": "piezas"
+        },
+        {
+          "nombre": "Si desea endulzar con poquita stevia",
+          "cantidad": null,
+          "unidad": ""
+        }
+      ]
+    },
+    {
+      "id": "pescado_empapelado",
+      "nombre": "Pescado empapelado",
+      "tiempo": "comida",
+      "video": false,
+      "nota": null,
+      "ingredientes": [
+        {
+          "nombre": "Pescado cocido",
+          "cantidad": 90,
+          "unidad": "gr"
+        },
+        {
+          "nombre": "Mantequilla",
+          "cantidad": 1,
+          "unidad": "Cc"
+        },
+        {
+          "nombre": "Zanahoria picada",
+          "cantidad": 0.5,
+          "unidad": "tz"
+        },
+        {
+          "nombre": "Espinaca cocida",
+          "cantidad": 0.25,
+          "unidad": "taza"
+        },
+        {
+          "nombre": "Calabacita",
+          "cantidad": 0.5,
+          "unidad": "pieza"
+        },
+        {
+          "nombre": "Arroz blanco",
+          "cantidad": 0.5,
+          "unidad": "taza"
+        },
+        {
+          "nombre": "Tortilla de maíz",
+          "cantidad": 1,
+          "unidad": "pieza"
+        }
+      ]
+    },
+    {
+      "id": "wrap_de_brocoli",
+      "nombre": "Wrap de brócoli ()",
+      "tiempo": "cena",
+      "video": true,
+      "nota": null,
+      "ingredientes": [
+        {
+          "nombre": "Brócoli",
+          "cantidad": 0.75,
+          "unidad": "taza"
+        },
+        {
+          "nombre": "Huevo",
+          "cantidad": 2,
+          "unidad": "piezas"
+        },
+        {
+          "nombre": "Aguacate",
+          "cantidad": 0.5,
+          "unidad": "pieza"
+        },
+        {
+          "nombre": "Jamón de pavo",
+          "cantidad": 2,
+          "unidad": "piezas"
+        },
+        {
+          "nombre": "Tomate",
+          "cantidad": 3,
+          "unidad": "piezas"
+        }
+      ]
+    },
+    {
+      "id": "huevo_con_frijoles",
+      "nombre": "Huevo con Frijoles",
+      "tiempo": "desayuno",
+      "video": false,
+      "nota": null,
+      "ingredientes": [
+        {
+          "nombre": "Huevo entero (1 pieza)\n• Clara de huevo (1 piezas)",
+          "cantidad": null,
+          "unidad": ""
+        },
+        {
+          "nombre": "Frijoles graneados",
+          "cantidad": 0.5,
+          "unidad": "taza"
+        },
+        {
+          "nombre": "Aceite de oliva",
+          "cantidad": 1,
+          "unidad": "Cc"
+        },
+        {
+          "nombre": "Tostada horneada",
+          "cantidad": 1,
+          "unidad": "piezas"
+        }
+      ]
+    },
+    {
+      "id": "pechuga_de_pollo_ensalada_de_arandanos",
+      "nombre": "Pechuga de pollo + Ensalada de Arándanos",
+      "tiempo": "comida",
+      "video": false,
+      "nota": null,
+      "ingredientes": [
+        {
+          "nombre": "Pechuga de pollo (90 gr)\n• Arándanos (1/4 taza)",
+          "cantidad": null,
+          "unidad": ""
+        },
+        {
+          "nombre": "Zanahoria rallada",
+          "cantidad": 0.5,
+          "unidad": "tz"
+        },
+        {
+          "nombre": "Espinaca picada",
+          "cantidad": 1,
+          "unidad": "taza"
+        },
+        {
+          "nombre": "Pepino picado",
+          "cantidad": 0.5,
+          "unidad": "taza"
+        },
+        {
+          "nombre": "Aguacate",
+          "cantidad": 0.375,
+          "unidad": "pieza"
+        },
+        {
+          "nombre": "Nuez triturada",
+          "cantidad": 3,
+          "unidad": "piezas"
+        },
+        {
+          "nombre": "Tostadas horneadas",
+          "cantidad": 2,
+          "unidad": "pz"
+        },
+        {
+          "nombre": "Se le puede añadir trocitos de durazno enlatado a la ensalada",
+          "cantidad": null,
+          "unidad": ""
+        }
+      ]
+    },
+    {
+      "id": "avena_con_cacahuate",
+      "nombre": "Avena con cacahuate",
+      "tiempo": "cena",
+      "video": false,
+      "nota": null,
+      "ingredientes": [
+        {
+          "nombre": "Avena cruda",
+          "cantidad": 0.5,
+          "unidad": "taza"
+        },
+        {
+          "nombre": "Leche de semidescremada",
+          "cantidad": 1,
+          "unidad": "taza"
+        },
+        {
+          "nombre": "Cacahuate natural",
+          "cantidad": 13,
+          "unidad": "piezas"
+        },
+        {
+          "nombre": "Endulzar con poquita Stevia",
+          "cantidad": null,
+          "unidad": ""
+        }
+      ]
+    },
+    {
+      "id": "nuggets_de_pollo_caseros",
+      "nombre": "Nuggets de pollo caseros",
+      "tiempo": "comida",
+      "video": true,
+      "nota": null,
+      "ingredientes": [
+        {
+          "nombre": "Pechuga de pollo picada",
+          "cantidad": 90.0,
+          "unidad": "gramos"
+        },
+        {
+          "nombre": "Ajo molido y sal",
+          "cantidad": null,
+          "unidad": ""
+        },
+        {
+          "nombre": "Brócoli rallado",
+          "cantidad": 0.5,
+          "unidad": "taza"
+        },
+        {
+          "nombre": "Huevo",
+          "cantidad": 1.0,
+          "unidad": "pieza"
+        },
+        {
+          "nombre": "Aceite de oliva",
+          "cantidad": 3.0,
+          "unidad": "cucharaditas"
+        },
+        {
+          "nombre": "Aguacate",
+          "cantidad": 0.5,
+          "unidad": "pieza"
+        }
+      ]
+    },
+    {
+      "id": "gyro_estilo_griego",
+      "nombre": "Gyro estilo griego ()",
+      "tiempo": "comida",
+      "video": true,
+      "nota": null,
+      "ingredientes": [
+        {
+          "nombre": "Pechuga de pollo (90 gramo)\n• Yogurt + Aceite de oliva + Jugo de limón + Ajo + Sal + Pimienta + Comino + Paprika + Cilantro y Canela",
+          "cantidad": null,
+          "unidad": ""
+        },
+        {
+          "nombre": "Salsa: Pepino rallado, Yogurt griego, Aceite de oliva + jugo de limón, Ajo y Pimienta\n• Tortilla de harina (1 pieza)",
+          "cantidad": null,
+          "unidad": ""
+        }
+      ]
+    },
+    {
+      "id": "nopales_en_salsa_vede",
+      "nombre": "Nopales en salsa vede ()",
+      "tiempo": "comida",
+      "video": true,
+      "nota": null,
+      "ingredientes": [
+        {
+          "nombre": "Nopal",
+          "cantidad": 1,
+          "unidad": "o 2 piezas"
+        },
+        {
+          "nombre": "Ajo y sal al gusto",
+          "cantidad": null,
+          "unidad": ""
+        },
+        {
+          "nombre": "Queso panela",
+          "cantidad": 60,
+          "unidad": "gramos"
+        },
+        {
+          "nombre": "Salsa verde al gusto",
+          "cantidad": null,
+          "unidad": ""
+        },
+        {
+          "nombre": "Aguacate",
+          "cantidad": 0.5,
+          "unidad": "pieza"
+        },
+        {
+          "nombre": "Pico de gallo",
+          "cantidad": null,
+          "unidad": ""
+        },
+        {
+          "nombre": "Frijol molido",
+          "cantidad": 0.5,
+          "unidad": "taza"
+        }
+      ]
+    },
+    {
+      "id": "rajitas_con_pechugas_de_pollo",
+      "nombre": "Rajitas con pechugas de pollo ()",
+      "tiempo": "comida",
+      "video": true,
+      "nota": null,
+      "ingredientes": [
+        {
+          "nombre": "Pechuga de pollo",
+          "cantidad": 90,
+          "unidad": "gr"
+        },
+        {
+          "nombre": "Aceite de oliva",
+          "cantidad": 1,
+          "unidad": "Cc"
+        },
+        {
+          "nombre": "Chile poblano",
+          "cantidad": null,
+          "unidad": ""
+        },
+        {
+          "nombre": "Yogurt griego sin azúcar",
+          "cantidad": 3,
+          "unidad": "cucharadas"
+        },
+        {
+          "nombre": "Elote amarillo",
+          "cantidad": 0.5,
+          "unidad": "taza"
+        },
+        {
+          "nombre": "Tomate picado",
+          "cantidad": 0.5,
+          "unidad": "pieza"
+        },
+        {
+          "nombre": "Arroz blanco",
+          "cantidad": 0.5,
+          "unidad": "taza"
+        }
+      ]
+    },
+    {
+      "id": "tortitas_de_atun_con_arroz",
+      "nombre": "Tortitas de Atún con arroz",
+      "tiempo": "comida",
+      "video": false,
+      "nota": null,
+      "ingredientes": [
+        {
+          "nombre": "Atún en agua",
+          "cantidad": 1,
+          "unidad": "lata"
+        },
+        {
+          "nombre": "Huevo entero",
+          "cantidad": 1,
+          "unidad": "pieza"
+        },
+        {
+          "nombre": "Queso rallado",
+          "cantidad": 0.5,
+          "unidad": "taza"
+        },
+        {
+          "nombre": "Aceite de oliva",
+          "cantidad": 3,
+          "unidad": "Cc"
+        },
+        {
+          "nombre": "Cebolla picada",
+          "cantidad": 0.5,
+          "unidad": "taza"
+        },
+        {
+          "nombre": "Tomate picada",
+          "cantidad": 0.25,
+          "unidad": "taza"
+        },
+        {
+          "nombre": "Guacamole",
+          "cantidad": 6,
+          "unidad": "cucharadas"
+        },
+        {
+          "nombre": "Arroz cocido",
+          "cantidad": 0.5,
+          "unidad": "taza"
+        }
+      ]
+    },
+    {
+      "id": "taquitos_de_pechuga_de_pollo",
+      "nombre": "Taquitos de pechuga de pollo ()",
+      "tiempo": "comida",
+      "video": true,
+      "nota": null,
+      "ingredientes": [
+        {
+          "nombre": "Pechuga de pollo (90 gr) + Yogurt griego, sal, pimienta, paprika.",
+          "cantidad": null,
+          "unidad": ""
+        },
+        {
+          "nombre": "Aceite de oliva",
+          "cantidad": 1,
+          "unidad": "Cc"
+        },
+        {
+          "nombre": "Tomate, cebolla y cilantro picados",
+          "cantidad": 1,
+          "unidad": "taza"
+        },
+        {
+          "nombre": "Aguacate",
+          "cantidad": 0.5,
+          "unidad": "pieza"
+        },
+        {
+          "nombre": "Limón, sal y pimienta al gusto",
+          "cantidad": null,
+          "unidad": ""
+        },
+        {
+          "nombre": "Tortillas de maíz",
+          "cantidad": 3,
+          "unidad": "piezas"
+        }
+      ]
+    },
+    {
+      "id": "ensalada_de_garbanzos_y_atun",
+      "nombre": "Ensalada de Garbanzos y Atún ()",
+      "tiempo": "cena",
+      "video": true,
+      "nota": null,
+      "ingredientes": [
+        {
+          "nombre": "Garbanzo",
+          "cantidad": 0.5,
+          "unidad": "taza"
+        },
+        {
+          "nombre": "Atún",
+          "cantidad": 30,
+          "unidad": "gr"
+        },
+        {
+          "nombre": "Espinaca",
+          "cantidad": 1,
+          "unidad": "taza"
+        },
+        {
+          "nombre": "Tomate",
+          "cantidad": 0.5,
+          "unidad": "pieza"
+        },
+        {
+          "nombre": "Limón",
+          "cantidad": 1,
+          "unidad": "pieza"
+        },
+        {
+          "nombre": "Zanahoria rallada",
+          "cantidad": 0.5,
+          "unidad": "taza"
+        },
+        {
+          "nombre": "Tostadas horneadas",
+          "cantidad": 2,
+          "unidad": "pz"
+        }
+      ]
+    },
+    {
+      "id": "pescado_a_la_plancha",
+      "nombre": "Pescado a la plancha",
+      "tiempo": "comida",
+      "video": false,
+      "nota": null,
+      "ingredientes": []
+    },
+    {
+      "id": "tostadas_de_pollo",
+      "nombre": "Tostadas de Pollo",
+      "tiempo": "comida",
+      "video": false,
+      "nota": null,
+      "ingredientes": [
+        {
+          "nombre": "Pollo desmenuzado",
+          "cantidad": 0.5,
+          "unidad": "pieza"
+        },
+        {
+          "nombre": "Tostada horneada",
+          "cantidad": 3,
+          "unidad": "piezas"
+        },
+        {
+          "nombre": "Zanahoria rallada",
+          "cantidad": 0.5,
+          "unidad": "taza"
+        },
+        {
+          "nombre": "Queso panela rallado",
+          "cantidad": 30,
+          "unidad": "gr"
+        },
+        {
+          "nombre": "Tomate",
+          "cantidad": 0.5,
+          "unidad": "taza"
+        }
+      ]
+    },
+    {
+      "id": "mango_grande_1_pieza",
+      "nombre": "Mango grande\n (1 pieza)",
+      "tiempo": "colacion",
+      "video": false,
+      "nota": null,
+      "ingredientes": []
+    },
+    {
+      "id": "alambre_de_pollo",
+      "nombre": "Alambre de pollo",
+      "tiempo": "comida",
+      "video": true,
+      "nota": null,
+      "ingredientes": [
+        {
+          "nombre": "Pechuga de pollo (90 gr) + Ajo, cebolla, paprika, sal, pimienta",
+          "cantidad": null,
+          "unidad": ""
+        },
+        {
+          "nombre": "Aceite de oliva",
+          "cantidad": 1.0,
+          "unidad": "Cc"
+        },
+        {
+          "nombre": "Chile morrón",
+          "cantidad": 1.0,
+          "unidad": "pieza"
+        },
+        {
+          "nombre": "Cebolla picada",
+          "cantidad": 0.25,
+          "unidad": "taza"
+        },
+        {
+          "nombre": "Tomate picado",
+          "cantidad": 0.5,
+          "unidad": "taza"
+        },
+        {
+          "nombre": "Queso",
+          "cantidad": 60.0,
+          "unidad": "gramos"
+        },
+        {
+          "nombre": "Tortillas de maíz",
+          "cantidad": 3.0,
+          "unidad": "piezas"
+        }
+      ]
+    },
+    {
+      "id": "barquitos_de_atun",
+      "nombre": "Barquitos de atún \n()",
+      "tiempo": "cena",
+      "video": true,
+      "nota": null,
+      "ingredientes": [
+        {
+          "nombre": "Pepino mediano",
+          "cantidad": 1,
+          "unidad": "pieza"
+        },
+        {
+          "nombre": "Atún en agua",
+          "cantidad": 1,
+          "unidad": "lata"
+        },
+        {
+          "nombre": "Elote amarrillo",
+          "cantidad": 0.5,
+          "unidad": "taza"
+        },
+        {
+          "nombre": "Apio picado",
+          "cantidad": 0.5,
+          "unidad": "taza"
+        },
+        {
+          "nombre": "Cebolla picada",
+          "cantidad": 0.25,
+          "unidad": "taza"
+        },
+        {
+          "nombre": "Mayonesa",
+          "cantidad": 2,
+          "unidad": "cucharadas"
+        },
+        {
+          "nombre": "Limón",
+          "cantidad": 1,
+          "unidad": "pieza"
+        }
+      ]
+    },
+    {
+      "id": "avena_con_cacahuates",
+      "nombre": "Avena con cacahuates",
+      "tiempo": "desayuno",
+      "video": false,
+      "nota": null,
+      "ingredientes": [
+        {
+          "nombre": "Avena cruda",
+          "cantidad": 0.5,
+          "unidad": "taza"
+        },
+        {
+          "nombre": "Leche de semidescremada",
+          "cantidad": 1,
+          "unidad": "taza"
+        },
+        {
+          "nombre": "Cacahuate natural",
+          "cantidad": 13,
+          "unidad": "piezas"
+        },
+        {
+          "nombre": "Endulzar con poquita Stevia",
+          "cantidad": null,
+          "unidad": ""
+        }
+      ]
+    },
+    {
+      "id": "melon_picado",
+      "nombre": "Melón picado",
+      "tiempo": "colacion",
+      "video": false,
+      "nota": null,
+      "ingredientes": [
+        {
+          "nombre": "(1 ½ taza)",
+          "cantidad": null,
+          "unidad": ""
+        }
+      ]
+    },
+    {
+      "id": "ceviche_de_pescado",
+      "nombre": "Ceviche de pescado",
+      "tiempo": "comida",
+      "video": false,
+      "nota": null,
+      "ingredientes": []
+    },
+    {
+      "id": "lonche_de_jamon_y_queso",
+      "nombre": "Lonche de jamón y queso",
+      "tiempo": "cena",
+      "video": false,
+      "nota": null,
+      "ingredientes": [
+        {
+          "nombre": "Pan integral",
+          "cantidad": 2,
+          "unidad": "piezas"
+        },
+        {
+          "nombre": "Queso panela",
+          "cantidad": 30,
+          "unidad": "gramos"
+        },
+        {
+          "nombre": "Jamón de pavo",
+          "cantidad": 1,
+          "unidad": "pieza"
+        },
+        {
+          "nombre": "Espinaca",
+          "cantidad": 0.25,
+          "unidad": "taza"
+        },
+        {
+          "nombre": "Tomate",
+          "cantidad": 2,
+          "unidad": "rodajas"
+        }
+      ]
+    },
+    {
+      "id": "huevo_con_tomate",
+      "nombre": "Huevo con tomate",
+      "tiempo": "desayuno",
+      "video": false,
+      "nota": null,
+      "ingredientes": []
+    },
+    {
+      "id": "pechugas_de_pollo_en_chile_chipotle",
+      "nombre": "Pechugas de pollo en chile chipotle ()",
+      "tiempo": "comida",
+      "video": true,
+      "nota": null,
+      "ingredientes": [
+        {
+          "nombre": "Pechuga de pollo (90 gr) + mostaza, sal, ajo en polvo y pimienta.",
+          "cantidad": null,
+          "unidad": ""
+        },
+        {
+          "nombre": "Aceite de oliva",
+          "cantidad": 1,
+          "unidad": "Cc"
+        },
+        {
+          "nombre": "Tomate",
+          "cantidad": 1,
+          "unidad": "pieza"
+        },
+        {
+          "nombre": "Diente de ajo",
+          "cantidad": 1,
+          "unidad": "pieza"
+        },
+        {
+          "nombre": "Cebolla",
+          "cantidad": 0.5,
+          "unidad": "pieza"
+        },
+        {
+          "nombre": "Chile guajillo",
+          "cantidad": 2,
+          "unidad": "piezas"
+        },
+        {
+          "nombre": "Arroz blanco",
+          "cantidad": 0.5,
+          "unidad": "taza"
+        }
+      ]
+    },
+    {
+      "id": "nopales_en_salsa_roja",
+      "nombre": "Nopales en salsa roja\n()",
+      "tiempo": "cena",
+      "video": true,
+      "nota": null,
+      "ingredientes": [
+        {
+          "nombre": "Nopales picados (3/4 taza) + Ajo, cebolla y sal",
+          "cantidad": null,
+          "unidad": ""
+        },
+        {
+          "nombre": "Queso panela",
+          "cantidad": 60,
+          "unidad": "gramos"
+        }
+      ]
+    },
+    {
+      "id": "salsa",
+      "nombre": "Salsa:",
+      "tiempo": "cena",
+      "video": false,
+      "nota": null,
+      "ingredientes": [
+        {
+          "nombre": "Tomate",
+          "cantidad": 1,
+          "unidad": "pieza"
+        },
+        {
+          "nombre": "Tomatillo",
+          "cantidad": 2,
+          "unidad": "piezas"
+        },
+        {
+          "nombre": "Chile jalapeño (1 pieza) + ajo y consomé.",
+          "cantidad": null,
+          "unidad": ""
+        }
+      ]
+    },
+    {
+      "id": "calabacitas_rellenas_de_carne_molida_y_queso",
+      "nombre": "Calabacitas rellenas de carne molida y queso ()",
+      "tiempo": "comida",
+      "video": true,
+      "nota": null,
+      "ingredientes": [
+        {
+          "nombre": "Calabacitas (3 pieza)\n• Cebolla y ajo al gusto",
+          "cantidad": null,
+          "unidad": ""
+        },
+        {
+          "nombre": "Carne molida",
+          "cantidad": 90,
+          "unidad": "gramos"
+        },
+        {
+          "nombre": "Zanahoria picada",
+          "cantidad": 0.5,
+          "unidad": "taza"
+        },
+        {
+          "nombre": "Papa",
+          "cantidad": 0.5,
+          "unidad": "pieza"
+        },
+        {
+          "nombre": "Queso",
+          "cantidad": 60,
+          "unidad": "gramos"
+        }
+      ]
+    },
+    {
+      "id": "pechugas_de_pollo_con_papa_en_crema",
+      "nombre": "Pechugas de pollo con papa en crema ()",
+      "tiempo": "comida",
+      "video": true,
+      "nota": null,
+      "ingredientes": [
+        {
+          "nombre": "Pechuga de pollo",
+          "cantidad": 90,
+          "unidad": "gr"
+        },
+        {
+          "nombre": "Aceite de oliva",
+          "cantidad": 3,
+          "unidad": "Cc"
+        },
+        {
+          "nombre": "Papa mediana",
+          "cantidad": 1,
+          "unidad": "pieza"
+        },
+        {
+          "nombre": "Cebolla mediana",
+          "cantidad": 0.5,
+          "unidad": "pieza"
+        },
+        {
+          "nombre": "Sal, pimienta al gusto",
+          "cantidad": null,
+          "unidad": ""
+        },
+        {
+          "nombre": "Champiñones",
+          "cantidad": 0.5,
+          "unidad": "taza"
+        },
+        {
+          "nombre": "Crema y queso al gusto",
+          "cantidad": null,
+          "unidad": ""
+        }
+      ]
+    },
+    {
+      "id": "chocolate_sin_azucar_1_pieza",
+      "nombre": "Chocolate sin azúcar \n(1 pieza)",
+      "tiempo": "colacion",
+      "video": false,
+      "nota": null,
+      "ingredientes": []
+    },
+    {
+      "id": "quesadilla_con_zanahoria_rallada",
+      "nombre": "Quesadilla con zanahoria rallada",
+      "tiempo": "cena",
+      "video": false,
+      "nota": null,
+      "ingredientes": [
+        {
+          "nombre": "Tortilla de maíz",
+          "cantidad": 2,
+          "unidad": "piezas"
+        },
+        {
+          "nombre": "Queso panela",
+          "cantidad": 30,
+          "unidad": "gramos"
+        },
+        {
+          "nombre": "Zanahoria rallada",
+          "cantidad": 0.5,
+          "unidad": "taza"
+        }
+      ]
+    },
+    {
+      "id": "lonche_de_atun",
+      "nombre": "Lonche de atún",
+      "tiempo": "desayuno",
+      "video": true,
+      "nota": null,
+      "ingredientes": [
+        {
+          "nombre": "Aguacate",
+          "cantidad": 0.5,
+          "unidad": "pieza"
+        },
+        {
+          "nombre": "Tomate chico",
+          "cantidad": 0.5,
+          "unidad": "piezas"
+        },
+        {
+          "nombre": "Cebolla picada",
+          "cantidad": 0.25,
+          "unidad": "taza"
+        },
+        {
+          "nombre": "Cilantro y limón al gusto",
+          "cantidad": null,
+          "unidad": ""
+        },
+        {
+          "nombre": "Atún en agua",
+          "cantidad": 1.0,
+          "unidad": "lata"
+        },
+        {
+          "nombre": "Pan integral",
+          "cantidad": 2.0,
+          "unidad": "piezas"
+        }
+      ]
+    },
+    {
+      "id": "pina_picada_1_taza",
+      "nombre": "Piña picada\n(1 taza)",
+      "tiempo": "colacion",
+      "video": false,
+      "nota": null,
+      "ingredientes": []
+    },
+    {
+      "id": "albondigas_de_pollo",
+      "nombre": "Albóndigas de pollo",
+      "tiempo": "comida",
+      "video": true,
+      "nota": null,
+      "ingredientes": [
+        {
+          "nombre": "Pechuga de pollo (90 gr) + sal, pimienta y ajo en polvo",
+          "cantidad": null,
+          "unidad": ""
+        },
+        {
+          "nombre": "Pan molido",
+          "cantidad": 0.5,
+          "unidad": "taza"
+        },
+        {
+          "nombre": "Jamón y queso al gusto",
+          "cantidad": null,
+          "unidad": ""
+        },
+        {
+          "nombre": "Aceite de oliva",
+          "cantidad": 3.0,
+          "unidad": "Cc"
+        },
+        {
+          "nombre": "Queso crema",
+          "cantidad": 0.5,
+          "unidad": "taza"
+        },
+        {
+          "nombre": "Arroz blanco",
+          "cantidad": 0.5,
+          "unidad": "taza"
+        }
+      ]
+    },
+    {
+      "id": "papaya_con_yogurt",
+      "nombre": "Papaya con yogurt",
+      "tiempo": "cena",
+      "video": false,
+      "nota": null,
+      "ingredientes": [
+        {
+          "nombre": "Papaya",
+          "cantidad": 1,
+          "unidad": "taza"
+        },
+        {
+          "nombre": "Yogurt griego sin azúcar",
+          "cantidad": 0.5,
+          "unidad": "taza"
+        }
+      ]
+    },
+    {
+      "id": "hamburguesa_low_carbo",
+      "nombre": "Hamburguesa low carbo",
+      "tiempo": "comida",
+      "video": false,
+      "nota": null,
+      "ingredientes": [
+        {
+          "nombre": "Carne para hamburgers",
+          "cantidad": 1,
+          "unidad": "pieza"
+        },
+        {
+          "nombre": "Lechuga romana (4 piezas), simulando el pan",
+          "cantidad": null,
+          "unidad": ""
+        },
+        {
+          "nombre": "Tomate",
+          "cantidad": 0.5,
+          "unidad": "pieza"
+        },
+        {
+          "nombre": "Aguacate",
+          "cantidad": 0.5,
+          "unidad": "pieza"
+        },
+        {
+          "nombre": "Mayonesa",
+          "cantidad": 2,
+          "unidad": "Cc"
+        },
+        {
+          "nombre": "Mostaza al gusto,",
+          "cantidad": null,
+          "unidad": ""
+        }
+      ]
+    },
+    {
+      "id": "pechugas_de_pollo_con_verduras_al_vapor",
+      "nombre": "Pechugas de pollo con verduras al vapor",
+      "tiempo": "comida",
+      "video": false,
+      "nota": null,
+      "ingredientes": [
+        {
+          "nombre": "Pechugas de pollo (90 gr)\n• Aceite de oliva (2 cc)",
+          "cantidad": null,
+          "unidad": ""
+        },
+        {
+          "nombre": "Zanahoria picada",
+          "cantidad": 0.5,
+          "unidad": "taza"
+        },
+        {
+          "nombre": "Calabacitas picadas",
+          "cantidad": 0.5,
+          "unidad": "tz"
+        },
+        {
+          "nombre": "Brócoli picado",
+          "cantidad": 0.5,
+          "unidad": "taza"
+        },
+        {
+          "nombre": "Aguacate",
+          "cantidad": 0.5,
+          "unidad": "pieza"
+        },
+        {
+          "nombre": "Tortilla de maíz",
+          "cantidad": 2,
+          "unidad": "pieza"
+        }
+      ]
+    },
+    {
+      "id": "chuleta_de_cerdo_ensalada",
+      "nombre": "Chuleta de cerdo + Ensalada",
+      "tiempo": "comida",
+      "video": false,
+      "nota": null,
+      "ingredientes": [
+        {
+          "nombre": "Chuleta de cerdo",
+          "cantidad": 2,
+          "unidad": "piezas"
+        },
+        {
+          "nombre": "Lechuga picada",
+          "cantidad": 0.5,
+          "unidad": "taza"
+        },
+        {
+          "nombre": "Zanahoria rallada",
+          "cantidad": 0.5,
+          "unidad": "taza"
+        },
+        {
+          "nombre": "Tomate",
+          "cantidad": 3,
+          "unidad": "rodajas"
+        },
+        {
+          "nombre": "Aguacate",
+          "cantidad": 0.5,
+          "unidad": "pieza"
+        },
+        {
+          "nombre": "Arroz blanco",
+          "cantidad": 0.5,
+          "unidad": "taza"
+        },
+        {
+          "nombre": "Tortilla de maíz",
+          "cantidad": 1,
+          "unidad": "pieza"
+        }
+      ]
+    },
+    {
+      "id": "lonche_de_queso_cottage",
+      "nombre": "Lonche de queso cottage",
+      "tiempo": "desayuno",
+      "video": false,
+      "nota": null,
+      "ingredientes": []
+    },
+    {
+      "id": "uvas_verdes_o_rojas_1_taza",
+      "nombre": "Uvas verdes o rojas\n(1 taza)",
+      "tiempo": "colacion",
+      "video": false,
+      "nota": null,
+      "ingredientes": []
+    },
+    {
+      "id": "tinga_de_atun_1",
+      "nombre": "Tinga de Atún ()",
+      "tiempo": "comida",
+      "video": true,
+      "nota": null,
+      "ingredientes": [
+        {
+          "nombre": "Atún en lata (1 lata)\n• Tomate cocido (1 pieza)",
+          "cantidad": null,
+          "unidad": ""
+        },
+        {
+          "nombre": "Cebolla",
+          "cantidad": 0.5,
+          "unidad": "pieza"
+        },
+        {
+          "nombre": "Lechuga picada",
+          "cantidad": 0.5,
+          "unidad": "taza"
+        },
+        {
+          "nombre": "Chile chipotle",
+          "cantidad": 2,
+          "unidad": "cucharadas"
+        },
+        {
+          "nombre": "Aceite de oliva",
+          "cantidad": 1,
+          "unidad": "cc"
+        },
+        {
+          "nombre": "Aguacate",
+          "cantidad": 0.5,
+          "unidad": "pieza"
+        },
+        {
+          "nombre": "Tostadas horneadas",
+          "cantidad": 3,
+          "unidad": "piezas"
+        }
+      ]
+    },
+    {
+      "id": "tostadas_saludables",
+      "nombre": "Tostadas saludables ()",
+      "tiempo": "cena",
+      "video": true,
+      "nota": null,
+      "ingredientes": [
+        {
+          "nombre": "Tostadas horneadas",
+          "cantidad": 3,
+          "unidad": "piezas"
+        },
+        {
+          "nombre": "Pollo desmenuzado",
+          "cantidad": 0.5,
+          "unidad": "taza"
+        },
+        {
+          "nombre": "Pepino picado",
+          "cantidad": 0.5,
+          "unidad": "taza"
+        },
+        {
+          "nombre": "Aderezo",
+          "cantidad": null,
+          "unidad": ""
+        },
+        {
+          "nombre": "Jugo de limón, sal, pimienta",
+          "cantidad": null,
+          "unidad": ""
+        },
+        {
+          "nombre": "Aceite de oliva, yogurt y aguacate",
+          "cantidad": null,
+          "unidad": ""
+        }
+      ]
+    },
+    {
+      "id": "lonches_de_lechuga",
+      "nombre": "Lonches de lechuga",
+      "tiempo": "comida",
+      "video": false,
+      "nota": null,
+      "ingredientes": [
+        {
+          "nombre": "Pollo desmenuzado",
+          "cantidad": 1,
+          "unidad": "taza"
+        },
+        {
+          "nombre": "Cebolla y cilantro",
+          "cantidad": 1,
+          "unidad": "taza"
+        },
+        {
+          "nombre": "Aguacate",
+          "cantidad": 1,
+          "unidad": "pieza"
+        },
+        {
+          "nombre": "Limón al gusto",
+          "cantidad": null,
+          "unidad": ""
+        },
+        {
+          "nombre": "Lechuga",
+          "cantidad": null,
+          "unidad": ""
+        }
+      ]
+    },
+    {
+      "id": "queso_cottage_con_fruta",
+      "nombre": "Queso cottage con fruta",
+      "tiempo": "desayuno",
+      "video": false,
+      "nota": null,
+      "ingredientes": []
+    },
+    {
+      "id": "arandanos_1_2_taza",
+      "nombre": "Arándanos \n(1/2 taza)",
+      "tiempo": "colacion",
+      "video": false,
+      "nota": null,
+      "ingredientes": []
+    },
+    {
+      "id": "ceviche_de_soya",
+      "nombre": "Ceviche de Soya ()",
+      "tiempo": "comida",
+      "video": true,
+      "nota": null,
+      "ingredientes": [
+        {
+          "nombre": "Soya texturizada",
+          "cantidad": 0.5,
+          "unidad": "taza"
+        },
+        {
+          "nombre": "Pepino",
+          "cantidad": 0.5,
+          "unidad": "taza"
+        },
+        {
+          "nombre": "Tomate",
+          "cantidad": 0.5,
+          "unidad": "pieza"
+        },
+        {
+          "nombre": "Cebolla",
+          "cantidad": 0.5,
+          "unidad": "pieza"
+        },
+        {
+          "nombre": "Aguacate",
+          "cantidad": 0.5,
+          "unidad": "pieza"
+        },
+        {
+          "nombre": "Tostadas horneadas",
+          "cantidad": 2,
+          "unidad": "pz"
+        },
+        {
+          "nombre": "Clamato + Cilantro + Chile + Apio",
+          "cantidad": null,
+          "unidad": ""
+        }
+      ]
+    },
+    {
+      "id": "molletes_1",
+      "nombre": "Molletes",
+      "tiempo": "cena",
+      "video": false,
+      "nota": null,
+      "ingredientes": [
+        {
+          "nombre": "Pan tipo bolillo",
+          "cantidad": 2,
+          "unidad": "piezas"
+        },
+        {
+          "nombre": "Frijoles molidos",
+          "cantidad": 0.5,
+          "unidad": "taza"
+        },
+        {
+          "nombre": "Queso rallado",
+          "cantidad": 60,
+          "unidad": "gr"
+        }
+      ]
+    },
+    {
+      "id": "ceviche_de_soya_agua_de_limon",
+      "nombre": "Ceviche de Soya + Agua de Limón",
+      "tiempo": "cena",
+      "video": false,
+      "nota": null,
+      "ingredientes": [
+        {
+          "nombre": "Soya texturizada",
+          "cantidad": 0.5,
+          "unidad": "taza"
+        },
+        {
+          "nombre": "Pepino",
+          "cantidad": 0.5,
+          "unidad": "taza"
+        },
+        {
+          "nombre": "Tomate",
+          "cantidad": 0.5,
+          "unidad": "pieza"
+        },
+        {
+          "nombre": "Cebolla",
+          "cantidad": 0.5,
+          "unidad": "pieza"
+        },
+        {
+          "nombre": "Tostadas horneadas",
+          "cantidad": 2,
+          "unidad": "pz"
+        },
+        {
+          "nombre": "Clamato + Cilantro + Chile + Apio",
+          "cantidad": null,
+          "unidad": ""
+        }
+      ]
+    },
+    {
+      "id": "espagueti_de_tortillos",
+      "nombre": "Espagueti de tortillos ()",
+      "tiempo": "comida",
+      "video": true,
+      "nota": null,
+      "ingredientes": [
+        {
+          "nombre": "Pasta tornillo (1 taza)\n• Aceite de oliva (2 cc)",
+          "cantidad": null,
+          "unidad": ""
+        },
+        {
+          "nombre": "Carne molida",
+          "cantidad": 90,
+          "unidad": "gramos"
+        },
+        {
+          "nombre": "Calabacitas picadas",
+          "cantidad": 0.5,
+          "unidad": "tz"
+        },
+        {
+          "nombre": "Zanahoria picada",
+          "cantidad": 0.5,
+          "unidad": "taza"
+        },
+        {
+          "nombre": "Salsa de tomate + tomate natural",
+          "cantidad": null,
+          "unidad": ""
+        },
+        {
+          "nombre": "Queso panela",
+          "cantidad": 30,
+          "unidad": "gramos"
+        }
+      ]
+    },
+    {
+      "id": "wrap_de_huevo_cocido",
+      "nombre": "Wrap de huevo cocido",
+      "tiempo": "desayuno",
+      "video": true,
+      "nota": null,
+      "ingredientes": [
+        {
+          "nombre": "Huevo cocido",
+          "cantidad": 2.0,
+          "unidad": "pieza"
+        },
+        {
+          "nombre": "Queso crema",
+          "cantidad": 3.0,
+          "unidad": "cucharada"
+        },
+        {
+          "nombre": "Aguacate",
+          "cantidad": 0.5,
+          "unidad": "piezas"
+        },
+        {
+          "nombre": "Jugo de una naranja",
+          "cantidad": 0.5,
+          "unidad": "pz"
+        },
+        {
+          "nombre": "Tortilla de maíz",
+          "cantidad": 1.0,
+          "unidad": "pieza"
+        }
+      ]
+    },
+    {
+      "id": "jicama_picada_1_taza_1",
+      "nombre": "Jícama picada\n(1 ½ taza)",
+      "tiempo": "colacion",
+      "video": false,
+      "nota": null,
+      "ingredientes": []
+    },
+    {
+      "id": "pechugas_de_pollo_con_calabacitas_gratinadas",
+      "nombre": "Pechugas de pollo con calabacitas gratinadas \n()",
+      "tiempo": "comida",
+      "video": true,
+      "nota": null,
+      "ingredientes": [
+        {
+          "nombre": "Pechugas de pollo",
+          "cantidad": 90,
+          "unidad": "gr"
+        },
+        {
+          "nombre": "Aceite de oliva (1 cc)\n• Calabacitas picadas (1 pz)",
+          "cantidad": null,
+          "unidad": ""
+        },
+        {
+          "nombre": "Cebolla morada",
+          "cantidad": 0.5,
+          "unidad": "taza"
+        },
+        {
+          "nombre": "Tomate picado",
+          "cantidad": 1,
+          "unidad": "pieza"
+        },
+        {
+          "nombre": "Elotes amarillos",
+          "cantidad": 0.5,
+          "unidad": "taza"
+        },
+        {
+          "nombre": "Queso",
+          "cantidad": 30,
+          "unidad": "gramos"
+        },
+        {
+          "nombre": "Espinaca + pepino",
+          "cantidad": 1,
+          "unidad": "taza"
+        },
+        {
+          "nombre": "Tostadas horneadas",
+          "cantidad": 3,
+          "unidad": "piezas"
+        }
+      ]
+    },
+    {
+      "id": "pasta_de_calabaza_a_la_bolonesa",
+      "nombre": "Pasta de calabaza a la boloñesa ()",
+      "tiempo": "comida",
+      "video": true,
+      "nota": null,
+      "ingredientes": [
+        {
+          "nombre": "Calabacita",
+          "cantidad": 2,
+          "unidad": "piezas"
+        },
+        {
+          "nombre": "Carne molida",
+          "cantidad": 90,
+          "unidad": "gramos"
+        },
+        {
+          "nombre": "Salsa de tomate",
+          "cantidad": 3,
+          "unidad": "cuchar."
+        },
+        {
+          "nombre": "Queso parmesano o panela",
+          "cantidad": 30,
+          "unidad": "gramos"
+        },
+        {
+          "nombre": "Ensalada con verduras mixtas",
+          "cantidad": null,
+          "unidad": ""
+        }
+      ]
+    },
+    {
+      "id": "quesadilla_de_huevo_y_atun_en_salsa_de_tomate",
+      "nombre": "Quesadilla de huevo y atún en salsa de tomate \n()",
+      "tiempo": "cena",
+      "video": true,
+      "nota": null,
+      "ingredientes": [
+        {
+          "nombre": "Huevo entero",
+          "cantidad": 1,
+          "unidad": "pieza"
+        },
+        {
+          "nombre": "Clara de huevo",
+          "cantidad": 1,
+          "unidad": "piezas"
+        },
+        {
+          "nombre": "Aceite de oliva",
+          "cantidad": 1,
+          "unidad": "cc"
+        },
+        {
+          "nombre": "Tortilla de harina chica",
+          "cantidad": null,
+          "unidad": "1 pz\n• Salsa de tomate (3 cc"
+        },
+        {
+          "nombre": "Atún en agua",
+          "cantidad": 1,
+          "unidad": "lata"
+        },
+        {
+          "nombre": "Queso panela",
+          "cantidad": 30,
+          "unidad": "gramos"
+        }
+      ]
+    },
+    {
+      "id": "ensalada_al_cilantro_con_garbanzos",
+      "nombre": "Ensalada al cilantro con garbanzos ()",
+      "tiempo": "comida",
+      "video": true,
+      "nota": null,
+      "ingredientes": [
+        {
+          "nombre": "Cilantro",
+          "cantidad": 1,
+          "unidad": "taza"
+        },
+        {
+          "nombre": "Yogurt griego",
+          "cantidad": 0.5,
+          "unidad": "taza"
+        },
+        {
+          "nombre": "Aceite de oliva",
+          "cantidad": 1,
+          "unidad": "cc"
+        },
+        {
+          "nombre": "Ajo, pimienta y sal",
+          "cantidad": null,
+          "unidad": ""
+        },
+        {
+          "nombre": "Aguacate",
+          "cantidad": 0.5,
+          "unidad": "pieza"
+        },
+        {
+          "nombre": "Agua",
+          "cantidad": 0.5,
+          "unidad": "taza"
+        },
+        {
+          "nombre": "Pechugas de pollo",
+          "cantidad": 90,
+          "unidad": "gr"
+        },
+        {
+          "nombre": "Espinaca",
+          "cantidad": 1,
+          "unidad": "taza"
+        },
+        {
+          "nombre": "Pepino picado",
+          "cantidad": 0.5,
+          "unidad": "taza"
+        },
+        {
+          "nombre": "Garbanzo",
+          "cantidad": 0.5,
+          "unidad": "taza"
+        }
+      ]
+    },
+    {
+      "id": "lonche_de_huevo",
+      "nombre": "Lonche de huevo",
+      "tiempo": "desayuno",
+      "video": false,
+      "nota": null,
+      "ingredientes": [
+        {
+          "nombre": "Huevo entero",
+          "cantidad": 1,
+          "unidad": "pieza"
+        },
+        {
+          "nombre": "Clara de huevo",
+          "cantidad": 1,
+          "unidad": "piezas"
+        },
+        {
+          "nombre": "Aceite de oliva",
+          "cantidad": 1,
+          "unidad": "Cc"
+        },
+        {
+          "nombre": "Pan integral cero",
+          "cantidad": 2,
+          "unidad": "piezas"
+        },
+        {
+          "nombre": "Espinaca",
+          "cantidad": 3,
+          "unidad": "hojas grandes"
+        }
+      ]
+    },
+    {
+      "id": "yogurt_griego_sin_azucar",
+      "nombre": "Yogurt griego sin azúcar",
+      "tiempo": "colacion",
+      "video": false,
+      "nota": null,
+      "ingredientes": [
+        {
+          "nombre": "(1 taza o 1 pieza)",
+          "cantidad": null,
+          "unidad": ""
+        }
+      ]
+    },
+    {
+      "id": "manzana_picada_1_taza_1",
+      "nombre": "Manzana picada \n(1 taza)",
+      "tiempo": "colacion",
+      "video": false,
+      "nota": null,
+      "ingredientes": []
+    },
+    {
+      "id": "arandanos_1_2_taza_1",
+      "nombre": "Arándanos  \n(1/2 taza)",
+      "tiempo": "colacion",
+      "video": false,
+      "nota": null,
+      "ingredientes": []
+    },
+    {
+      "id": "pan_de_avena_con_espinaca",
+      "nombre": "Pan de avena con espinaca",
+      "tiempo": "desayuno",
+      "video": true,
+      "nota": null,
+      "ingredientes": [
+        {
+          "nombre": "Huevo entero",
+          "cantidad": 1.0,
+          "unidad": "pieza"
+        },
+        {
+          "nombre": "Clara de huevo",
+          "cantidad": 1.0,
+          "unidad": "pieza"
+        },
+        {
+          "nombre": "Espinaca",
+          "cantidad": 0.75,
+          "unidad": "taza"
+        },
+        {
+          "nombre": "Harina de avena casera (3 cucharas) + polvo para hornear + Sal + Leche",
+          "cantidad": null,
+          "unidad": ""
+        },
+        {
+          "nombre": "Jamón de pavo",
+          "cantidad": 1.0,
+          "unidad": "pieza"
+        },
+        {
+          "nombre": "Queso",
+          "cantidad": 30.0,
+          "unidad": "gramos"
+        }
+      ]
+    },
+    {
+      "id": "fresas_picadas_1_taza",
+      "nombre": "Fresas picadas\n(1 taza)",
+      "tiempo": "colacion",
+      "video": false,
+      "nota": null,
+      "ingredientes": []
+    },
+    {
+      "id": "pollo_a_la_suiza",
+      "nombre": "Pollo a la suiza ()",
+      "tiempo": "comida",
+      "video": true,
+      "nota": null,
+      "ingredientes": [
+        {
+          "nombre": "Pechuga de pollo",
+          "cantidad": 90,
+          "unidad": "gr"
+        },
+        {
+          "nombre": "Tomatillo verde",
+          "cantidad": 5,
+          "unidad": "piezas"
+        },
+        {
+          "nombre": "Chile serrano",
+          "cantidad": 1,
+          "unidad": "pieza"
+        },
+        {
+          "nombre": "Cebolla",
+          "cantidad": 0.5,
+          "unidad": "pieza"
+        },
+        {
+          "nombre": "Cilantro + yogurt griego + sazonador + Agua",
+          "cantidad": null,
+          "unidad": ""
+        },
+        {
+          "nombre": "Cebolla y calabacita",
+          "cantidad": 1,
+          "unidad": "taza"
+        },
+        {
+          "nombre": "Queso",
+          "cantidad": 60,
+          "unidad": "gramos"
+        }
+      ]
+    },
+    {
+      "id": "lonche_saludable",
+      "nombre": "Lonche saludable \n()",
+      "tiempo": "cena",
+      "video": true,
+      "nota": null,
+      "ingredientes": [
+        {
+          "nombre": "Huevo",
+          "cantidad": 2,
+          "unidad": "piezas"
+        },
+        {
+          "nombre": "Queso crema",
+          "cantidad": 2,
+          "unidad": "Cc"
+        },
+        {
+          "nombre": "Jamón",
+          "cantidad": 1,
+          "unidad": "piezas"
+        },
+        {
+          "nombre": "Tomate",
+          "cantidad": 2,
+          "unidad": "rodajas"
+        }
+      ]
+    },
+    {
+      "id": "yogurt_griego_bebible_con_proteina_1_pieza",
+      "nombre": "Yogurt griego bebible",
+      "tiempo": "colacion",
+      "video": false,
+      "nota": "Con Proteina",
+      "ingredientes": [
+        {
+          "nombre": "Yogurt griego bebible",
+          "cantidad": 1.0,
+          "unidad": "pz"
+        }
+      ]
+    },
+    {
+      "id": "ensalada_de_lentejas",
+      "nombre": "Ensalada de lentejas \n()",
+      "tiempo": "comida",
+      "video": true,
+      "nota": null,
+      "ingredientes": [
+        {
+          "nombre": "Lentejas cocida",
+          "cantidad": 0.75,
+          "unidad": "taza"
+        },
+        {
+          "nombre": "Pepino picado",
+          "cantidad": 0.5,
+          "unidad": "taza"
+        },
+        {
+          "nombre": "Cebolla morada",
+          "cantidad": 0.5,
+          "unidad": "taza"
+        },
+        {
+          "nombre": "Tomate picado",
+          "cantidad": 0.5,
+          "unidad": "taza"
+        },
+        {
+          "nombre": "Cilantro",
+          "cantidad": 0.5,
+          "unidad": "taza"
+        },
+        {
+          "nombre": "Aguacate",
+          "cantidad": 0.5,
+          "unidad": "pieza"
+        },
+        {
+          "nombre": "Limón + pimienta y sal",
+          "cantidad": null,
+          "unidad": ""
+        },
+        {
+          "nombre": "Tostadas horneadas",
+          "cantidad": 3,
+          "unidad": "piezas"
+        }
+      ]
+    },
+    {
+      "id": "bolitas_de_camote",
+      "nombre": "Bolitas de camote ()",
+      "tiempo": "cena",
+      "video": true,
+      "nota": null,
+      "ingredientes": [
+        {
+          "nombre": "Camote",
+          "cantidad": 1,
+          "unidad": "pieza"
+        },
+        {
+          "nombre": "Amaranto",
+          "cantidad": 0.5,
+          "unidad": "taza"
+        },
+        {
+          "nombre": "Se le puede poner unas cucharaditas de miel reducida en azucar",
+          "cantidad": null,
+          "unidad": ""
+        }
+      ]
+    },
+    {
+      "id": "salpicon_de_res",
+      "nombre": "Salpicón de Res ()",
+      "tiempo": "comida",
+      "video": true,
+      "nota": null,
+      "ingredientes": [
+        {
+          "nombre": "Car de res deshebrada",
+          "cantidad": 90,
+          "unidad": "gramos"
+        },
+        {
+          "nombre": "Lechuga y cebolla",
+          "cantidad": 0.75,
+          "unidad": "tz"
+        },
+        {
+          "nombre": "Cilantro picado",
+          "cantidad": 0.5,
+          "unidad": "taza"
+        },
+        {
+          "nombre": "Tomate y rábanos",
+          "cantidad": 0.5,
+          "unidad": "taza"
+        },
+        {
+          "nombre": "Aguacate",
+          "cantidad": 0.5,
+          "unidad": "pieza"
+        },
+        {
+          "nombre": "Vinagreta",
+          "cantidad": null,
+          "unidad": ""
+        },
+        {
+          "nombre": "Aceite de oliva (+ ¼ taza)",
+          "cantidad": null,
+          "unidad": ""
+        },
+        {
+          "nombre": "Vinagre blanco",
+          "cantidad": 3,
+          "unidad": "cucharadas"
+        },
+        {
+          "nombre": "Limón y pimienta al gusto",
+          "cantidad": null,
+          "unidad": ""
+        }
+      ]
+    },
+    {
+      "id": "pechugas_de_pollo_ensalada_y_arroz_de_coliflor",
+      "nombre": "Pechugas de pollo + Ensalada y arroz de coliflor",
+      "tiempo": "comida",
+      "video": false,
+      "nota": null,
+      "ingredientes": [
+        {
+          "nombre": "Pechuga de pollo",
+          "cantidad": 90,
+          "unidad": "gr"
+        },
+        {
+          "nombre": "Aceite de oliva",
+          "cantidad": 1,
+          "unidad": "Cc"
+        },
+        {
+          "nombre": "Aguacate",
+          "cantidad": 0.5,
+          "unidad": "pieza"
+        },
+        {
+          "nombre": "Zanahoria rallada",
+          "cantidad": 0.5,
+          "unidad": "taza"
+        },
+        {
+          "nombre": "Espinaca picada",
+          "cantidad": 1,
+          "unidad": "taza"
+        },
+        {
+          "nombre": "Tomate picado",
+          "cantidad": 0.5,
+          "unidad": "pieza"
+        },
+        {
+          "nombre": "Arroz de coliflor (1 tz) video",
+          "cantidad": null,
+          "unidad": ""
+        },
+        {
+          "nombre": "O hacer una combinación de arroz y coliflor",
+          "cantidad": null,
+          "unidad": ""
+        }
+      ]
+    },
+    {
+      "id": "kekitos_de_chocolate_y_manzana",
+      "nombre": "Kekitos de chocolate y manzana ()",
+      "tiempo": "cena",
+      "video": true,
+      "nota": null,
+      "ingredientes": [
+        {
+          "nombre": "Manzana",
+          "cantidad": 1,
+          "unidad": "o 2 piezas"
+        },
+        {
+          "nombre": "Huevo",
+          "cantidad": 1,
+          "unidad": "o 2 piezas"
+        },
+        {
+          "nombre": "Yogurt griego",
+          "cantidad": 2,
+          "unidad": "cc"
+        },
+        {
+          "nombre": "Cacao en polvo",
+          "cantidad": 1,
+          "unidad": "cc"
+        },
+        {
+          "nombre": "Endulzar con poquita Stevia",
+          "cantidad": null,
+          "unidad": ""
+        }
+      ]
+    },
+    {
+      "id": "smoothie_de_aguacate",
+      "nombre": "Smoothie de aguacate",
+      "tiempo": "desayuno",
+      "video": true,
+      "nota": null,
+      "ingredientes": [
+        {
+          "nombre": "Plátano chico",
+          "cantidad": 1.0,
+          "unidad": "pieza"
+        },
+        {
+          "nombre": "Leche",
+          "cantidad": 1.0,
+          "unidad": "taza"
+        },
+        {
+          "nombre": "Endulzar con poquita Stevia",
+          "cantidad": null,
+          "unidad": ""
+        },
+        {
+          "nombre": "Espinaca",
+          "cantidad": 0.75,
+          "unidad": "taza"
+        },
+        {
+          "nombre": "Aguacate",
+          "cantidad": 0.5,
+          "unidad": "pieza"
+        }
+      ]
+    },
+    {
+      "id": "taquitos_de_pescado_1",
+      "nombre": "Taquitos de pescado\n()",
+      "tiempo": "comida",
+      "video": true,
+      "nota": null,
+      "ingredientes": [
+        {
+          "nombre": "Filete de pescado",
+          "cantidad": 2,
+          "unidad": "piezas"
+        },
+        {
+          "nombre": "Aceite de oliva",
+          "cantidad": 1,
+          "unidad": "cc"
+        },
+        {
+          "nombre": "Sal, pimienta, paprika",
+          "cantidad": 3,
+          "unidad": "Cc"
+        },
+        {
+          "nombre": "Tortillas de maíz",
+          "cantidad": 3,
+          "unidad": "piezas"
+        },
+        {
+          "nombre": "Salsa casera y limón al gusto",
+          "cantidad": null,
+          "unidad": ""
+        },
+        {
+          "nombre": "Cebolla, cilantro y poquita piña",
+          "cantidad": null,
+          "unidad": ""
+        }
+      ]
+    },
+    {
+      "id": "tortitas_low_carbos",
+      "nombre": "Tortitas low carbos ()",
+      "tiempo": "comida",
+      "video": true,
+      "nota": null,
+      "ingredientes": [
+        {
+          "nombre": "Pechuga de pollo",
+          "cantidad": 90,
+          "unidad": "gr"
+        },
+        {
+          "nombre": "Aceite de oliva",
+          "cantidad": 2,
+          "unidad": "Cc"
+        },
+        {
+          "nombre": "Calabaza",
+          "cantidad": 1,
+          "unidad": "pieza"
+        },
+        {
+          "nombre": "Huevo",
+          "cantidad": 1,
+          "unidad": "pieza"
+        },
+        {
+          "nombre": "Sal, perejil",
+          "cantidad": null,
+          "unidad": ""
+        },
+        {
+          "nombre": "Aguacate",
+          "cantidad": 0.5,
+          "unidad": "pieza"
+        },
+        {
+          "nombre": "Arroz de coliflor (1 tz) video",
+          "cantidad": null,
+          "unidad": ""
+        }
+      ]
+    },
+    {
+      "id": "pechuga_de_pollo_al_chipotle",
+      "nombre": "Pechuga de pollo al chipotle ()",
+      "tiempo": "comida",
+      "video": true,
+      "nota": null,
+      "ingredientes": [
+        {
+          "nombre": "Pechugas de pollo (90 gr)\n• Aceite de oliva (1 cc)",
+          "cantidad": null,
+          "unidad": ""
+        },
+        {
+          "nombre": "Leche, crema, ajo, chipotle, cebolla y sal.",
+          "cantidad": null,
+          "unidad": ""
+        },
+        {
+          "nombre": "Espinaca picada",
+          "cantidad": 0.5,
+          "unidad": "tz"
+        },
+        {
+          "nombre": "Pepino picado",
+          "cantidad": 0.5,
+          "unidad": "taza"
+        },
+        {
+          "nombre": "Aguacate",
+          "cantidad": 0.5,
+          "unidad": "pieza"
+        },
+        {
+          "nombre": "Arroz de coliflor (1 tz) video",
+          "cantidad": null,
+          "unidad": ""
+        }
+      ]
+    },
+    {
+      "id": "pollo_a_la_naranja",
+      "nombre": "Pollo a la naranja ()",
+      "tiempo": "comida",
+      "video": true,
+      "nota": null,
+      "ingredientes": [
+        {
+          "nombre": "Pechuga de pollo",
+          "cantidad": 90,
+          "unidad": "gr"
+        },
+        {
+          "nombre": "Sal, pimienta, cebolla en polvo, paprika",
+          "cantidad": null,
+          "unidad": ""
+        },
+        {
+          "nombre": "Diente de ajo",
+          "cantidad": 1,
+          "unidad": "pieza"
+        },
+        {
+          "nombre": "Aceite",
+          "cantidad": 2,
+          "unidad": "cucharadas"
+        },
+        {
+          "nombre": "Jugo de naranja, salsa de soya, miel, ralladura de naranja",
+          "cantidad": null,
+          "unidad": ""
+        },
+        {
+          "nombre": "Aguacate",
+          "cantidad": 0.5,
+          "unidad": "pieza"
+        },
+        {
+          "nombre": "Arroz de coliflor (1 tz) video",
+          "cantidad": null,
+          "unidad": ""
+        }
+      ]
+    },
+    {
+      "id": "wrap_de_pollo_ensalada",
+      "nombre": "Wrap de pollo + Ensalada\n()",
+      "tiempo": "comida",
+      "video": true,
+      "nota": null,
+      "ingredientes": [
+        {
+          "nombre": "Pechuga de pollo",
+          "cantidad": 120,
+          "unidad": "gramos"
+        },
+        {
+          "nombre": "Tortilla de harina integral",
+          "cantidad": 1,
+          "unidad": "pz"
+        },
+        {
+          "nombre": "Queso panela rallado",
+          "cantidad": 15,
+          "unidad": "gr"
+        },
+        {
+          "nombre": "Aguacate chico",
+          "cantidad": 0.5,
+          "unidad": "pieza"
+        },
+        {
+          "nombre": "Espinaca picada",
+          "cantidad": 0.5,
+          "unidad": "taza"
+        },
+        {
+          "nombre": "Tomate",
+          "cantidad": 0.5,
+          "unidad": "pieza"
+        },
+        {
+          "nombre": "Chile al gusto",
+          "cantidad": null,
+          "unidad": ""
+        }
+      ]
+    },
+    {
+      "id": "el_batido_de_amaranto_no_se_licua_ni_se_coce_se_sirve_como_s",
+      "nombre": "El batido de amaranto no se licua ni se coce, se sirve como si fuera un cereal",
+      "tiempo": "colacion",
+      "video": false,
+      "nota": null,
+      "ingredientes": []
+    },
+    {
+      "id": "licuado_de_fresa_galletas_de_arroz_inflado_con_crema_de_caca",
+      "nombre": "Licuado de fresa + Galletas de arroz inflado con crema de cacahuate",
+      "tiempo": "desayuno",
+      "video": false,
+      "nota": null,
+      "ingredientes": [
+        {
+          "nombre": "Leche",
+          "cantidad": 1,
+          "unidad": "taza"
+        },
+        {
+          "nombre": "Fresas frescas",
+          "cantidad": 0.5,
+          "unidad": "taza"
+        },
+        {
+          "nombre": "Endulzar con stevia",
+          "cantidad": null,
+          "unidad": ""
+        },
+        {
+          "nombre": "Galleta de arroz inflado",
+          "cantidad": 2,
+          "unidad": "piezas"
+        },
+        {
+          "nombre": "Crema de cacahuate",
+          "cantidad": 2,
+          "unidad": "cucharadas"
+        }
+      ]
+    },
+    {
+      "id": "manzana_roja_mediana_1_pieza",
+      "nombre": "Manzana roja mediana (1 pieza)",
+      "tiempo": "colacion",
+      "video": false,
+      "nota": null,
+      "ingredientes": []
+    },
+    {
+      "id": "huevo_revuelto_con_frijoles",
+      "nombre": "Huevo revuelto con frijoles",
+      "tiempo": "desayuno",
+      "video": false,
+      "nota": null,
+      "ingredientes": [
+        {
+          "nombre": "Huevo entero",
+          "cantidad": 1,
+          "unidad": "pieza"
+        },
+        {
+          "nombre": "Clara de huevo",
+          "cantidad": 1,
+          "unidad": "piezas"
+        },
+        {
+          "nombre": "Frijoles graneados",
+          "cantidad": 0.5,
+          "unidad": "taza"
+        },
+        {
+          "nombre": "Tortilla de maíz",
+          "cantidad": 1,
+          "unidad": "pieza"
+        },
+        {
+          "nombre": "Aceite de oliva",
+          "cantidad": 1,
+          "unidad": "Cc"
+        }
+      ]
+    },
+    {
+      "id": "pina_picada_1_taza_1",
+      "nombre": "Piña picada \n(1 taza)",
+      "tiempo": "colacion",
+      "video": false,
+      "nota": null,
+      "ingredientes": []
+    },
+    {
+      "id": "huevo_con_chile_morron",
+      "nombre": "Huevo con chile morrón",
+      "tiempo": "desayuno",
+      "video": false,
+      "nota": null,
+      "ingredientes": [
+        {
+          "nombre": "Huevo entero",
+          "cantidad": 1,
+          "unidad": "pieza"
+        },
+        {
+          "nombre": "Clara de huevo",
+          "cantidad": 1,
+          "unidad": "piezas"
+        },
+        {
+          "nombre": "Chile morrón",
+          "cantidad": 0.5,
+          "unidad": "pieza"
+        },
+        {
+          "nombre": "Tortilla de maíz (1 piezas)\n• Aceite de oliva (1Cc)",
+          "cantidad": null,
+          "unidad": ""
+        }
+      ]
+    },
+    {
+      "id": "fresas_picadas_1_taza_1",
+      "nombre": "Fresas picadas \n(1 taza)",
+      "tiempo": "colacion",
+      "video": false,
+      "nota": null,
+      "ingredientes": []
+    },
+    {
+      "id": "teriyaki_de_pollo_1",
+      "nombre": "Teriyaki de pollo\n()",
+      "tiempo": "comida",
+      "video": true,
+      "nota": null,
+      "ingredientes": [
+        {
+          "nombre": "Pechuga de pollo picada en cuadritos",
+          "cantidad": 120,
+          "unidad": "gramos"
+        },
+        {
+          "nombre": "Cebolla y tomate picados",
+          "cantidad": 0.5,
+          "unidad": "taza"
+        },
+        {
+          "nombre": "Champiñones al gusto\n• Brócoli (1/2 taza)",
+          "cantidad": null,
+          "unidad": ""
+        },
+        {
+          "nombre": "Calabacita",
+          "cantidad": 0.5,
+          "unidad": "taza"
+        },
+        {
+          "nombre": "Cacahuates",
+          "cantidad": 12,
+          "unidad": "piezas"
+        },
+        {
+          "nombre": "Salsa soya",
+          "cantidad": 1,
+          "unidad": "cc"
+        },
+        {
+          "nombre": "Arroz blanco",
+          "cantidad": 0.5,
+          "unidad": "taza"
+        }
+      ]
+    },
+    {
+      "id": "bistec_a_la_mexicana_1",
+      "nombre": "Bistec a la mexicana\n()",
+      "tiempo": "cena",
+      "video": true,
+      "nota": null,
+      "ingredientes": [
+        {
+          "nombre": "Bistec",
+          "cantidad": 90,
+          "unidad": "gr"
+        },
+        {
+          "nombre": "Tomate",
+          "cantidad": 0.5,
+          "unidad": "taza"
+        },
+        {
+          "nombre": "Cebolla",
+          "cantidad": 0.5,
+          "unidad": "taza"
+        },
+        {
+          "nombre": "Aceite de oliva",
+          "cantidad": null,
+          "unidad": ""
+        },
+        {
+          "nombre": "Tostada horneada",
+          "cantidad": 1,
+          "unidad": "pieza"
+        }
+      ]
+    },
+    {
+      "id": "pimienta_sal_ajo_chile",
+      "nombre": "Pimienta + sal + Ajo + Chile",
+      "tiempo": "cena",
+      "video": false,
+      "nota": null,
+      "ingredientes": []
+    },
+    {
+      "id": "licuado_de_platano_galletas_de_arroz_inflado_con_crema_de_ca",
+      "nombre": "Licuado de plátano + Galletas de arroz inflado con crema de cacahuate",
+      "tiempo": "desayuno",
+      "video": false,
+      "nota": null,
+      "ingredientes": [
+        {
+          "nombre": "Leche",
+          "cantidad": 1,
+          "unidad": "taza"
+        },
+        {
+          "nombre": "Plátano pequeño",
+          "cantidad": 1,
+          "unidad": "pieza"
+        },
+        {
+          "nombre": "Endulzar con poquita stevia",
+          "cantidad": null,
+          "unidad": ""
+        },
+        {
+          "nombre": "Galleta de arroz inflado",
+          "cantidad": 2,
+          "unidad": "piezas"
+        },
+        {
+          "nombre": "Crema de cacahuate",
+          "cantidad": 2,
+          "unidad": "cucharadas"
+        }
+      ]
+    },
+    {
+      "id": "tostadas_aguacate",
+      "nombre": "Tostadas Aguacate",
+      "tiempo": "cena",
+      "video": false,
+      "nota": null,
+      "ingredientes": [
+        {
+          "nombre": "Aguacate",
+          "cantidad": 0.5,
+          "unidad": "pieza"
+        },
+        {
+          "nombre": "Tostada horneada",
+          "cantidad": 2,
+          "unidad": "o 3 piezas"
+        },
+        {
+          "nombre": "Zanahoria rallada",
+          "cantidad": 1,
+          "unidad": "taza"
+        },
+        {
+          "nombre": "Tomate",
+          "cantidad": 0.5,
+          "unidad": "taza"
+        }
+      ]
+    },
+    {
+      "id": "gelatina_sin_azucar_1_taza_1",
+      "nombre": "Gelatina sin azúcar (1 taza)\n+",
+      "tiempo": "colacion",
+      "video": false,
+      "nota": null,
+      "ingredientes": [
+        {
+          "nombre": "Nuez (6 pz)\n+",
+          "cantidad": null,
+          "unidad": ""
+        },
+        {
+          "nombre": "Almendras",
+          "cantidad": 10,
+          "unidad": "pz"
+        }
+      ]
+    },
+    {
+      "id": "wrap_de_pollo_ensalada_1",
+      "nombre": "Wrap de pollo + Ensalada",
+      "tiempo": "comida",
+      "video": false,
+      "nota": null,
+      "ingredientes": [
+        {
+          "nombre": "Pechuga de pollo",
+          "cantidad": 120,
+          "unidad": "gramos"
+        },
+        {
+          "nombre": "Tortilla de harina integral",
+          "cantidad": 1,
+          "unidad": "pz"
+        },
+        {
+          "nombre": "Queso panela rallado",
+          "cantidad": 15,
+          "unidad": "gr"
+        },
+        {
+          "nombre": "Aguacate chico",
+          "cantidad": 0.5,
+          "unidad": "pieza"
+        },
+        {
+          "nombre": "Espinaca picada",
+          "cantidad": 0.5,
+          "unidad": "taza"
+        },
+        {
+          "nombre": "Tomate",
+          "cantidad": 0.5,
+          "unidad": "pieza"
+        },
+        {
+          "nombre": "Chile al gusto",
+          "cantidad": null,
+          "unidad": ""
+        }
+      ]
+    },
+    {
+      "id": "sardinas_a_la_mexicana",
+      "nombre": "Sardinas a la mexicana",
+      "tiempo": "cena",
+      "video": false,
+      "nota": null,
+      "ingredientes": [
+        {
+          "nombre": "Sardinas",
+          "cantidad": 0.5,
+          "unidad": "lata o 1 lata"
+        },
+        {
+          "nombre": "Zanahoria rallada",
+          "cantidad": 0.5,
+          "unidad": "tz"
+        },
+        {
+          "nombre": "Chile jalapeño",
+          "cantidad": 0.5,
+          "unidad": "pieza"
+        },
+        {
+          "nombre": "Tomate + cebolla al gusto",
+          "cantidad": null,
+          "unidad": ""
+        },
+        {
+          "nombre": "Tostadas horneadas",
+          "cantidad": 1,
+          "unidad": "o 2 pz"
+        }
+      ]
+    },
+    {
+      "id": "pechuga_de_pollo_en_crema",
+      "nombre": "Pechuga de pollo en crema",
+      "tiempo": "comida",
+      "video": true,
+      "nota": null,
+      "ingredientes": [
+        {
+          "nombre": "Pechuga de pollo",
+          "cantidad": 120.0,
+          "unidad": "gr"
+        },
+        {
+          "nombre": "Aceite de oliva",
+          "cantidad": 1.0,
+          "unidad": "cc"
+        },
+        {
+          "nombre": "Cebolla y champiñones",
+          "cantidad": null,
+          "unidad": ""
+        },
+        {
+          "nombre": "Aceite de oliva",
+          "cantidad": 1.0,
+          "unidad": "cc"
+        },
+        {
+          "nombre": "1 dientesito de ajo picado",
+          "cantidad": null,
+          "unidad": ""
+        },
+        {
+          "nombre": "Salsa de soya",
+          "cantidad": 2.0,
+          "unidad": "cc"
+        },
+        {
+          "nombre": "Leche",
+          "cantidad": 1.0,
+          "unidad": "taza"
+        },
+        {
+          "nombre": "Maizena",
+          "cantidad": 2.0,
+          "unidad": "cc"
+        },
+        {
+          "nombre": "Queso crema",
+          "cantidad": 1.0,
+          "unidad": "cucharada"
+        },
+        {
+          "nombre": "Arroz blanco",
+          "cantidad": 0.5,
+          "unidad": "taza"
+        }
+      ]
+    },
+    {
+      "id": "taquitos_de_carne_molida_ensalada",
+      "nombre": "Taquitos de carne molida + Ensalada",
+      "tiempo": "comida",
+      "video": false,
+      "nota": null,
+      "ingredientes": [
+        {
+          "nombre": "Carne molida",
+          "cantidad": 120,
+          "unidad": "gramos"
+        },
+        {
+          "nombre": "Tortillas de maíz",
+          "cantidad": 3,
+          "unidad": "pieza"
+        },
+        {
+          "nombre": "Espinaca picada",
+          "cantidad": 0.5,
+          "unidad": "taza"
+        },
+        {
+          "nombre": "Tomate picado",
+          "cantidad": 6,
+          "unidad": "rodajas"
+        },
+        {
+          "nombre": "Se pueden dorar con poquito aceite",
+          "cantidad": null,
+          "unidad": ""
+        },
+        {
+          "nombre": "Ensalada con verduras mixtas",
+          "cantidad": null,
+          "unidad": ""
+        }
+      ]
+    },
+    {
+      "id": "pollo_rostizado_ensalada",
+      "nombre": "Pollo rostizado + Ensalada",
+      "tiempo": "comida",
+      "video": false,
+      "nota": null,
+      "ingredientes": [
+        {
+          "nombre": "Pollo rostizado",
+          "cantidad": 120,
+          "unidad": "gramos"
+        },
+        {
+          "nombre": "Zanahoria rallada",
+          "cantidad": 0.5,
+          "unidad": "taza"
+        },
+        {
+          "nombre": "Espinaca picada",
+          "cantidad": 1,
+          "unidad": "taza"
+        },
+        {
+          "nombre": "Tomate picado",
+          "cantidad": 0.5,
+          "unidad": "pieza"
+        },
+        {
+          "nombre": "Tortillas de maíz",
+          "cantidad": 2,
+          "unidad": "pieza"
+        }
+      ]
+    },
+    {
+      "id": "pina_picada",
+      "nombre": "Piña picada",
+      "tiempo": "colacion",
+      "video": false,
+      "nota": null,
+      "ingredientes": [
+        {
+          "nombre": "(1 pieza)",
+          "cantidad": null,
+          "unidad": ""
+        }
+      ]
+    },
+    {
+      "id": "pechuga_de_pollo_en_salsa_de_tomate",
+      "nombre": "Pechuga de pollo en salsa de tomate ()",
+      "tiempo": "comida",
+      "video": true,
+      "nota": null,
+      "ingredientes": [
+        {
+          "nombre": "Pechuga de pollo",
+          "cantidad": 120,
+          "unidad": "gr"
+        },
+        {
+          "nombre": "Salsa de tomate natural",
+          "cantidad": null,
+          "unidad": ""
+        },
+        {
+          "nombre": "Zanahoria cocida",
+          "cantidad": 0.5,
+          "unidad": "taza"
+        },
+        {
+          "nombre": "Calabacitas cocidas",
+          "cantidad": 0.5,
+          "unidad": "taza"
+        },
+        {
+          "nombre": "Brócoli cocidas",
+          "cantidad": 0.5,
+          "unidad": "taza"
+        },
+        {
+          "nombre": "Arroz blanco",
+          "cantidad": 0.5,
+          "unidad": "taza"
+        }
+      ]
+    },
+    {
+      "id": "quesadilla_con_verduras_al_vapor",
+      "nombre": "Quesadilla con verduras al vapor",
+      "tiempo": "cena",
+      "video": false,
+      "nota": null,
+      "ingredientes": [
+        {
+          "nombre": "Queso panela rallado",
+          "cantidad": 30,
+          "unidad": "gr"
+        },
+        {
+          "nombre": "Tortilla de maíz",
+          "cantidad": 2,
+          "unidad": "pieza"
+        },
+        {
+          "nombre": "Brócoli",
+          "cantidad": 0.5,
+          "unidad": "taza"
+        },
+        {
+          "nombre": "Calabacitas",
+          "cantidad": 0.5,
+          "unidad": "taza"
+        },
+        {
+          "nombre": "Zanahoria picada",
+          "cantidad": 0.5,
+          "unidad": "taza"
+        }
+      ]
+    },
+    {
+      "id": "video",
+      "nombre": "(Vídeo)",
+      "tiempo": "desayuno",
+      "video": false,
+      "nota": null,
+      "ingredientes": [
+        {
+          "nombre": "Huevo entero",
+          "cantidad": 1,
+          "unidad": "pieza"
+        },
+        {
+          "nombre": "Clara de huevo",
+          "cantidad": 1,
+          "unidad": "piezas"
+        },
+        {
+          "nombre": "Brócoli rallado",
+          "cantidad": 0.5,
+          "unidad": "taza"
+        },
+        {
+          "nombre": "Queso panela",
+          "cantidad": 30,
+          "unidad": "gramos"
+        },
+        {
+          "nombre": "Tortilla de maíz",
+          "cantidad": 1,
+          "unidad": "piezas"
+        },
+        {
+          "nombre": "Aceite de oliva",
+          "cantidad": 1,
+          "unidad": "Cc"
+        }
+      ]
+    },
+    {
+      "id": "melon_picado_1_taza",
+      "nombre": "Melón picado  \n(1 taza)",
+      "tiempo": "colacion",
+      "video": false,
+      "nota": null,
+      "ingredientes": []
+    },
+    {
+      "id": "huevo_con_tortilla",
+      "nombre": "Huevo con tortilla",
+      "tiempo": "desayuno",
+      "video": false,
+      "nota": null,
+      "ingredientes": [
+        {
+          "nombre": "Huevo entero",
+          "cantidad": 1,
+          "unidad": "pieza"
+        },
+        {
+          "nombre": "Clara de huevo",
+          "cantidad": 1,
+          "unidad": "piezas"
+        },
+        {
+          "nombre": "Tortilla de maíz",
+          "cantidad": 2,
+          "unidad": "piezas"
+        },
+        {
+          "nombre": "Aceite de oliva",
+          "cantidad": 1,
+          "unidad": "Cc"
+        }
+      ]
+    },
+    {
+      "id": "pepino_picado_1_taza",
+      "nombre": "Pepino picado  \n(1 taza)",
+      "tiempo": "colacion",
+      "video": false,
+      "nota": null,
+      "ingredientes": []
+    },
+    {
+      "id": "enchiladas_suizas_de_pollo_1",
+      "nombre": "Enchiladas suizas de pollo\n()",
+      "tiempo": "comida",
+      "video": true,
+      "nota": null,
+      "ingredientes": [
+        {
+          "nombre": "Tortillas de maíz",
+          "cantidad": 3,
+          "unidad": "piezas"
+        },
+        {
+          "nombre": "Pollo desmenuzado",
+          "cantidad": 1,
+          "unidad": "tz"
+        },
+        {
+          "nombre": "Aceite de oliva",
+          "cantidad": 3,
+          "unidad": "Cc"
+        },
+        {
+          "nombre": "Queso panela",
+          "cantidad": 30,
+          "unidad": "gramos"
+        },
+        {
+          "nombre": "Salsa verde casera",
+          "cantidad": null,
+          "unidad": ""
+        }
+      ]
+    },
+    {
+      "id": "alubias",
+      "nombre": "Alubias",
+      "tiempo": "cena",
+      "video": false,
+      "nota": null,
+      "ingredientes": [
+        {
+          "nombre": "Alubias",
+          "cantidad": 1,
+          "unidad": "taza"
+        }
+      ]
+    },
+    {
+      "id": "ensalada_de_pollo",
+      "nombre": "Ensalada de pollo",
+      "tiempo": "comida",
+      "video": false,
+      "nota": null,
+      "ingredientes": [
+        {
+          "nombre": "Pollo deshebrado (1 taza)\n• Mayonesa (1 Cc)",
+          "cantidad": null,
+          "unidad": ""
+        },
+        {
+          "nombre": "Zanahoria rallada",
+          "cantidad": 0.5,
+          "unidad": "tz"
+        },
+        {
+          "nombre": "Elote amarillo",
+          "cantidad": 0.25,
+          "unidad": "tz"
+        },
+        {
+          "nombre": "Espinaca picada",
+          "cantidad": 1,
+          "unidad": "taza"
+        },
+        {
+          "nombre": "Tostadas horneadas",
+          "cantidad": 2,
+          "unidad": "pz"
+        }
+      ]
+    },
+    {
+      "id": "crema_de_huevo_1",
+      "nombre": "Crema de huevo ()",
+      "tiempo": "desayuno",
+      "video": true,
+      "nota": null,
+      "ingredientes": [
+        {
+          "nombre": "Huevos cocido",
+          "cantidad": 2,
+          "unidad": "piezas"
+        },
+        {
+          "nombre": "Aguacate chico",
+          "cantidad": 0.5,
+          "unidad": "pieza"
+        },
+        {
+          "nombre": "Apio, cilantro y cebolla picados finamente",
+          "cantidad": 0.5,
+          "unidad": "taza"
+        },
+        {
+          "nombre": "Tostada horneada (1 pieza)\n\nAderezo casero (Yogurt griego + mostaza + sal y pimienta)",
+          "cantidad": null,
+          "unidad": ""
+        },
+        {
+          "nombre": "Tomar un té de manzanilla en el día",
+          "cantidad": null,
+          "unidad": ""
+        }
+      ]
+    },
+    {
+      "id": "gelatina_sin_azucar_1_taza_2",
+      "nombre": "Gelatina sin azúcar (1 taza)",
+      "tiempo": "colacion",
+      "video": false,
+      "nota": null,
+      "ingredientes": []
+    },
+    {
+      "id": "crema_de_elote_verduras_1",
+      "nombre": "Crema de elote + Verduras\n()",
+      "tiempo": "comida",
+      "video": true,
+      "nota": null,
+      "ingredientes": [
+        {
+          "nombre": "Pechuga de pollo",
+          "cantidad": 120,
+          "unidad": "gr"
+        },
+        {
+          "nombre": "Crema ácida",
+          "cantidad": 3,
+          "unidad": "Cc"
+        },
+        {
+          "nombre": "Elote",
+          "cantidad": 0.5,
+          "unidad": "taza"
+        },
+        {
+          "nombre": "Quinoa cocida",
+          "cantidad": 0.5,
+          "unidad": "taza"
+        },
+        {
+          "nombre": "Espinaca picada",
+          "cantidad": 1,
+          "unidad": "taza"
+        },
+        {
+          "nombre": "Tomate chico",
+          "cantidad": 0.75,
+          "unidad": "pieza"
+        }
+      ]
+    },
+    {
+      "id": "guisado_de_pollo_con_chile_morron",
+      "nombre": "Guisado de pollo con chile morrón",
+      "tiempo": "cena",
+      "video": false,
+      "nota": null,
+      "ingredientes": [
+        {
+          "nombre": "Chile morrón",
+          "cantidad": 0.5,
+          "unidad": "piezas"
+        },
+        {
+          "nombre": "Pollo desmenuzado",
+          "cantidad": 0.5,
+          "unidad": "tz"
+        },
+        {
+          "nombre": "Zanahoria",
+          "cantidad": 0.5,
+          "unidad": "taza"
+        },
+        {
+          "nombre": "Calabacitas",
+          "cantidad": 0.5,
+          "unidad": "taza"
+        }
+      ]
+    },
+    {
+      "id": "nopales_con_queso",
+      "nombre": "Nopales con queso \n()",
+      "tiempo": "desayuno",
+      "video": true,
+      "nota": null,
+      "ingredientes": [
+        {
+          "nombre": "Nopales picados",
+          "cantidad": 1,
+          "unidad": "taza"
+        },
+        {
+          "nombre": "Cebolla al gusto",
+          "cantidad": null,
+          "unidad": ""
+        },
+        {
+          "nombre": "Queso rallado",
+          "cantidad": 30,
+          "unidad": "gr"
+        },
+        {
+          "nombre": "Chile pasilla al gusto",
+          "cantidad": null,
+          "unidad": ""
+        },
+        {
+          "nombre": "Aceite de oliva",
+          "cantidad": 1,
+          "unidad": "cc"
+        },
+        {
+          "nombre": "Tostada horneada",
+          "cantidad": 3,
+          "unidad": "piezas"
+        },
+        {
+          "nombre": "Tomar un té de manzanilla",
+          "cantidad": null,
+          "unidad": ""
+        }
+      ]
+    },
+    {
+      "id": "arroz_con_leche_nuez",
+      "nombre": "Arroz con leche + nuez",
+      "tiempo": "cena",
+      "video": false,
+      "nota": null,
+      "ingredientes": [
+        {
+          "nombre": "Arroz cocido",
+          "cantidad": 0.5,
+          "unidad": "taza"
+        },
+        {
+          "nombre": "Nuez picada",
+          "cantidad": 5,
+          "unidad": "piezas"
+        },
+        {
+          "nombre": "Leche",
+          "cantidad": 1,
+          "unidad": "taza"
+        },
+        {
+          "nombre": "Pan tostado (1 pieza) Opcional",
+          "cantidad": null,
+          "unidad": ""
+        },
+        {
+          "nombre": "Endulzar con Stevia",
+          "cantidad": null,
+          "unidad": ""
+        }
+      ]
+    },
+    {
+      "id": "sushi_casero_quinoa",
+      "nombre": "Sushi casero + Quinoa",
+      "tiempo": "comida",
+      "video": true,
+      "nota": null,
+      "ingredientes": [
+        {
+          "nombre": "Pepino rallado",
+          "cantidad": 1.0,
+          "unidad": "pieza"
+        },
+        {
+          "nombre": "Atún",
+          "cantidad": 1.0,
+          "unidad": "lata"
+        },
+        {
+          "nombre": "Mayonesa",
+          "cantidad": 2.0,
+          "unidad": "Cc"
+        },
+        {
+          "nombre": "Queso crema",
+          "cantidad": 2.0,
+          "unidad": "Cc"
+        },
+        {
+          "nombre": "Aguacate",
+          "cantidad": 0.5,
+          "unidad": "pieza"
+        },
+        {
+          "nombre": "Salsa de soya",
+          "cantidad": null,
+          "unidad": ""
+        },
+        {
+          "nombre": "Quínoa",
+          "cantidad": 0.5,
+          "unidad": "taza"
+        }
+      ]
+    },
+    {
+      "id": "guisado_de_chile_colorado_ensalada",
+      "nombre": "Guisado de chile colorado + Ensalada",
+      "tiempo": "comida",
+      "video": false,
+      "nota": null,
+      "ingredientes": [
+        {
+          "nombre": "Pechuga de pollo (120 gr) \n• Papa chica (1/2 pieza)\n• Nopales (3/4 taza)",
+          "cantidad": null,
+          "unidad": ""
+        },
+        {
+          "nombre": "Aceite de oliva",
+          "cantidad": 1,
+          "unidad": "Cc"
+        },
+        {
+          "nombre": "Chile colorado al gusto\n• Tostada horneada (2 piezas)",
+          "cantidad": null,
+          "unidad": ""
+        },
+        {
+          "nombre": "Espinaca",
+          "cantidad": 0.5,
+          "unidad": "taza"
+        },
+        {
+          "nombre": "Tomate",
+          "cantidad": 0.5,
+          "unidad": "pieza"
+        },
+        {
+          "nombre": "Zanahoria rallada",
+          "cantidad": 0.5,
+          "unidad": "taza"
+        }
+      ]
+    },
+    {
+      "id": "platano_mediano_1_pieza",
+      "nombre": "Plátano mediano\n(1 pieza)",
+      "tiempo": "colacion",
+      "video": false,
+      "nota": null,
+      "ingredientes": []
+    },
+    {
+      "id": "omelette_con_verduras_al_vapor",
+      "nombre": "Omelette con verduras al vapor",
+      "tiempo": "desayuno",
+      "video": false,
+      "nota": null,
+      "ingredientes": [
+        {
+          "nombre": "Huevo entero",
+          "cantidad": 1,
+          "unidad": "pieza"
+        },
+        {
+          "nombre": "Clara de huevo",
+          "cantidad": 1,
+          "unidad": "piezas"
+        },
+        {
+          "nombre": "Aceite de oliva",
+          "cantidad": 1,
+          "unidad": "Cc"
+        },
+        {
+          "nombre": "Brócolis cocidos",
+          "cantidad": 0.5,
+          "unidad": "taza"
+        },
+        {
+          "nombre": "Calabacitas",
+          "cantidad": 0.5,
+          "unidad": "taza"
+        },
+        {
+          "nombre": "Zanahoria picada",
+          "cantidad": 0.5,
+          "unidad": "taza"
+        },
+        {
+          "nombre": "Tomar en ayunas 1 vaso de agua con 3 cucharaditas de chía",
+          "cantidad": null,
+          "unidad": ""
+        }
+      ]
+    },
+    {
+      "id": "sandwich_de_atun_y_nopales",
+      "nombre": "Sándwich de atún y nopales ()",
+      "tiempo": "cena",
+      "video": true,
+      "nota": null,
+      "ingredientes": [
+        {
+          "nombre": "Atún en agua",
+          "cantidad": 1,
+          "unidad": "lata"
+        },
+        {
+          "nombre": "Nopal cocido",
+          "cantidad": 0.5,
+          "unidad": "taza"
+        },
+        {
+          "nombre": "Pan integral cero",
+          "cantidad": 2,
+          "unidad": "rebanada"
+        },
+        {
+          "nombre": "Chile al gusto",
+          "cantidad": null,
+          "unidad": ""
+        },
+        {
+          "nombre": "Cebolla, tomate y lechuga",
+          "cantidad": null,
+          "unidad": ""
+        },
+        {
+          "nombre": "Yogurt griego con sal y pimienta",
+          "cantidad": null,
+          "unidad": ""
+        }
+      ]
+    },
+    {
+      "id": "brownie_con_un_vaso_de_leche_1",
+      "nombre": "Brownie con un vaso de leche ()",
+      "tiempo": "desayuno",
+      "video": true,
+      "nota": null,
+      "ingredientes": [
+        {
+          "nombre": "Avena en hojuelas",
+          "cantidad": 0.5,
+          "unidad": "taza"
+        },
+        {
+          "nombre": "Huevo entero",
+          "cantidad": 1,
+          "unidad": "pieza"
+        },
+        {
+          "nombre": "Vainilla",
+          "cantidad": 1,
+          "unidad": "cucharadita"
+        },
+        {
+          "nombre": "Cacao en polvo",
+          "cantidad": 1,
+          "unidad": "cc"
+        },
+        {
+          "nombre": "Leche",
+          "cantidad": 0.25,
+          "unidad": "taza"
+        },
+        {
+          "nombre": "Endulzar con Stevia",
+          "cantidad": null,
+          "unidad": ""
+        },
+        {
+          "nombre": "Leche semidescremada",
+          "cantidad": null,
+          "unidad": ""
+        }
+      ]
+    },
+    {
+      "id": "uvas_rojas_o_verdes",
+      "nombre": "Uvas rojas o verdes",
+      "tiempo": "colacion",
+      "video": false,
+      "nota": null,
+      "ingredientes": [
+        {
+          "nombre": "(1 taza)",
+          "cantidad": null,
+          "unidad": ""
+        }
+      ]
+    },
+    {
+      "id": "salmon_pure_de_papa_1",
+      "nombre": "Salmón + Pure de papa ()",
+      "tiempo": "comida",
+      "video": true,
+      "nota": null,
+      "ingredientes": [
+        {
+          "nombre": "Salmón",
+          "cantidad": 90,
+          "unidad": "gr"
+        },
+        {
+          "nombre": "Miel",
+          "cantidad": 1,
+          "unidad": "Cc"
+        },
+        {
+          "nombre": "Salsa soya",
+          "cantidad": 1,
+          "unidad": "cc"
+        },
+        {
+          "nombre": "Pimienta y chile al gusto",
+          "cantidad": null,
+          "unidad": ""
+        },
+        {
+          "nombre": "Calabacita",
+          "cantidad": 0.5,
+          "unidad": "pieza"
+        },
+        {
+          "nombre": "Pure de papa",
+          "cantidad": 0.5,
+          "unidad": "taza"
+        }
+      ]
+    },
+    {
+      "id": "ceviche_de_soya_agua_de_limon_1",
+      "nombre": "Ceviche de Soya + Agua de Limón ()",
+      "tiempo": "comida",
+      "video": true,
+      "nota": null,
+      "ingredientes": [
+        {
+          "nombre": "Soya texturizada",
+          "cantidad": 0.5,
+          "unidad": "taza"
+        },
+        {
+          "nombre": "Pepino",
+          "cantidad": 0.5,
+          "unidad": "taza"
+        },
+        {
+          "nombre": "Tomate",
+          "cantidad": 0.5,
+          "unidad": "pieza"
+        },
+        {
+          "nombre": "Cebolla",
+          "cantidad": 0.5,
+          "unidad": "pieza"
+        },
+        {
+          "nombre": "Aguacate chico",
+          "cantidad": 0.5,
+          "unidad": "pieza"
+        },
+        {
+          "nombre": "Tostadas horneadas",
+          "cantidad": 2,
+          "unidad": "pz"
+        },
+        {
+          "nombre": "Clamato + Cilantro + Chile + Apio",
+          "cantidad": null,
+          "unidad": ""
+        }
+      ]
+    },
+    {
+      "id": "platillo_de_nopales_con_carne",
+      "nombre": "Platillo de Nopales con carne ()",
+      "tiempo": "comida",
+      "video": true,
+      "nota": null,
+      "ingredientes": [
+        {
+          "nombre": "Nopales",
+          "cantidad": 2,
+          "unidad": "pieza"
+        },
+        {
+          "nombre": "Queso mozzarella",
+          "cantidad": 60,
+          "unidad": "gr"
+        },
+        {
+          "nombre": "Carne molida",
+          "cantidad": 90,
+          "unidad": "gr"
+        },
+        {
+          "nombre": "Pico de gallo (al gusto)",
+          "cantidad": null,
+          "unidad": ""
+        },
+        {
+          "nombre": "Cebolla cocida",
+          "cantidad": 0.5,
+          "unidad": "pieza"
+        },
+        {
+          "nombre": "Mantequilla",
+          "cantidad": 2,
+          "unidad": "Cc"
+        }
+      ]
+    },
+    {
+      "id": "sandwich_de_atun_y_nopales_1",
+      "nombre": "Sándwich de atún y nopales",
+      "tiempo": "cena",
+      "video": false,
+      "nota": null,
+      "ingredientes": [
+        {
+          "nombre": "Atún en agua",
+          "cantidad": 1,
+          "unidad": "lata"
+        },
+        {
+          "nombre": "Nopal cocido",
+          "cantidad": 0.5,
+          "unidad": "taza"
+        },
+        {
+          "nombre": "Pan integral cero",
+          "cantidad": 2,
+          "unidad": "rebanada"
+        },
+        {
+          "nombre": "Tomate y lechuga",
+          "cantidad": null,
+          "unidad": ""
+        }
+      ]
+    },
+    {
+      "id": "chocolate_sin_azucar_1_barrita",
+      "nombre": "Chocolate sin azúcar \n(1 barrita)",
+      "tiempo": "colacion",
+      "video": false,
+      "nota": null,
+      "ingredientes": []
+    },
+    {
+      "id": "licuado_de_papaya_galletas_de_arroz_inflado_con_crema_de_cac",
+      "nombre": "Licuado de papaya + Galletas de arroz inflado con crema de cacahuate",
+      "tiempo": "desayuno",
+      "video": false,
+      "nota": null,
+      "ingredientes": [
+        {
+          "nombre": "Leche semidescre.",
+          "cantidad": 1,
+          "unidad": "taza"
+        },
+        {
+          "nombre": "Papaya picada",
+          "cantidad": 0.5,
+          "unidad": "taza"
+        },
+        {
+          "nombre": "Endulzar con poquita stevia",
+          "cantidad": null,
+          "unidad": ""
+        },
+        {
+          "nombre": "Galleta de arroz inflado",
+          "cantidad": 2,
+          "unidad": "piezas"
+        },
+        {
+          "nombre": "Crema de cacahuate",
+          "cantidad": 2,
+          "unidad": "cucharadas"
+        }
+      ]
+    },
+    {
+      "id": "manzana_mediana_1_pieza_1",
+      "nombre": "Manzana mediana\n(1 pieza)",
+      "tiempo": "colacion",
+      "video": false,
+      "nota": null,
+      "ingredientes": []
+    },
+    {
+      "id": "chuleta_de_res_ensalada",
+      "nombre": "Chuleta de res + Ensalada",
+      "tiempo": "comida",
+      "video": false,
+      "nota": null,
+      "ingredientes": [
+        {
+          "nombre": "Chuleta de res",
+          "cantidad": 90,
+          "unidad": "gramos"
+        },
+        {
+          "nombre": "Lechuga picada",
+          "cantidad": 0.5,
+          "unidad": "taza"
+        },
+        {
+          "nombre": "Zanahoria rallada",
+          "cantidad": 0.5,
+          "unidad": "taza"
+        },
+        {
+          "nombre": "Tomate",
+          "cantidad": 3,
+          "unidad": "rodajas"
+        },
+        {
+          "nombre": "Aguacate",
+          "cantidad": 0.5,
+          "unidad": "pieza"
+        },
+        {
+          "nombre": "Tortilla de maíz",
+          "cantidad": 2,
+          "unidad": "pieza"
+        }
+      ]
+    },
+    {
+      "id": "ensalada_de_garbanzos_y_atun_1",
+      "nombre": "Ensalada de Garbanzos y Atún",
+      "tiempo": "cena",
+      "video": false,
+      "nota": null,
+      "ingredientes": [
+        {
+          "nombre": "Garbanzo",
+          "cantidad": 0.5,
+          "unidad": "taza"
+        },
+        {
+          "nombre": "Atún",
+          "cantidad": 1,
+          "unidad": "lata"
+        },
+        {
+          "nombre": "Espinaca",
+          "cantidad": 1,
+          "unidad": "taza"
+        },
+        {
+          "nombre": "Tomate",
+          "cantidad": 0.5,
+          "unidad": "pieza"
+        },
+        {
+          "nombre": "Limón",
+          "cantidad": 1,
+          "unidad": "pieza"
+        },
+        {
+          "nombre": "Zanahoria rallada",
+          "cantidad": 0.5,
+          "unidad": "taza"
+        },
+        {
+          "nombre": "Tostadas horneadas",
+          "cantidad": 2,
+          "unidad": "pz"
+        }
+      ]
+    },
+    {
+      "id": "platano_mediano",
+      "nombre": "Plátano mediano",
+      "tiempo": "colacion",
+      "video": false,
+      "nota": null,
+      "ingredientes": [
+        {
+          "nombre": "(1 pieza)",
+          "cantidad": null,
+          "unidad": ""
+        }
+      ]
+    },
+    {
+      "id": "pechuga_de_pollo_ensalada",
+      "nombre": "Pechuga de pollo + Ensalada",
+      "tiempo": "comida",
+      "video": false,
+      "nota": null,
+      "ingredientes": [
+        {
+          "nombre": "Pechuga de pollo",
+          "cantidad": 90,
+          "unidad": "gr"
+        },
+        {
+          "nombre": "Aceite de oliva",
+          "cantidad": 1,
+          "unidad": "Cc"
+        },
+        {
+          "nombre": "Zanahoria rallada",
+          "cantidad": 0.5,
+          "unidad": "taza"
+        },
+        {
+          "nombre": "Espinaca picada",
+          "cantidad": 1,
+          "unidad": "taza"
+        },
+        {
+          "nombre": "Tomate picado",
+          "cantidad": 1,
+          "unidad": "pieza"
+        },
+        {
+          "nombre": "Arroz blanco",
+          "cantidad": 0.5,
+          "unidad": "taza"
+        }
+      ]
+    },
+    {
+      "id": "omelette_con_esparragos_1",
+      "nombre": "Omelette con espárragos ()",
+      "tiempo": "desayuno",
+      "video": true,
+      "nota": null,
+      "ingredientes": [
+        {
+          "nombre": "Huevo entero",
+          "cantidad": 1,
+          "unidad": "pieza"
+        },
+        {
+          "nombre": "Clara de huevo",
+          "cantidad": 1,
+          "unidad": "piezas"
+        },
+        {
+          "nombre": "Aceite de oliva",
+          "cantidad": 1,
+          "unidad": "Cc"
+        },
+        {
+          "nombre": "Tortillas de maíz",
+          "cantidad": 1,
+          "unidad": "pieza"
+        },
+        {
+          "nombre": "Espárragos",
+          "cantidad": 5,
+          "unidad": "piezas"
+        },
+        {
+          "nombre": "Mantequilla",
+          "cantidad": 2,
+          "unidad": "cc"
+        }
+      ]
+    },
+    {
+      "id": "tostadas_de_carnitas_de_atun_1",
+      "nombre": "Tostadas de Carnitas de atún ()",
+      "tiempo": "comida",
+      "video": true,
+      "nota": null,
+      "ingredientes": [
+        {
+          "nombre": "Tostada horneada (3 pieza)\n• Atún (1 lata) + aceite en Spray",
+          "cantidad": null,
+          "unidad": ""
+        },
+        {
+          "nombre": "Cebolla + cilantro picado",
+          "cantidad": null,
+          "unidad": ""
+        },
+        {
+          "nombre": "Salsa (Chile, ajo en polvo, paprika, pimienta, aceite de oliva, comino)",
+          "cantidad": null,
+          "unidad": ""
+        },
+        {
+          "nombre": "Limón al gusto",
+          "cantidad": null,
+          "unidad": ""
+        },
+        {
+          "nombre": "Aguacate chico",
+          "cantidad": 0.5,
+          "unidad": "pieza"
+        }
+      ]
+    },
+    {
+      "id": "lentejas_tostada_con_zanahoria",
+      "nombre": "Lentejas + Tostada con zanahoria",
+      "tiempo": "cena",
+      "video": false,
+      "nota": null,
+      "ingredientes": [
+        {
+          "nombre": "Lentejas",
+          "cantidad": 1,
+          "unidad": "taza"
+        },
+        {
+          "nombre": "Tostadas horneadas",
+          "cantidad": 1,
+          "unidad": "pz"
+        },
+        {
+          "nombre": "Zanahoria rallada",
+          "cantidad": 0.25,
+          "unidad": "taza"
+        }
+      ]
+    },
+    {
+      "id": "espagueti_verde_con_pechugas_de_pollo",
+      "nombre": "Espagueti verde con pechugas de pollo ()",
+      "tiempo": "comida",
+      "video": true,
+      "nota": null,
+      "ingredientes": [
+        {
+          "nombre": "Pasta en fideos",
+          "cantidad": 1,
+          "unidad": "taza"
+        },
+        {
+          "nombre": "Yogurt o crema",
+          "cantidad": 0.5,
+          "unidad": "taza"
+        },
+        {
+          "nombre": "Cilantro picado",
+          "cantidad": 1,
+          "unidad": "taza"
+        },
+        {
+          "nombre": "Leche condensada",
+          "cantidad": 0.25,
+          "unidad": "taza"
+        },
+        {
+          "nombre": "Ajo en polvo",
+          "cantidad": 1,
+          "unidad": "cc"
+        },
+        {
+          "nombre": "Pechuga de pollo",
+          "cantidad": 90,
+          "unidad": "gr"
+        },
+        {
+          "nombre": "Ensalada con verduras mixta",
+          "cantidad": null,
+          "unidad": ""
+        }
+      ]
+    },
+    {
+      "id": "huevo_con_nopales",
+      "nombre": "Huevo con nopales ()",
+      "tiempo": "desayuno",
+      "video": true,
+      "nota": null,
+      "ingredientes": [
+        {
+          "nombre": "Huevo entero",
+          "cantidad": 1,
+          "unidad": "pieza"
+        },
+        {
+          "nombre": "Clara de huevo",
+          "cantidad": 1,
+          "unidad": "piezas"
+        },
+        {
+          "nombre": "Aceite de oliva",
+          "cantidad": 1,
+          "unidad": "Cc"
+        },
+        {
+          "nombre": "Nopales picados",
+          "cantidad": 0.5,
+          "unidad": "taza"
+        },
+        {
+          "nombre": "Tortilla de maíz",
+          "cantidad": 1,
+          "unidad": "piezas"
+        },
+        {
+          "nombre": "Consumir un té en el día",
+          "cantidad": null,
+          "unidad": ""
+        }
+      ]
+    },
+    {
+      "id": "gelatina_sin_azucar",
+      "nombre": "Gelatina SIN azúcar",
+      "tiempo": "colacion",
+      "video": false,
+      "nota": "+",
+      "ingredientes": [
+        {
+          "nombre": "(1 paquetito)",
+          "cantidad": null,
+          "unidad": ""
+        },
+        {
+          "nombre": "Yogurt griego sin azúcar",
+          "cantidad": 1,
+          "unidad": "taza"
+        }
+      ]
+    },
+    {
+      "id": "taquitos_de_carne_molida",
+      "nombre": "Taquitos de carne molida",
+      "tiempo": "comida",
+      "video": false,
+      "nota": null,
+      "ingredientes": [
+        {
+          "nombre": "Carne molida",
+          "cantidad": 90,
+          "unidad": "gr"
+        },
+        {
+          "nombre": "Tortilla de maíz",
+          "cantidad": 3,
+          "unidad": "pieza"
+        },
+        {
+          "nombre": "Aceite de oliva",
+          "cantidad": 1,
+          "unidad": "Cc"
+        },
+        {
+          "nombre": "Espinaca",
+          "cantidad": 0.25,
+          "unidad": "taza"
+        },
+        {
+          "nombre": "Tomate (1/2 pieza)\n• Zanahoria rallada (1/4 taza)",
+          "cantidad": null,
+          "unidad": ""
+        }
+      ]
+    },
+    {
+      "id": "sardina_a_la_mexicana",
+      "nombre": "Sardina a la Mexicana",
+      "tiempo": "cena",
+      "video": false,
+      "nota": null,
+      "ingredientes": [
+        {
+          "nombre": "Sardinas",
+          "cantidad": 0.5,
+          "unidad": "lata"
+        },
+        {
+          "nombre": "Zanahoria rallada",
+          "cantidad": 0.5,
+          "unidad": "tz"
+        },
+        {
+          "nombre": "Chile jalapeño",
+          "cantidad": 0.5,
+          "unidad": "pieza"
+        },
+        {
+          "nombre": "Cebolla picada",
+          "cantidad": 0.25,
+          "unidad": "taza"
+        },
+        {
+          "nombre": "Tostada horneada",
+          "cantidad": 2,
+          "unidad": "pz"
+        }
+      ]
+    },
+    {
+      "id": "huevo_con_espinaca",
+      "nombre": "Huevo con espinaca",
+      "tiempo": "desayuno",
+      "video": false,
+      "nota": null,
+      "ingredientes": [
+        {
+          "nombre": "Huevo entero",
+          "cantidad": 1,
+          "unidad": "pieza"
+        },
+        {
+          "nombre": "Clara de huevo",
+          "cantidad": 1,
+          "unidad": "piezas"
+        },
+        {
+          "nombre": "Espinaca",
+          "cantidad": 0.5,
+          "unidad": "taza"
+        },
+        {
+          "nombre": "Tortilla de maíz",
+          "cantidad": 1,
+          "unidad": "pieza"
+        },
+        {
+          "nombre": "Aceite de oliva",
+          "cantidad": 1,
+          "unidad": "Cc"
+        },
+        {
+          "nombre": "Consumir un té en el día",
+          "cantidad": null,
+          "unidad": ""
+        }
+      ]
+    },
+    {
+      "id": "arandanos",
+      "nombre": "Arándanos",
+      "tiempo": "colacion",
+      "video": false,
+      "nota": null,
+      "ingredientes": [
+        {
+          "nombre": "(1/2 taza)",
+          "cantidad": null,
+          "unidad": ""
+        }
+      ]
+    },
+    {
+      "id": "nopales_frijoles",
+      "nombre": "Nopales + frijoles ()",
+      "tiempo": "desayuno",
+      "video": true,
+      "nota": null,
+      "ingredientes": [
+        {
+          "nombre": "Nopales entero",
+          "cantidad": 1,
+          "unidad": "pieza"
+        },
+        {
+          "nombre": "Salsa verde al gusto",
+          "cantidad": null,
+          "unidad": ""
+        },
+        {
+          "nombre": "Queso panela rallado",
+          "cantidad": 30,
+          "unidad": "gr"
+        },
+        {
+          "nombre": "Pico de gallo al gusto",
+          "cantidad": null,
+          "unidad": ""
+        },
+        {
+          "nombre": "Aguacate",
+          "cantidad": 0.5,
+          "unidad": "pieza"
+        },
+        {
+          "nombre": "Frijoles molidos",
+          "cantidad": 0.25,
+          "unidad": "taza"
+        }
+      ]
+    },
+    {
+      "id": "mini_pizzas",
+      "nombre": "Mini pizzas ()",
+      "tiempo": "cena",
+      "video": true,
+      "nota": null,
+      "ingredientes": [
+        {
+          "nombre": "Pan integral",
+          "cantidad": 1,
+          "unidad": "o 2 piezas"
+        },
+        {
+          "nombre": "Salsa de tomate casera",
+          "cantidad": 4,
+          "unidad": "cucharaditas"
+        },
+        {
+          "nombre": "Queso panela",
+          "cantidad": 60,
+          "unidad": "gramos"
+        },
+        {
+          "nombre": "Pechuga de pollo desmenuzada",
+          "cantidad": 0.5,
+          "unidad": "taza"
+        },
+        {
+          "nombre": "Aceite de oliva",
+          "cantidad": 2,
+          "unidad": "cc"
+        },
+        {
+          "nombre": "Pimentones y champiñones al gusto",
+          "cantidad": null,
+          "unidad": ""
+        }
+      ]
+    },
+    {
+      "id": "taquitos_de_atun",
+      "nombre": "Taquitos de atún",
+      "tiempo": "comida",
+      "video": true,
+      "nota": null,
+      "ingredientes": [
+        {
+          "nombre": "Atún en agua",
+          "cantidad": 1.0,
+          "unidad": "lata"
+        },
+        {
+          "nombre": "Cebolla morada",
+          "cantidad": 0.5,
+          "unidad": "taza"
+        },
+        {
+          "nombre": "Elote",
+          "cantidad": 0.5,
+          "unidad": "taza"
+        },
+        {
+          "nombre": "Mayonesa",
+          "cantidad": 2.0,
+          "unidad": "cucharadas"
+        },
+        {
+          "nombre": "Limón",
+          "cantidad": 1.0,
+          "unidad": "pieza"
+        },
+        {
+          "nombre": "Tortilla de harina chica",
+          "cantidad": 1.0,
+          "unidad": "pieza"
+        },
+        {
+          "nombre": "Rodajas de tomate y pepino",
+          "cantidad": null,
+          "unidad": ""
+        }
+      ]
+    },
+    {
+      "id": "hummus",
+      "nombre": "Hummus",
+      "tiempo": "colacion",
+      "video": false,
+      "nota": null,
+      "ingredientes": []
+    },
+    {
+      "id": "pechugas_de_pollo_con_verduras_al_vapor_1",
+      "nombre": "Pechugas de pollo con verduras al vapor.",
+      "tiempo": "comida",
+      "video": false,
+      "nota": null,
+      "ingredientes": [
+        {
+          "nombre": "Pechuga de pollo",
+          "cantidad": 90,
+          "unidad": "gr"
+        },
+        {
+          "nombre": "Aceite de oliva",
+          "cantidad": 1,
+          "unidad": "Cc"
+        },
+        {
+          "nombre": "Zanahoria picada",
+          "cantidad": 0.5,
+          "unidad": "taza"
+        },
+        {
+          "nombre": "Espinaca picada",
+          "cantidad": 1,
+          "unidad": "taza"
+        },
+        {
+          "nombre": "Calabacita",
+          "cantidad": 0.5,
+          "unidad": "taza"
+        },
+        {
+          "nombre": "Aguacate",
+          "cantidad": 0.5,
+          "unidad": "pieza"
+        },
+        {
+          "nombre": "Arroz cocido",
+          "cantidad": 0.5,
+          "unidad": "taza"
+        },
+        {
+          "nombre": "Tortilla de maíz",
+          "cantidad": 1,
+          "unidad": "pieza"
+        }
+      ]
+    },
+    {
+      "id": "ceviche_de_mango_y_panela",
+      "nombre": "Ceviche de mango y panela ()",
+      "tiempo": "cena",
+      "video": true,
+      "nota": null,
+      "ingredientes": [
+        {
+          "nombre": "Queso panela",
+          "cantidad": 60,
+          "unidad": "gr"
+        },
+        {
+          "nombre": "Pepino en cuadritos",
+          "cantidad": 0.5,
+          "unidad": "tz"
+        },
+        {
+          "nombre": "Cebolla picada",
+          "cantidad": 0.25,
+          "unidad": "taza"
+        },
+        {
+          "nombre": "Mango natural o en lata",
+          "cantidad": 0.5,
+          "unidad": "taza"
+        },
+        {
+          "nombre": "Limón",
+          "cantidad": null,
+          "unidad": ""
+        },
+        {
+          "nombre": "Aguacate",
+          "cantidad": 0.5,
+          "unidad": "pieza"
+        }
+      ]
+    },
+    {
+      "id": "chile_relleno_de_pollo",
+      "nombre": "Chile relleno de pollo",
+      "tiempo": "cena",
+      "video": false,
+      "nota": null,
+      "ingredientes": [
+        {
+          "nombre": "Chile morrón",
+          "cantidad": 2,
+          "unidad": "piezas"
+        },
+        {
+          "nombre": "Pollo desmenuzado",
+          "cantidad": 0.5,
+          "unidad": "tz"
+        },
+        {
+          "nombre": "Zanahoria rallada",
+          "cantidad": 0.5,
+          "unidad": "taza"
+        },
+        {
+          "nombre": "Aguacate",
+          "cantidad": 0.5,
+          "unidad": "pieza"
+        },
+        {
+          "nombre": "Queso panela rallado",
+          "cantidad": 30,
+          "unidad": "gr"
+        }
+      ]
+    },
+    {
+      "id": "pan_frances",
+      "nombre": "Pan francés ()",
+      "tiempo": "desayuno",
+      "video": true,
+      "nota": null,
+      "ingredientes": [
+        {
+          "nombre": "Huevos",
+          "cantidad": 1,
+          "unidad": "piezas"
+        },
+        {
+          "nombre": "Clara de huevo",
+          "cantidad": 1,
+          "unidad": "pieza"
+        },
+        {
+          "nombre": "Pan integral (2 piezas) \n• Mantequilla (2 cc)",
+          "cantidad": null,
+          "unidad": ""
+        },
+        {
+          "nombre": "Miel reducida en azúcar",
+          "cantidad": 2,
+          "unidad": "cc"
+        },
+        {
+          "nombre": "Leche semji",
+          "cantidad": 0.5,
+          "unidad": "taza"
+        }
+      ]
+    },
+    {
+      "id": "pechuga_de_pollo_en_salsa_de_tomate_1",
+      "nombre": "Pechuga de pollo en salsa de tomate",
+      "tiempo": "comida",
+      "video": false,
+      "nota": null,
+      "ingredientes": [
+        {
+          "nombre": "Pechuga de pollo",
+          "cantidad": 90,
+          "unidad": "gr"
+        },
+        {
+          "nombre": "Salsa de tomate natural",
+          "cantidad": null,
+          "unidad": ""
+        },
+        {
+          "nombre": "Zanahoria cocida",
+          "cantidad": 0.5,
+          "unidad": "taza"
+        },
+        {
+          "nombre": "Calabacitas cocidas",
+          "cantidad": 0.5,
+          "unidad": "taza"
+        },
+        {
+          "nombre": "Brócoli cocidas",
+          "cantidad": 0.5,
+          "unidad": "taza"
+        },
+        {
+          "nombre": "Arroz blanco",
+          "cantidad": 0.5,
+          "unidad": "taza"
+        },
+        {
+          "nombre": "Tortilla de maíz",
+          "cantidad": 2,
+          "unidad": "pieza"
+        }
+      ]
+    },
+    {
+      "id": "2_o_3_rollitos_de_jamon_y_queso",
+      "nombre": "2 o 3 Rollitos de jamón y queso ()",
+      "tiempo": "cena",
+      "video": true,
+      "nota": null,
+      "ingredientes": [
+        {
+          "nombre": "Jamón",
+          "cantidad": 4,
+          "unidad": "piezas"
+        },
+        {
+          "nombre": "Queso amarillo",
+          "cantidad": 2,
+          "unidad": "pieza"
+        },
+        {
+          "nombre": "Queso",
+          "cantidad": 30,
+          "unidad": "gr"
+        },
+        {
+          "nombre": "Huevo",
+          "cantidad": 1,
+          "unidad": "pieza"
+        },
+        {
+          "nombre": "Empanizador",
+          "cantidad": 4,
+          "unidad": "Cucharadas"
+        }
+      ]
+    },
+    {
+      "id": "pasta_de_chicharos_pechuga_de_pollo",
+      "nombre": "Pasta de chicharos + Pechuga de pollo ()",
+      "tiempo": "comida",
+      "video": true,
+      "nota": null,
+      "ingredientes": [
+        {
+          "nombre": "Pechuga de pollo",
+          "cantidad": 90,
+          "unidad": "gr"
+        },
+        {
+          "nombre": "Aceite de oliva",
+          "cantidad": 1,
+          "unidad": "Cc"
+        },
+        {
+          "nombre": "Chicharos rallada",
+          "cantidad": 0.5,
+          "unidad": "taza"
+        },
+        {
+          "nombre": "Espinaca picada",
+          "cantidad": 0.5,
+          "unidad": "taza"
+        },
+        {
+          "nombre": "Leche",
+          "cantidad": 0.5,
+          "unidad": "taza"
+        },
+        {
+          "nombre": "Ajo, limón, espárragos, calabacitas",
+          "cantidad": null,
+          "unidad": ""
+        },
+        {
+          "nombre": "Pasta de tornillo",
+          "cantidad": 1,
+          "unidad": "taza"
+        },
+        {
+          "nombre": "Aguacate",
+          "cantidad": 0.5,
+          "unidad": "pieza"
+        }
+      ]
+    },
+    {
+      "id": "sushi_casero_arroz",
+      "nombre": "Sushi casero + Arroz",
+      "tiempo": "comida",
+      "video": false,
+      "nota": null,
+      "ingredientes": [
+        {
+          "nombre": "Pepino rallado",
+          "cantidad": 1,
+          "unidad": "pieza"
+        },
+        {
+          "nombre": "Atún",
+          "cantidad": 1,
+          "unidad": "lata"
+        },
+        {
+          "nombre": "Mayonesa",
+          "cantidad": 2,
+          "unidad": "Cc"
+        },
+        {
+          "nombre": "Queso crema",
+          "cantidad": 2,
+          "unidad": "Cc"
+        },
+        {
+          "nombre": "Aguacate",
+          "cantidad": 0.5,
+          "unidad": "pieza"
+        },
+        {
+          "nombre": "Salsa de soya",
+          "cantidad": null,
+          "unidad": ""
+        },
+        {
+          "nombre": "Arroz blanco",
+          "cantidad": 0.5,
+          "unidad": "taza"
+        }
+      ]
+    },
+    {
+      "id": "ceviche_de_mango_y_panela_1",
+      "nombre": "Ceviche de mango y panela",
+      "tiempo": "cena",
+      "video": false,
+      "nota": null,
+      "ingredientes": [
+        {
+          "nombre": "Queso panela",
+          "cantidad": 60,
+          "unidad": "gr"
+        },
+        {
+          "nombre": "Pepino en cuadritos",
+          "cantidad": 0.5,
+          "unidad": "tz"
+        },
+        {
+          "nombre": "Cebolla picada",
+          "cantidad": 0.25,
+          "unidad": "taza"
+        },
+        {
+          "nombre": "Mango natural o en lata",
+          "cantidad": 0.5,
+          "unidad": "taza"
+        },
+        {
+          "nombre": "Limón",
+          "cantidad": null,
+          "unidad": ""
+        },
+        {
+          "nombre": "Aguacate",
+          "cantidad": 0.5,
+          "unidad": "pieza"
+        }
+      ]
+    }
+  ]
+}
