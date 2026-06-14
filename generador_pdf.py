@@ -14,6 +14,7 @@ Genera un PDF idéntico al formato del Lic. Juan Pablo Espino, usando reportlab.
   - Firma al pie derecha
 """
 
+import logging
 import os
 from reportlab.lib.pagesizes import landscape, letter
 from reportlab.lib import colors
@@ -26,6 +27,8 @@ from reportlab.platypus.flowables import KeepTogether
 from reportlab.lib.utils import ImageReader
 
 import config
+
+log = logging.getLogger(__name__)
 
 # ── Colores ──────────────────────────────────────────────────────────────── #
 VERDE      = colors.HexColor("#1AA27E")
@@ -157,6 +160,8 @@ def generar(plan, ruta_salida=None):
         try:
             logo_cell = Image(config.RUTA_LOGO, width=1.3 * inch, height=0.85 * inch)
         except Exception:
+            log.warning("No se pudo cargar el logo para el PDF: %s",
+                        config.RUTA_LOGO, exc_info=True)
             logo_cell = ""
 
     # Título

@@ -17,6 +17,7 @@ Reglas:
 De la ficha se extraen automaticamente los "alimentos que no le agradan".
 """
 
+import logging
 import os
 import re
 from typing import List
@@ -24,6 +25,8 @@ from typing import List
 import config
 import utilidades as U
 from modelos import Paciente
+
+log = logging.getLogger(__name__)
 
 try:
     import docx  # python-docx
@@ -35,10 +38,12 @@ except ImportError:
 def _texto_completo_docx(ruta) -> str:
     """Devuelve TODO el texto de un .docx (parrafos + celdas de tablas)."""
     if docx is None:
+        log.warning("python-docx no esta instalado; no se puede leer %s", ruta)
         return ""
     try:
         d = docx.Document(ruta)
     except Exception:
+        log.warning("No se pudo leer el .docx: %s", ruta, exc_info=True)
         return ""
     partes = [p.text for p in d.paragraphs]
     for tabla in d.tables:

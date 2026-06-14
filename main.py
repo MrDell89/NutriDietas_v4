@@ -400,6 +400,11 @@ def main():
 
 
 if __name__ == "__main__":
+    import logging
+    logging.basicConfig(
+        level=logging.INFO,
+        format="%(asctime)s  %(levelname)-7s  %(name)s: %(message)s",
+    )
     try:
         main()
     except KeyboardInterrupt:

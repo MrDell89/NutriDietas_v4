@@ -1611,4 +1611,9 @@ def _plan_desde_celdas(paciente, celdas_manual, numero_plan, notas):
 
 
 if __name__ == "__main__":
+    import logging
+    logging.basicConfig(
+        level=logging.INFO,
+        format="%(asctime)s  %(levelname)-7s  %(name)s: %(message)s",
+    )
     app = NutriApp(); app.run()

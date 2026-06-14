@@ -18,6 +18,7 @@ Usa python-docx. Las cosas que python-docx no expone directamente (sombreado
 de celda, bordes, ancho fijo) se hacen manipulando el XML con OxmlElement.
 """
 
+import logging
 import os
 
 from docx import Document
@@ -29,6 +30,8 @@ from docx.oxml.ns import qn
 from docx.oxml import OxmlElement
 
 import config
+
+log = logging.getLogger(__name__)
 
 
 # ----------------------- helpers de bajo nivel (XML) ----------------------- #
@@ -141,7 +144,8 @@ def generar(plan, ruta_salida=None):
         try:
             run_logo.add_picture(config.RUTA_LOGO, height=Emu(int(1.0 * 914400)))
         except Exception:
-            pass
+            log.warning("No se pudo insertar el logo: %s",
+                        config.RUTA_LOGO, exc_info=True)
 
     # --- titulo centrado ---
     p_tit = doc.add_paragraph()
