@@ -262,42 +262,11 @@ def generar_desde_celdas_manuales(paciente, celdas_manual,
 
     celdas_manual: dict[dia] = list de 5 dicts:
         {"titulo": str, "ingredientes": [str], "nota": str|None, "video": bool}
+
+    El armado del plan vive en planes.plan_desde_celdas_manual (único lugar
+    compartido); aquí solo se delega y se genera el PDF.
     """
-    from modelos import PlanSemanal, CeldaDieta, Platillo, Ingrediente
-
-    plan = PlanSemanal(
-        paciente=paciente,
-        numero_plan=numero_plan,
-        notas_superiores=notas or [],
-        celdas={},
-    )
-
-    for dia in config.DIAS:
-        fila = []
-        celdas_dia = celdas_manual.get(dia, [{}] * 5)
-        for ci, datos in enumerate(celdas_dia):
-            if not datos or not datos.get("titulo"):
-                fila.append(None)
-                continue
-            if datos.get("titulo", "").lower() == "comida libre":
-                fila.append(CeldaDieta(texto_especial="Comida libre"))
-                continue
-            # construir platillo temporal desde los datos del editor
-            ings = []
-            for txt in datos.get("ingredientes", []):
-                txt = txt.strip().lstrip("•").strip()
-                if txt:
-                    ings.append(Ingrediente(nombre=txt))
-            pl = Platillo(
-                id=f"manual_{dia}_{ci}",
-                nombre=datos.get("titulo", ""),
-                tiempo=config.COLUMNAS[ci]["tiempo"],
-                ingredientes=ings,
-                video=datos.get("video", False),
-                nota=datos.get("nota"),
-            )
-            fila.append(CeldaDieta(platillo=pl,
-                                   factor=paciente.factor_porcion))
-        plan.celdas[dia] = fila
-
+    import planes
+    plan = planes.plan_desde_celdas_manual(paciente, celdas_manual,
+                                           numero_plan, notas=notas)
     return generar(plan, ruta_salida=ruta_salida)

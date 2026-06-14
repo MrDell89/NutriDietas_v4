@@ -15,8 +15,8 @@ from catalogo import Catalogo
 from modelos import Platillo, Ingrediente, PlanSemanal, CeldaDieta
 import dieta_individual as di
 import dieta_grupal as dgrupo
-import generador_docx as gen_docx
-import generador_pdf   as gen_pdf
+import generadores
+import planes
 from tabla_dieta import TablaDieta
 
 # ── Paleta (desde config: única fuente de verdad) ───────────────────────────── #
@@ -579,7 +579,7 @@ class NutriApp:
         tiene_contenido = any(d for fila in celdas_manual.values() for d in fila if d)
 
         # destino en carpeta del paciente
-        ext = ".pdf" if fmt=="pdf" else ".docx"
+        ext = generadores.extension(fmt)
         from modelos import PlanSemanal
         plan_tmp = PlanSemanal(paciente=pac, numero_plan=num,
                                notas_superiores=notas, celdas={})
@@ -600,21 +600,14 @@ class NutriApp:
         def _run():
             try:
                 if tiene_contenido:
-                    if fmt == "pdf":
-                        ruta = gen_pdf.generar_desde_celdas_manuales(
-                            pac, celdas_manual, num, notas, destino)
-                    else:
-                        plan = _plan_desde_celdas(pac, celdas_manual, num, notas)
-                        ruta = gen_docx.generar(plan, destino)
+                    ruta = generadores.generar_desde_celdas_manual(
+                        pac, celdas_manual, num, notas, destino, formato=fmt)
                 else:
                     plan = di.construir(pac, self.catalogo, numero_plan=num,
                                         incluir_colacion2=self._var_col2.get(),
                                         comida_libre_domingo=self._var_libre.get(),
                                         notas=notas)
-                    if fmt == "pdf":
-                        ruta = gen_pdf.generar(plan, destino)
-                    else:
-                        ruta = gen_docx.generar(plan, destino)
+                    ruta = generadores.generar(plan, fmt, destino)
                 self.root.after(0, lambda r=ruta: self._gen_ok(r))
             except Exception as e:
                 self.root.after(0, lambda m=str(e): self._gen_error(m))
@@ -836,7 +829,7 @@ class NutriApp:
             try:
                 rutas=[]
                 for pac in grupo:
-                    ext = ".pdf" if fmt=="pdf" else ".docx"
+                    ext = generadores.extension(fmt)
                     from modelos import PlanSemanal
                     plan_tmp=PlanSemanal(paciente=pac,numero_plan=num,
                                         notas_superiores=["Dieta en grupo."],celdas={})
@@ -872,23 +865,19 @@ class NutriApp:
                                     else:
                                         fila_pac.append(datos)
                             celdas_pac[dia]=fila_pac
-                        if fmt=="pdf":
-                            ruta=gen_pdf.generar_desde_celdas_manuales(
-                                pac,celdas_pac,num,["Dieta en grupo."],destino)
-                        else:
-                            plan=_plan_desde_celdas(pac,celdas_pac,num,["Dieta en grupo."])
-                            ruta=gen_docx.generar(plan,destino)
+                        ruta=generadores.generar_desde_celdas_manual(
+                            pac,celdas_pac,num,["Dieta en grupo."],destino,formato=fmt)
                     else:
-                        planes=dgrupo.construir_grupo(grupo,self.catalogo,
+                        planes_grupo=dgrupo.construir_grupo(grupo,self.catalogo,
                                                       numero_plan=num,incluir_colacion2=col2)
-                        for pac2,plan2 in planes:
+                        for pac2,plan2 in planes_grupo:
                             if pac2.nombre==pac.nombre:
-                                ext2=".pdf" if fmt=="pdf" else ".docx"
+                                ext2=generadores.extension(fmt)
                                 dest2=None
                                 if pac2.carpeta and os.path.isdir(pac2.carpeta):
                                     dest2=os.path.join(pac2.carpeta,
                                         plan2.nombre_archivo().replace(".docx",ext2))
-                                ruta = gen_pdf.generar(plan2,dest2) if fmt=="pdf" else gen_docx.generar(plan2,dest2)
+                                ruta = generadores.generar(plan2,fmt,dest2)
                     rutas.append((pac.nombre,ruta))
                 self.root.after(0, lambda r=rutas: self._gen_ok_grupo(r))
             except Exception as e:
@@ -1598,24 +1587,11 @@ class NutriApp:
 
 
 # ══ helper: construir PlanSemanal desde celdas del editor ══════════════════ #
+# El armado real vive en planes.plan_desde_celdas_manual (un solo lugar,
+# con tests). Se conserva este alias para no tocar los sitios de llamada.
 def _plan_desde_celdas(paciente, celdas_manual, numero_plan, notas):
-    plan = PlanSemanal(paciente=paciente, numero_plan=numero_plan,
-                       notas_superiores=notas or [], celdas={})
-    for dia in config.DIAS:
-        fila=[]
-        for ci,datos in enumerate(celdas_manual.get(dia,[])):
-            if not datos: fila.append(None); continue
-            if datos.get("titulo","").lower()=="comida libre":
-                fila.append(CeldaDieta(texto_especial="Comida libre")); continue
-            ings=[Ingrediente(nombre=t.strip().lstrip("•").strip())
-                  for t in datos.get("ingredientes",[]) if t.strip()]
-            pl=Platillo(id=f"m{ci}",nombre=datos.get("titulo",""),
-                        tiempo=config.COLUMNAS[ci]["tiempo"],
-                        ingredientes=ings,video=datos.get("video",False),
-                        nota=datos.get("nota"))
-            fila.append(CeldaDieta(platillo=pl,factor=paciente.factor_porcion))
-        plan.celdas[dia]=fila
-    return plan
+    return planes.plan_desde_celdas_manual(paciente, celdas_manual,
+                                           numero_plan, notas=notas)
 
 
 if __name__ == "__main__":
