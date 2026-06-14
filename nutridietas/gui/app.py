@@ -36,6 +36,7 @@ from nutridietas.gui.paneles.config import PanelConfigMixin
 class NutriApp(PanelPacientesMixin, PanelIndividualMixin, PanelGrupoMixin,
                TablaMixin, PanelCatalogoMixin, PanelConfigMixin):
     def __init__(self):
+        self._declarar_identidad_windows()
         self.root = tk.Tk()
         self.root.title("NutriDietas — Lic. Juan Pablo Espino")
         self.root.geometry("1280x780"); self.root.minsize(960, 620)
@@ -68,6 +69,20 @@ class NutriApp(PanelPacientesMixin, PanelIndividualMixin, PanelGrupoMixin,
                 f"Revisa la consola para el detalle completo.")
 
     # ── ICONO ─────────────────────────────────────────────────────────────── #
+    def _declarar_identidad_windows(self):
+        """Declara un AppUserModelID propio en Windows.
+
+        Sin esto, Windows agrupa la ventana bajo Python/Tk y la barra de tareas
+        muestra el icono por defecto (la 'pluma' de Tk) en vez del nuestro.
+        Debe hacerse ANTES de crear la ventana. No afecta a otros sistemas.
+        """
+        try:
+            import ctypes
+            ctypes.windll.shell32.SetCurrentProcessExplicitAppUserModelID(
+                "NutriDietas.JuanPabloEspino.App")
+        except Exception:
+            pass  # no es Windows o no se pudo; el icono igual se intenta
+
     def _aplicar_icono(self):
         """Pone el icono de la app en la ventana (barra de título / taskbar).
 
@@ -78,7 +93,8 @@ class NutriApp(PanelPacientesMixin, PanelIndividualMixin, PanelGrupoMixin,
         log = logging.getLogger(__name__)
         try:
             if os.path.exists(config.RUTA_ICONO):
-                self.root.iconbitmap(config.RUTA_ICONO)
+                # default=… aplica el icono a esta ventana y a las futuras.
+                self.root.iconbitmap(default=config.RUTA_ICONO)
                 return
         except Exception:
             log.warning("No se pudo aplicar el .ico: %s",
