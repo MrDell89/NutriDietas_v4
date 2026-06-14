@@ -10,22 +10,17 @@ import threading
 import tkinter as tk
 from tkinter import filedialog, messagebox, scrolledtext, ttk
 from pathlib import Path
-import subprocess
 import sys
 
-
-# ── Verificar dependencias ──────────────────────────────────────────────────
-def check_and_install(package, import_name=None):
-    import_name = import_name or package
-    try:
-        __import__(import_name)
-    except ImportError:
-        subprocess.check_call([sys.executable, "-m", "pip", "install", package, "-q"])
-
-
-check_and_install("python-docx", "docx")
-
-from docx import Document  # noqa: E402
+# python-docx es una dependencia declarada en requirements.txt.
+# Instálala con:  pip install -r requirements.txt
+try:
+    from docx import Document
+except ImportError:
+    sys.exit(
+        "Falta la dependencia 'python-docx'.\n"
+        "Instálala con:  pip install -r requirements.txt"
+    )
 
 
 # ── Utilidades de parseo ────────────────────────────────────────────────────

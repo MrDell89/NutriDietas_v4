@@ -217,10 +217,7 @@ def menu_grupo(catalogo):
     print("  " + (", ".join(sorted(union)) if union else "(ninguno)"))
 
     print("\nPlatillos que TODOS pueden comer:")
-    for col in config.COLUMNAS:
-        t = col["tiempo"]
-        nombres = [p.nombre for p in reporte["comunes"][t]]
-        # evitar repetir el mismo tiempo dos veces (colacion)
+    # evitar repetir el mismo tiempo dos veces (colacion aparece en 2 columnas)
     vistos = set()
     for col in config.COLUMNAS:
         t = col["tiempo"]
@@ -268,9 +265,7 @@ def menu_catalogo(catalogo):
     while True:
         limpiar()
         titulo("CATÁLOGO DE PLATILLOS")
-        for col in config.COLUMNAS:
-            pass
-        # mostrar por tiempo
+        # mostrar por tiempo (colacion aparece en 2 columnas → no repetir)
         vistos = set()
         for col in config.COLUMNAS:
             t = col["tiempo"]
