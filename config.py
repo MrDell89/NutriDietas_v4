@@ -38,14 +38,35 @@ RUTA_CATALOGO = os.path.join(DIR_BASE, "datos", "catalogo_platos.json")
 FIRMA = "Lic. Nutrición. Juan Pablo Espino"
 
 # --------------------------------------------------------------------------- #
-#  COLORES (hexadecimal, exactamente los del documento original)
+#  PALETA DE COLORES  (única fuente de verdad)
 # --------------------------------------------------------------------------- #
+# Los valores se guardan en hexadecimal SIN '#', tal como los necesita
+# python-docx (RGBColor.from_string). Para Tkinter o reportlab, que requieren
+# el prefijo '#', usa el helper ui() de abajo, p.ej.:
+#     fondo = config.ui(config.COLOR_VERDE_ENCABEZADO)   # -> "#1AA27E"
+#
+# Colores del documento original (Word/PDF):
 COLOR_VERDE_ENCABEZADO = "1AA27E"   # fondo de cabeceras y columna de dias
 COLOR_VERDE_TITULO     = "072F25"   # titulos y nombres de platillos
 COLOR_TEXTO            = "0D0D0D"    # texto normal (casi negro)
 COLOR_NOTA             = "385623"    # notas en verde oscuro
 COLOR_BLANCO           = "FFFFFF"
-COLOR_BORDE            = "000000"
+COLOR_BORDE            = "000000"    # borde de tabla (negro)
+
+# Colores adicionales de la interfaz gráfica (Tkinter):
+COLOR_HOVER     = "148A6A"   # verde al pasar el mouse
+COLOR_ACTIVE    = "0D6E55"   # verde al presionar
+COLOR_FONDO     = "F4F7F6"   # fondo general de la app
+COLOR_BORDE_UI  = "C4DDD6"   # bordes suaves de la UI
+COLOR_TEXTO_TENUE = "6B8C82" # texto secundario / etiquetas
+COLOR_ERROR     = "D9534F"   # mensajes de error
+COLOR_SIDEBAR   = "0B5C46"   # barra lateral / encabezado oscuro
+COLOR_ACENTO    = "E6F5EF"   # resaltados suaves y celdas "libre"
+
+
+def ui(color_hex):
+    """Devuelve el color con prefijo '#' para Tkinter / reportlab."""
+    return "#" + color_hex
 
 # --------------------------------------------------------------------------- #
 #  TIPOGRAFIA

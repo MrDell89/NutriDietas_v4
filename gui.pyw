@@ -19,11 +19,19 @@ import generador_docx as gen_docx
 import generador_pdf   as gen_pdf
 from tabla_dieta import TablaDieta
 
-# ── Paleta ────────────────────────────────────────────────────────────────── #
-C_GREEN   = "#1AA27E"; C_DARK  = "#072F25"; C_HOVER = "#148A6A"
-C_ACTIVE  = "#0D6E55"; C_BG    = "#F4F7F6"; C_WHITE = "#FFFFFF"
-C_BORDER  = "#C4DDD6"; C_TEXT  = "#0D0D0D"; C_MUTED = "#6B8C82"
-C_ERROR   = "#D9534F"; C_SIDEBAR = "#0B5C46"; C_ACCENT = "#E6F5EF"
+# ── Paleta (desde config: única fuente de verdad) ───────────────────────────── #
+C_GREEN   = config.ui(config.COLOR_VERDE_ENCABEZADO)
+C_DARK    = config.ui(config.COLOR_VERDE_TITULO)
+C_HOVER   = config.ui(config.COLOR_HOVER)
+C_ACTIVE  = config.ui(config.COLOR_ACTIVE)
+C_BG      = config.ui(config.COLOR_FONDO)
+C_WHITE   = config.ui(config.COLOR_BLANCO)
+C_BORDER  = config.ui(config.COLOR_BORDE_UI)
+C_TEXT    = config.ui(config.COLOR_TEXTO)
+C_MUTED   = config.ui(config.COLOR_TEXTO_TENUE)
+C_ERROR   = config.ui(config.COLOR_ERROR)
+C_SIDEBAR = config.ui(config.COLOR_SIDEBAR)
+C_ACCENT  = config.ui(config.COLOR_ACENTO)
 
 FT_TITLE = ("Segoe UI", 15, "bold"); FT_H3 = ("Segoe UI", 10, "bold")
 FT_BODY  = ("Segoe UI", 10);        FT_SMALL = ("Segoe UI", 9)
@@ -74,8 +82,8 @@ class NutriApp:
         s.map("Treeview", background=[("selected", C_GREEN)],
               foreground=[("selected", C_WHITE)])
         s.map("Treeview.Heading", background=[("active", C_HOVER)])
-        for nom, bg, fg in [("Green","#1AA27E","white"),
-                            ("Dark","#072F25","white"),
+        for nom, bg, fg in [("Green",C_GREEN,"white"),
+                            ("Dark",C_DARK,"white"),
                             ("Outline",C_BG,C_DARK)]:
             s.configure(f"{nom}.TButton", background=bg, foreground=fg,
                         font=FT_BTN, padding=(10,5), relief="flat",
@@ -235,7 +243,7 @@ class NutriApp:
         self._btn_abrir_det.pack(side="right", padx=4)
         ttk.Button(det_top, text="🍽 Hacer dieta", style="Green.TButton",
                    command=self._ir_a_dieta_individual).pack(side="right", padx=4)
-        self._lbl_ultima = tk.Label(det, text="", bg=C_BG, fg="#0B5C46",
+        self._lbl_ultima = tk.Label(det, text="", bg=C_BG, fg=C_SIDEBAR,
                                     font=FT_SMALL, anchor="w", justify="left")
         self._lbl_ultima.pack(fill="x", pady=(4,0))
         return f

@@ -30,17 +30,17 @@ from typing import List, Dict, Optional
 
 import config
 
-# colores locales (no importa gui para evitar circular)
-_VERDE     = "#1AA27E"
-_VERDE_OSC = "#072F25"
-_HOVER     = "#148A6A"
-_BG        = "#F4F7F6"
-_WHITE     = "#FFFFFF"
-_BORDER    = "#C4DDD6"
-_TEXT      = "#0D0D0D"
-_MUTED     = "#6B8C82"
-_NOTA_C    = "#385623"
-_LIBRE_BG  = "#E6F5EF"
+# colores tomados de la paleta central de config (con prefijo '#' para Tkinter)
+_VERDE     = config.ui(config.COLOR_VERDE_ENCABEZADO)
+_VERDE_OSC = config.ui(config.COLOR_VERDE_TITULO)
+_HOVER     = config.ui(config.COLOR_HOVER)
+_BG        = config.ui(config.COLOR_FONDO)
+_WHITE     = config.ui(config.COLOR_BLANCO)
+_BORDER    = config.ui(config.COLOR_BORDE_UI)
+_TEXT      = config.ui(config.COLOR_TEXTO)
+_MUTED     = config.ui(config.COLOR_TEXTO_TENUE)
+_NOTA_C    = config.ui(config.COLOR_NOTA)
+_LIBRE_BG  = config.ui(config.COLOR_ACENTO)
 
 _FT_DIA    = ("Segoe UI", 9, "bold")
 _FT_CAB    = ("Segoe UI", 9, "bold")

@@ -31,11 +31,11 @@ import config
 log = logging.getLogger(__name__)
 
 # ── Colores ──────────────────────────────────────────────────────────────── #
-VERDE      = colors.HexColor("#1AA27E")
-VERDE_OSC  = colors.HexColor("#072F25")
+VERDE      = colors.HexColor(config.ui(config.COLOR_VERDE_ENCABEZADO))
+VERDE_OSC  = colors.HexColor(config.ui(config.COLOR_VERDE_TITULO))
 BLANCO     = colors.white
-NEGRO      = colors.HexColor("#0D0D0D")
-VERDE_NOTA = colors.HexColor("#385623")
+NEGRO      = colors.HexColor(config.ui(config.COLOR_TEXTO))
+VERDE_NOTA = colors.HexColor(config.ui(config.COLOR_NOTA))
 
 # ── Estilos de párrafo ────────────────────────────────────────────────────── #
 _FONT = "Helvetica"   # reportlab siempre tiene Helvetica (≈ Century Gothic)
