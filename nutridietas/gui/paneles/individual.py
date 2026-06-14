@@ -115,7 +115,7 @@ class PanelIndividualMixin:
 
         # tabla interactiva
         pac_tmp = self._get_pac_individual() if self.pacientes else None
-        nd_tmp  = pac_tmp.no_deseados if pac_tmp else []
+        nd_tmp  = pac_tmp.restricciones_alimentarias() if pac_tmp else []
         self._tabla_ind = TablaDieta(tab_tabla, self.catalogo,
                                      no_deseados=nd_tmp, factor=1.0)
         self._tabla_ind.pack(fill="both", expand=True, padx=8, pady=(0,8))
@@ -167,7 +167,7 @@ class PanelIndividualMixin:
         self._spin_plan.set(pac.num_planes+1)
         self._actualizar_exclusiones()
         self._tabla_ind.refrescar_catalogo(
-            no_deseados=pac.no_deseados,
+            no_deseados=pac.restricciones_alimentarias(),
             factor=pac.factor_porcion)
 
     def _get_pac_individual(self):
@@ -189,7 +189,7 @@ class PanelIndividualMixin:
     def _refrescar_tabla_ind(self):
         self.catalogo.cargar()
         pac = self._get_pac_individual()
-        nd = pac.no_deseados if pac else []
+        nd = pac.restricciones_alimentarias() if pac else []
         self._tabla_ind.refrescar_catalogo(self.catalogo, no_deseados=nd)
         self.set_status("↺ Catálogo refrescado en la tabla")
 

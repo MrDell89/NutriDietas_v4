@@ -73,5 +73,9 @@ def test_coincide_ignora_acentos_y_mayusculas():
     assert U.coincide_no_deseado("Sopa de FRIJÓL", ["frijol"]) == "frijol"
 
 
+def test_coincide_no_confunde_subcadena_con_palabra():
+    assert U.coincide_no_deseado("Fresas picadas", ["res"]) is None
+
+
 def test_coincide_ignora_no_deseados_vacios():
     assert U.coincide_no_deseado("Pollo", ["", "  "]) is None

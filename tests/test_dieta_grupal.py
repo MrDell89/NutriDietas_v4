@@ -19,6 +19,19 @@ def _catalogo():
     return c
 
 
+def _catalogo_reglas():
+    c = Catalogo(ruta="__inexistente__.json")
+    c.platillos = [
+        Platillo("d1", "Avena", "desayuno", []),
+        Platillo("d2", "Fruta", "desayuno", []),
+        Platillo("d3", "Hotcakes", "desayuno", []),
+        Platillo("m1", "Pollo", "comida", [Ingrediente("Pollo", 100, "gramos")]),
+        Platillo("n1", "Atún", "cena", [Ingrediente("Atún", 1, "lata")]),
+        Platillo("n2", "Pollo cena", "cena", [Ingrediente("Pollo", 100, "gramos")]),
+    ]
+    return c
+
+
 def test_comparar_gustos_union_de_no_deseados():
     g = [Paciente("Ana", no_deseados=["leche"]),
          Paciente("Beto", no_deseados=["nuez"])]
@@ -66,3 +79,26 @@ def test_construir_grupo_agrega_nota_de_grupo():
     g = [Paciente("Ana"), Paciente("Beto")]
     (_, plan_a), _ = dg.construir_grupo(g, _catalogo(), numero_plan=1)
     assert any("grupo" in n.lower() for n in plan_a.notas_superiores)
+
+
+def test_construir_grupo_aplica_patron_de_desayuno():
+    g = [Paciente("Ana"), Paciente("Beto")]
+    (_, plan_a), _ = dg.construir_grupo(g, _catalogo_reglas(), numero_plan=1)
+    desayunos = [plan_a.celdas[d][0].platillo.nombre for d in config.DIAS]
+    assert desayunos == [
+        "Avena",
+        "Fruta",
+        "Hotcakes",
+        "Fruta",
+        "Avena",
+        "Fruta",
+        "Hotcakes",
+    ]
+
+
+def test_construir_grupo_no_repite_proteina_en_el_dia():
+    g = [Paciente("Ana"), Paciente("Beto")]
+    (_, plan_a), _ = dg.construir_grupo(g, _catalogo_reglas(), numero_plan=1)
+    assert plan_a.celdas["Lunes"][2].platillo.nombre == "Pollo"
+    assert plan_a.celdas["Lunes"][4].platillo.nombre == "Atún"
+    assert plan_a.celdas["Martes"][4].platillo.nombre == "Atún"

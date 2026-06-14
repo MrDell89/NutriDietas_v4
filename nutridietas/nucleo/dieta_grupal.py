@@ -23,6 +23,7 @@ from nutridietas import config
 from nutridietas.nucleo import utilidades as U
 from nutridietas.nucleo.modelos import PlanSemanal, CeldaDieta
 from nutridietas.nucleo.catalogo import Catalogo
+from nutridietas.nucleo import reglas_dieta
 
 
 # --------------------------------------------------------------------------- #
@@ -33,7 +34,7 @@ def comparar_gustos(pacientes, catalogo: Catalogo):
       - 'conflictos': lista de (platillo, [pacientes que no lo pueden comer, palabra])
       - 'no_deseados_union': set con todos los alimentos no deseados del grupo
     """
-    listas_nd = [p.no_deseados for p in pacientes]
+    listas_nd = [p.restricciones_alimentarias() for p in pacientes]
 
     comunes = {}
     for col in config.COLUMNAS:
@@ -45,7 +46,7 @@ def comparar_gustos(pacientes, catalogo: Catalogo):
     for p in catalogo.platillos:
         choca_con = []
         for pac in pacientes:
-            palabra = p.es_aceptable(pac.no_deseados)
+            palabra = p.es_aceptable(pac.restricciones_alimentarias())
             if palabra:
                 choca_con.append((pac.nombre, palabra))
         if choca_con:
@@ -71,7 +72,7 @@ def construir_grupo(pacientes, catalogo: Catalogo, numero_plan=1,
     el mismo menú; las porciones se ajustan con el factor_porcion de cada
     paciente.
     """
-    listas_nd = [p.no_deseados for p in pacientes]
+    listas_nd = [p.restricciones_alimentarias() for p in pacientes]
 
     # platillos aptos para TODOS, por tiempo
     aptos = {}
@@ -82,9 +83,11 @@ def construir_grupo(pacientes, catalogo: Catalogo, numero_plan=1,
 
     # 1) Elegimos UN menú comun (mismo platillo por dia/columna para el grupo)
     contador = {t: 0 for t in aptos}
+    patrones_tres = {"desayuno": {}, "cena": {}}
     menu = {}  # menu[dia] = lista de platillos (o None) por columna
     for dia in config.DIAS:
         fila = []
+        proteinas_usadas = set()
         for col in config.COLUMNAS:
             t = col["tiempo"]
             if col["titulo"] == "Colación 2" and not incluir_colacion2:
@@ -94,9 +97,19 @@ def construir_grupo(pacientes, catalogo: Catalogo, numero_plan=1,
             if not lista:
                 fila.append(None)
                 continue
-            idx = contador[t] % len(lista)
-            fila.append(lista[idx])
-            contador[t] += 1
+            if t in patrones_tres:
+                platillo = reglas_dieta.escoger_patron_tres(
+                    lista, dia, patrones_tres[t], proteinas_usadas
+                )
+            else:
+                platillo, contador[t] = reglas_dieta.escoger_sin_repetir_proteina(
+                    lista, contador[t], proteinas_usadas
+                )
+            if platillo is None:
+                fila.append(None)
+                continue
+            proteinas_usadas.update(reglas_dieta.proteinas_de_platillo(platillo))
+            fila.append(platillo)
         menu[dia] = fila
 
     # 2) Para cada paciente, mismo menú pero con SU factor de porcion

@@ -72,9 +72,8 @@ def coincide_no_deseado(texto_ingrediente, lista_no_deseados):
     Devuelve la palabra que coincide si el ingrediente contiene algun
     alimento no deseado; si no, devuelve None.
     """
-    ing = normalizar(texto_ingrediente)
-    for no in lista_no_deseados:
-        n = normalizar(no)
-        if n and n in ing:
-            return no
-    return None
+    from nutridietas.nucleo import detector_ingredientes
+    return detector_ingredientes.detectar_en_texto(
+        texto_ingrediente,
+        lista_no_deseados,
+    )

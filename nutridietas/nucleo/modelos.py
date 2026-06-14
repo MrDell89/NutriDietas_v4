@@ -17,6 +17,7 @@ from dataclasses import dataclass, field
 from typing import List, Optional, Dict
 
 from nutridietas.nucleo import utilidades as U
+from nutridietas.nucleo import detector_ingredientes
 
 
 # --------------------------------------------------------------------------- #
@@ -59,15 +60,10 @@ class Platillo:
         Devuelve None si el platillo es apto para el paciente, o la palabra
         que choca con sus alimentos no deseados.
         """
-        # El propio nombre tambien cuenta (ej. "Sardinas a la mexicana")
-        choca = U.coincide_no_deseado(self.nombre, no_deseados)
-        if choca:
-            return choca
-        for ing in self.ingredientes:
-            choca = U.coincide_no_deseado(ing.nombre, no_deseados)
-            if choca:
-                return choca
-        return None
+        conflicto = detector_ingredientes.detectar_conflicto_platillo(
+            self, no_deseados
+        )
+        return conflicto.restriccion if conflicto else None
 
 
 # --------------------------------------------------------------------------- #
@@ -85,6 +81,13 @@ class Paciente:
     def __str__(self):
         extra = f" | evita: {', '.join(self.no_deseados)}" if self.no_deseados else ""
         return f"{self.nombre}{extra}"
+
+    def restricciones_alimentarias(self) -> List[str]:
+        """Alimentos a excluir por disgusto, alergia o intolerancia."""
+        return detector_ingredientes.preparar_restricciones(
+            self.no_deseados,
+            self.alergias,
+        )
 
 
 # --------------------------------------------------------------------------- #

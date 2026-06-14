@@ -12,6 +12,7 @@ no deseados). Va rotando entre los platillos disponibles para dar variedad.
 from nutridietas import config
 from nutridietas.nucleo.modelos import PlanSemanal, CeldaDieta
 from nutridietas.nucleo.catalogo import Catalogo
+from nutridietas.nucleo import reglas_dieta
 
 
 def construir(paciente, catalogo: Catalogo, numero_plan=None,
@@ -34,13 +35,17 @@ def construir(paciente, catalogo: Catalogo, numero_plan=None,
     for col in config.COLUMNAS:
         t = col["tiempo"]
         if t not in aptos:
-            aptos[t] = catalogo.aptos_para(t, paciente.no_deseados)
+            aptos[t] = catalogo.aptos_para(
+                t, paciente.restricciones_alimentarias()
+            )
 
     # indices rotatorios por tiempo
     contador = {t: 0 for t in aptos}
+    patrones_tres = {"desayuno": {}, "cena": {}}
 
     for d, dia in enumerate(config.DIAS):
         celdas_dia = []
+        proteinas_usadas = set()
         for ci, col in enumerate(config.COLUMNAS):
             t = col["tiempo"]
             titulo_col = col["titulo"]
@@ -61,10 +66,20 @@ def construir(paciente, catalogo: Catalogo, numero_plan=None,
                 celdas_dia.append(None)
                 continue
 
-            # elegimos rotando para variedad
-            idx = contador[t] % len(lista)
-            platillo = lista[idx]
-            contador[t] += 1
+            if t in patrones_tres:
+                platillo = reglas_dieta.escoger_patron_tres(
+                    lista, dia, patrones_tres[t], proteinas_usadas
+                )
+            else:
+                platillo, contador[t] = reglas_dieta.escoger_sin_repetir_proteina(
+                    lista, contador[t], proteinas_usadas
+                )
+
+            if platillo is None:
+                celdas_dia.append(None)
+                continue
+
+            proteinas_usadas.update(reglas_dieta.proteinas_de_platillo(platillo))
 
             celdas_dia.append(
                 CeldaDieta(platillo=platillo, factor=paciente.factor_porcion)
@@ -83,7 +98,7 @@ def reporte_excluidos(paciente, catalogo: Catalogo):
     """
     excluidos = []
     for p in catalogo.platillos:
-        choca = p.es_aceptable(paciente.no_deseados)
+        choca = p.es_aceptable(paciente.restricciones_alimentarias())
         if choca:
             excluidos.append((p, choca))
     return excluidos

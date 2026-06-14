@@ -115,6 +115,9 @@ def cargar_paciente(carpeta) -> Paciente:
         texto = _texto_completo_docx(ficha)
         paciente.no_deseados = _extraer_lista(texto, config.ETIQUETA_NO_AGRADAN)
         paciente.preferidos = _extraer_lista(texto, config.ETIQUETA_PREFERIDOS)
+        paciente.alergias = ", ".join(
+            _extraer_lista(texto, config.ETIQUETA_ALERGIAS)
+        )
         # nombre real desde la ficha si aparece
         m = re.search(r"Nombre:\s*\n?\s*([^\n]+)", texto)
         if m and m.group(1).strip():

@@ -172,7 +172,9 @@ class PanelGrupoMixin:
             messagebox.showinfo("Paso previo","Usa primero 'Comparar gustos'."); return
         grupo=[p for _,(p,v) in self._grupo_checks.items() if v.get()]
         if len(grupo)<2: return
-        nd_union=list(set(nd for p in grupo for nd in p.no_deseados))
+        nd_union = list(set(
+            nd for p in grupo for nd in p.restricciones_alimentarias()
+        ))
         self._nd_union_gr = nd_union
         try: num=int(self._spin_plan_gr.get()); col2=self._var_col2_gr.get()
         except: num=1; col2=False
