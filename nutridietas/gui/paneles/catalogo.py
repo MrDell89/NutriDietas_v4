@@ -385,12 +385,16 @@ class PanelCatalogoMixin:
             for linea in txt_ing.get("1.0", "end").splitlines():
                 partes = [x.strip() for x in linea.split("|")]
                 if not partes[0]: continue
-                try:
-                    cant = float(partes[1]) if len(partes) > 1 and partes[1] else None
-                except ValueError:
-                    cant = None
-                unid = partes[2] if len(partes) > 2 else ""
-                ings_nuevos.append(Ingrediente(nombre=partes[0], cantidad=cant, unidad=unid))
+                if len(partes) == 1:
+                    ing = _parsear_ingrediente_linea(partes[0])
+                    ings_nuevos.append(ing)
+                else:
+                    try:
+                        cant = float(partes[1]) if len(partes) > 1 and partes[1] else None
+                    except ValueError:
+                        cant = None
+                    unid = partes[2] if len(partes) > 2 else ""
+                    ings_nuevos.append(Ingrediente(nombre=partes[0], cantidad=cant, unidad=unid))
 
             # aplicar cambios directamente al objeto
             platillo.id          = nuevo_id
@@ -457,9 +461,13 @@ class PanelCatalogoMixin:
                     if ing_nombre:
                         try: cant = float(row.get("Cantidad","")) if row.get("Cantidad","").strip() else None
                         except: cant = None
-                        platillos_tmp[nombre]["ings"].append(
-                            Ingrediente(nombre=ing_nombre, cantidad=cant,
-                                        unidad=row.get("Unidad","").strip()))
+                        unidad = row.get("Unidad","").strip()
+                        if cant is None and not unidad:
+                            ing = _parsear_ingrediente_linea(ing_nombre)
+                        else:
+                            ing = Ingrediente(nombre=ing_nombre, cantidad=cant,
+                                              unidad=unidad)
+                        platillos_tmp[nombre]["ings"].append(ing)
             if not platillos_tmp:
                 messagebox.showinfo("Sin platillos nuevos",
                     "Todos los platillos del CSV ya están en el catálogo."); return
@@ -526,10 +534,13 @@ class PanelCatalogoMixin:
             for linea in txt.get("1.0","end").splitlines():
                 partes=[x.strip() for x in linea.split("|")]
                 if not partes[0]: continue
-                try: cant=float(partes[1]) if len(partes)>1 and partes[1] else None
-                except: cant=None
-                unid=partes[2] if len(partes)>2 else ""
-                ings.append(Ingrediente(nombre=partes[0],cantidad=cant,unidad=unid))
+                if len(partes) == 1:
+                    ings.append(_parsear_ingrediente_linea(partes[0]))
+                else:
+                    try: cant=float(partes[1]) if len(partes)>1 and partes[1] else None
+                    except: cant=None
+                    unid=partes[2] if len(partes)>2 else ""
+                    ings.append(Ingrediente(nombre=partes[0],cantidad=cant,unidad=unid))
             pid=nombre.lower().replace(" ","_")[:30]
             self.catalogo.agregar_platillo(Platillo(id=pid,nombre=nombre,tiempo=v_tiempo.get(),
                                                     ingredientes=ings,video=v_video.get(),
@@ -543,3 +554,18 @@ class PanelCatalogoMixin:
     # ════════════════════════════════════════════════════════════════════════ #
     #  PANEL CONFIGURACIÓN                                                     #
     # ════════════════════════════════════════════════════════════════════════ #
+
+
+def _parsear_ingrediente_linea(linea):
+    try:
+        from nutridietas.herramientas import extractor_planes_alimenticios as _ext
+        datos = _ext.parsear_ingrediente_texto(linea)
+    except Exception:
+        datos = None
+    if datos:
+        return Ingrediente(
+            nombre=datos.get("nombre", linea),
+            cantidad=datos.get("cantidad"),
+            unidad=datos.get("unidad", ""),
+        )
+    return Ingrediente(nombre=linea)

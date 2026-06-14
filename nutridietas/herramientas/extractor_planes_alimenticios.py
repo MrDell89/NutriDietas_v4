@@ -61,7 +61,13 @@ def tiene_video(texto: str) -> bool:
 
 def _parsear_cantidad(s: str):
     s = s.strip().replace(",", ".")
+    fracciones = {"¼": 0.25, "½": 0.5, "¾": 0.75}
     try:
+        if s in fracciones:
+            return fracciones[s]
+        m = re.match(r"^(\d+(?:\.\d+)?)\s*([¼½¾])$", s)
+        if m:
+            return float(m.group(1)) + fracciones[m.group(2)]
         if "/" in s:
             partes = s.split("/")
             return round(float(partes[0]) / float(partes[1]), 4)
@@ -80,15 +86,16 @@ def parsear_ingrediente_texto(texto: str) -> dict | None:
     if not texto:
         return None
 
+    patron_cantidad = r"(?:\d+/\d+|\d+\s*[¼½¾]|\d+(?:[,.]\d+)?|[¼½¾])"
     m = re.match(
-        r"^(?P<nombre>.+?)\s*\((?P<cant>[0-9/,.¼½¾]+[^)]*?)\)\s*$",
+        rf"^(?P<nombre>.+?)\s*\((?P<cant>{patron_cantidad}\s*[^)]*?)\)\s*$",
         texto, re.IGNORECASE
     )
     if m:
         nombre = m.group("nombre").strip().rstrip(":")
         interior = m.group("cant").strip()
         # Separar número y unidad
-        m2 = re.match(r"^([0-9/,.¼½¾]+)\s*(.*?)$", interior)
+        m2 = re.match(rf"^({patron_cantidad})\s*(.*?)$", interior)
         if m2:
             cant = _parsear_cantidad(m2.group(1))
             unidad = m2.group(2).strip()
@@ -96,6 +103,18 @@ def parsear_ingrediente_texto(texto: str) -> dict | None:
             cant = None
             unidad = interior
         return {"nombre": nombre, "cantidad": cant, "unidad": unidad}
+
+    m = re.match(
+        rf"^(?P<nombre>.+?)\s+(?P<cant>{patron_cantidad})\s+(?P<unidad>[A-Za-zÁÉÍÓÚÜÑáéíóúüñ]+(?:\s+[A-Za-zÁÉÍÓÚÜÑáéíóúüñ]+)?)\s*$",
+        texto,
+        re.IGNORECASE,
+    )
+    if m:
+        return {
+            "nombre": m.group("nombre").strip().rstrip(":"),
+            "cantidad": _parsear_cantidad(m.group("cant")),
+            "unidad": m.group("unidad").strip(),
+        }
 
     # Sin paréntesis: toda la línea es el nombre
     if len(texto) > 2:
@@ -141,6 +160,12 @@ def extraer_platillos_de_celda(celda, tiempo: str) -> list[dict]:
         nonlocal nombre_actual, ings_actuales, es_video, notas_actuales
         if nombre_actual:
             nombre_limpio = re.sub(r"\s*video\s*", "", nombre_actual, flags=re.IGNORECASE).strip()
+            if not ings_actuales:
+                ing_desde_nombre = parsear_ingrediente_texto(nombre_limpio)
+                if (ing_desde_nombre and ing_desde_nombre["nombre"]
+                        and (ing_desde_nombre["cantidad"] is not None
+                             or ing_desde_nombre["unidad"])):
+                    ings_actuales.append(ing_desde_nombre)
             platillos.append({
                 "id": generar_id(nombre_limpio),
                 "nombre": nombre_limpio,

@@ -311,7 +311,13 @@
       "tiempo": "colacion",
       "video": false,
       "nota": null,
-      "ingredientes": []
+      "ingredientes": [
+        {
+          "nombre": "Manzana mediana",
+          "cantidad": 1,
+          "unidad": "pieza"
+        }
+      ]
     },
     {
       "id": "pechugas_de_pollo_con_chile_chipotle",
@@ -668,7 +674,13 @@
       "tiempo": "colacion",
       "video": false,
       "nota": null,
-      "ingredientes": []
+      "ingredientes": [
+        {
+          "nombre": "Manzana grande",
+          "cantidad": 1,
+          "unidad": "pieza"
+        }
+      ]
     },
     {
       "id": "quesadillas_de_atun_guacamole",
@@ -1031,7 +1043,13 @@
       "tiempo": "colacion",
       "video": false,
       "nota": null,
-      "ingredientes": []
+      "ingredientes": [
+        {
+          "nombre": "Zanahoria rallada",
+          "cantidad": 0.75,
+          "unidad": "taza"
+        }
+      ]
     },
     {
       "id": "ensalada_verde_pollo_y_aguacate",
@@ -1151,7 +1169,13 @@
       "tiempo": "colacion",
       "video": false,
       "nota": null,
-      "ingredientes": []
+      "ingredientes": [
+        {
+          "nombre": "Manzana picada",
+          "cantidad": 1,
+          "unidad": "taza"
+        }
+      ]
     },
     {
       "id": "guisado_de_nopales_y_frijoles",
@@ -1217,7 +1241,13 @@
       "tiempo": "colacion",
       "video": false,
       "nota": null,
-      "ingredientes": []
+      "ingredientes": [
+        {
+          "nombre": "Gelatina sin azúcar",
+          "cantidad": 1,
+          "unidad": "taza"
+        }
+      ]
     },
     {
       "id": "taquitos_de_pescado",
@@ -1463,11 +1493,17 @@
     },
     {
       "id": "jicama_picada_1_taza",
-      "nombre": "Jícama picada  \n(1 taza)",
+      "nombre": "Jícama picada",
       "tiempo": "colacion",
       "video": false,
       "nota": null,
-      "ingredientes": []
+      "ingredientes": [
+        {
+          "nombre": "jicama picada",
+          "cantidad": 1.0,
+          "unidad": "taza"
+        }
+      ]
     },
     {
       "id": "pechugas_de_pollo_ensalada",
@@ -2485,7 +2521,13 @@
       "tiempo": "colacion",
       "video": false,
       "nota": null,
-      "ingredientes": []
+      "ingredientes": [
+        {
+          "nombre": "Mango grande",
+          "cantidad": 1,
+          "unidad": "pieza"
+        }
+      ]
     },
     {
       "id": "alambre_de_pollo",
@@ -2839,7 +2881,13 @@
       "tiempo": "colacion",
       "video": false,
       "nota": null,
-      "ingredientes": []
+      "ingredientes": [
+        {
+          "nombre": "Chocolate sin azúcar",
+          "cantidad": 1,
+          "unidad": "pieza"
+        }
+      ]
     },
     {
       "id": "quesadilla_con_zanahoria_rallada",
@@ -2910,7 +2958,13 @@
       "tiempo": "colacion",
       "video": false,
       "nota": null,
-      "ingredientes": []
+      "ingredientes": [
+        {
+          "nombre": "Piña picada",
+          "cantidad": 1,
+          "unidad": "taza"
+        }
+      ]
     },
     {
       "id": "albondigas_de_pollo",
@@ -3106,7 +3160,13 @@
       "tiempo": "colacion",
       "video": false,
       "nota": null,
-      "ingredientes": []
+      "ingredientes": [
+        {
+          "nombre": "Uvas verdes o rojas",
+          "cantidad": 1,
+          "unidad": "taza"
+        }
+      ]
     },
     {
       "id": "tinga_de_atun_1",
@@ -3239,7 +3299,13 @@
       "tiempo": "colacion",
       "video": false,
       "nota": null,
-      "ingredientes": []
+      "ingredientes": [
+        {
+          "nombre": "Arándanos",
+          "cantidad": 0.5,
+          "unidad": "taza"
+        }
+      ]
     },
     {
       "id": "ceviche_de_soya",
@@ -3427,7 +3493,13 @@
       "tiempo": "colacion",
       "video": false,
       "nota": null,
-      "ingredientes": []
+      "ingredientes": [
+        {
+          "nombre": "Jícama picada",
+          "cantidad": 1.5,
+          "unidad": "taza"
+        }
+      ]
     },
     {
       "id": "pechugas_de_pollo_con_calabacitas_gratinadas",
@@ -3664,7 +3736,13 @@
       "tiempo": "colacion",
       "video": false,
       "nota": null,
-      "ingredientes": []
+      "ingredientes": [
+        {
+          "nombre": "Manzana picada",
+          "cantidad": 1,
+          "unidad": "taza"
+        }
+      ]
     },
     {
       "id": "arandanos_1_2_taza_1",
@@ -3672,7 +3750,13 @@
       "tiempo": "colacion",
       "video": false,
       "nota": null,
-      "ingredientes": []
+      "ingredientes": [
+        {
+          "nombre": "Arándanos",
+          "cantidad": 0.5,
+          "unidad": "taza"
+        }
+      ]
     },
     {
       "id": "pan_de_avena_con_espinaca",
@@ -3719,7 +3803,13 @@
       "tiempo": "colacion",
       "video": false,
       "nota": null,
-      "ingredientes": []
+      "ingredientes": [
+        {
+          "nombre": "Fresas picadas",
+          "cantidad": 1,
+          "unidad": "taza"
+        }
+      ]
     },
     {
       "id": "pollo_a_la_suiza",
@@ -4310,7 +4400,13 @@
       "tiempo": "colacion",
       "video": false,
       "nota": null,
-      "ingredientes": []
+      "ingredientes": [
+        {
+          "nombre": "Manzana roja mediana",
+          "cantidad": 1,
+          "unidad": "pieza"
+        }
+      ]
     },
     {
       "id": "huevo_revuelto_con_frijoles",
@@ -4352,7 +4448,13 @@
       "tiempo": "colacion",
       "video": false,
       "nota": null,
-      "ingredientes": []
+      "ingredientes": [
+        {
+          "nombre": "Piña picada",
+          "cantidad": 1,
+          "unidad": "taza"
+        }
+      ]
     },
     {
       "id": "huevo_con_chile_morron",
@@ -4389,7 +4491,13 @@
       "tiempo": "colacion",
       "video": false,
       "nota": null,
-      "ingredientes": []
+      "ingredientes": [
+        {
+          "nombre": "Fresas picadas",
+          "cantidad": 1,
+          "unidad": "taza"
+        }
+      ]
     },
     {
       "id": "teriyaki_de_pollo_1",
@@ -4901,7 +5009,13 @@
       "tiempo": "colacion",
       "video": false,
       "nota": null,
-      "ingredientes": []
+      "ingredientes": [
+        {
+          "nombre": "Melón picado",
+          "cantidad": 1,
+          "unidad": "taza"
+        }
+      ]
     },
     {
       "id": "huevo_con_tortilla",
@@ -4938,7 +5052,13 @@
       "tiempo": "colacion",
       "video": false,
       "nota": null,
-      "ingredientes": []
+      "ingredientes": [
+        {
+          "nombre": "Pepino picado",
+          "cantidad": 1,
+          "unidad": "taza"
+        }
+      ]
     },
     {
       "id": "enchiladas_suizas_de_pollo_1",
@@ -5062,7 +5182,13 @@
       "tiempo": "colacion",
       "video": false,
       "nota": null,
-      "ingredientes": []
+      "ingredientes": [
+        {
+          "nombre": "Gelatina sin azúcar",
+          "cantidad": 1,
+          "unidad": "taza"
+        }
+      ]
     },
     {
       "id": "crema_de_elote_verduras_1",
@@ -5299,7 +5425,13 @@
       "tiempo": "colacion",
       "video": false,
       "nota": null,
-      "ingredientes": []
+      "ingredientes": [
+        {
+          "nombre": "Plátano mediano",
+          "cantidad": 1,
+          "unidad": "pieza"
+        }
+      ]
     },
     {
       "id": "omelette_con_verduras_al_vapor",
@@ -5599,7 +5731,13 @@
       "tiempo": "colacion",
       "video": false,
       "nota": null,
-      "ingredientes": []
+      "ingredientes": [
+        {
+          "nombre": "Chocolate sin azúcar",
+          "cantidad": 1,
+          "unidad": "barrita"
+        }
+      ]
     },
     {
       "id": "licuado_de_papaya_galletas_de_arroz_inflado_con_crema_de_cac",
@@ -5641,7 +5779,13 @@
       "tiempo": "colacion",
       "video": false,
       "nota": null,
-      "ingredientes": []
+      "ingredientes": [
+        {
+          "nombre": "Manzana mediana",
+          "cantidad": 1,
+          "unidad": "pieza"
+        }
+      ]
     },
     {
       "id": "chuleta_de_res_ensalada",
