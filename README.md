@@ -19,7 +19,7 @@ verde (#1AA27E), nombres de platillos en verde oscuro y firma al pie.
 ## 1. Requisitos
 
 - Python 3.9 o superior.
-- La librería `python-docx`:
+- Las librerías `python-docx` (Word) y `reportlab` (PDF):
 
 ```bash
 pip install -r requirements.txt
@@ -28,22 +28,30 @@ pip install -r requirements.txt
 ## 2. Estructura del proyecto (modular)
 
 ```
-DietasApp/
-├── main.py              Menú principal (punto de entrada)
+NutriDietas/
+├── gui.pyw             Interfaz gráfica (punto de entrada recomendado)
+├── main.py             Menú de consola (entrada alternativa, CLI)
 ├── config.py           Configuración: rutas, colores, fuentes, medidas
 ├── utilidades.py       Fracciones, normalización de texto, escalado de porciones
 ├── modelos.py          Clases de datos: Paciente, Platillo, PlanSemanal, ...
 ├── catalogo.py         Base de datos de platillos (carga/consulta/guardado)
 ├── pacientes.py        Lectura de carpetas y fichas de pacientes (.docx)
 ├── generador_docx.py   Creación del Word con el formato exacto
+├── generador_pdf.py    Creación del PDF con el mismo formato (reportlab)
 ├── dieta_individual.py Lógica de dieta individual (evita lo no deseado)
 ├── dieta_grupal.py     Lógica de dieta en grupo (mismo menú, distintas porciones)
+├── tabla_dieta.py      Widget Tkinter: editor visual de la tabla 6×8
+├── atajos.py           Atajos de teclado y acciones masivas de la GUI
+├── extractor_planes_alimenticios.py
+│                       Herramienta aparte: convierte .docx de planes a JSON
 ├── datos/
 │   └── catalogo_platos.json   Catálogo de platillos (editable)
+├── plantillas/
+│   └── ejemplo_plantilla.json  Plantilla de menú reutilizable
 ├── recursos/
 │   └── logo.png        Logo del nutriólogo (se inserta en cada dieta)
 ├── salidas/            Dietas generadas (si el paciente no tiene carpeta)
-└── Pacientes/          Carpetas de pacientes (DEMO incluida)
+└── Pacientes/          Carpetas de pacientes (NO se versiona; ver nota final)
 ```
 
 ## 3. Cómo se organizan los pacientes
@@ -78,10 +86,20 @@ O cámbialo temporalmente desde la **opción 5 (Configuración)** del menú.
 
 ## 5. Ejecutar
 
+**Interfaz gráfica (recomendada):**
+
 ```bash
-cd DietasApp
+python gui.pyw
+```
+
+**Menú de consola (alternativa):**
+
+```bash
 python main.py
 ```
+
+Ambas comparten la misma lógica y el mismo catálogo; solo cambia la forma
+de interactuar. El resto de esta sección describe el flujo del menú de consola.
 
 Menú principal:
 
@@ -133,6 +151,8 @@ Todo lo visual y las rutas están en `config.py`:
 
 ---
 
-**Nota:** la carpeta `Pacientes/` incluida es solo una **demostración** para que
-puedas probar el programa de inmediato. Apunta `CARPETA_PACIENTES` a tu carpeta
-real cuando empieces a usarlo.
+**Nota sobre los datos de pacientes (privacidad):**
+La carpeta `Pacientes/` contiene información personal y de salud, por lo que
+**no se versiona** (está en `.gitignore`). Mantenla solo en tu equipo o apunta
+`CARPETA_PACIENTES` en `config.py` a tu carpeta real (por ejemplo, en OneDrive).
+Si necesitas una carpeta de prueba, crea una con datos ficticios.
