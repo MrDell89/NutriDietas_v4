@@ -52,7 +52,14 @@
       "Bash(python -m py_compile nutridietas/config.py nutridietas/gui/app.py gui.pyw)",
       "Bash(git commit -q -m 'feat: icono de la aplicacion \\(ventana y compilado\\) *)",
       "Bash(git commit -q -m 'feat: detectar conflictos de restricciones al cargar plantillas Word *)",
-      "Bash(git commit -q -m 'chore: actualizar allowlist local de permisos \\(.claude/settings.local.json\\) *)"
+      "Bash(git commit -q -m 'chore: actualizar allowlist local de permisos \\(.claude/settings.local.json\\) *)",
+      "Bash(git push *)",
+      "Bash(python -m py_compile nutridietas/config.py)",
+      "Bash(python -m PyInstaller NutriDietas.spec --noconfirm --log-level ERROR)",
+      "Bash(git commit -q -m 'fix: rutas correctas en el .exe compilado \\(PyInstaller\\) *)",
+      "Bash(python -m py_compile nutridietas/gui/paneles/grupo.py nutridietas/salida/generador_pdf.py)",
+      "Bash(git commit -q -m 'feat: ajustes individuales por paciente en dieta de grupo *)",
+      "Bash(git commit -q -m 'chore: actualizar allowlist local de permisos *)"
     ]
   }
 }
