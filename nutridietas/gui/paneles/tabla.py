@@ -4,6 +4,7 @@
 import os, sys, threading, subprocess, json
 import tkinter as tk
 from tkinter import ttk, messagebox, filedialog, scrolledtext
+import re
 
 from nutridietas import config
 from nutridietas.nucleo import pacientes as gp
@@ -22,7 +23,11 @@ from nutridietas.gui.tema import (C_GREEN, C_DARK, C_HOVER, C_ACTIVE, C_BG, C_WH
 class TablaMixin:
     def _cargar_plantilla(self, tabla: "TablaDieta"):
         """Carga una plantilla JSON o Word de plan semanal en la tabla indicada."""
-        carpeta_plantillas = os.path.join(os.path.dirname(__file__), "plantillas")
+        carpeta_plantillas = getattr(
+            config,
+            "CARPETA_PLANTILLAS",
+            os.path.join(config.RAIZ_PROYECTO, "plantillas"),
+        )
         os.makedirs(carpeta_plantillas, exist_ok=True)
 
         # buscar plantillas en la carpeta
@@ -32,21 +37,14 @@ class TablaMixin:
         ]
 
         if not archivos:
-            if messagebox.askyesno(
+            messagebox.showinfo(
                 "Sin plantillas",
                 f"No hay plantillas en:\n{carpeta_plantillas}\n\n"
-                "¿Deseas seleccionar un archivo manualmente?"):
-                ruta = filedialog.askopenfilename(
-                    title="Abrir plantilla de dieta",
-                    filetypes=[
-                        ("Plantillas", "*.json *.docx"),
-                        ("Word", "*.docx"),
-                        ("JSON", "*.json"),
-                        ("Todos", "*"),
-                    ])
-                if not ruta: return
-                self._aplicar_plantilla(tabla, ruta)
+                "Puedes cambiar esta carpeta en Configuración."
+            )
             return
+
+        archivos = sorted(archivos, key=_orden_plantilla)
 
         # diálogo de selección
         dlg = tk.Toplevel(self.root)
@@ -95,24 +93,17 @@ class TablaMixin:
         try:
             if ruta.lower().endswith(".docx"):
                 from nutridietas.nucleo import plantillas_word
-                resultado = plantillas_word.cargar(ruta, self.catalogo)
+                restricciones, revisiones = self._restricciones_para_plantilla()
+                resultado = plantillas_word.cargar(
+                    ruta,
+                    self.catalogo,
+                    restricciones=restricciones,
+                )
                 tabla.refrescar_catalogo(self.catalogo)
                 tabla.set_celdas(resultado.celdas)
                 nombre = os.path.basename(ruta)
                 self.set_status(f"✔ Plantilla Word '{nombre}' cargada en la tabla.")
-                if resultado.agregados:
-                    resumen = "\n".join(
-                        f"• {p.nombre} [{p.tiempo}]"
-                        for p in resultado.agregados[:20]
-                    )
-                    extra = "" if len(resultado.agregados) <= 20 else (
-                        f"\n... y {len(resultado.agregados) - 20} más"
-                    )
-                    messagebox.showinfo(
-                        "Platillos agregados al catálogo",
-                        "Estos platillos no estaban en el catálogo y se agregaron:\n\n"
-                        f"{resumen}{extra}",
-                    )
+                self._avisar_resultado_plantilla(resultado, revisiones)
                 return
 
             with open(ruta, "r", encoding="utf-8") as f:
@@ -123,6 +114,67 @@ class TablaMixin:
             self.set_status(f"✔ Plantilla '{nombre}' cargada en la tabla.")
         except Exception as e:
             messagebox.showerror("Error al cargar plantilla", str(e))
+
+    def _restricciones_para_plantilla(self):
+        pacientes = []
+        if getattr(self, "_panel_activo", None) == "individual":
+            try:
+                pac = self._get_pac_individual()
+            except Exception:
+                pac = None
+            if pac:
+                nd = [
+                    x.strip()
+                    for x in self._entry_nd.get("1.0", "end").splitlines()
+                    if x.strip()
+                ]
+                pac.no_deseados = nd
+                pacientes = [pac]
+        elif getattr(self, "_panel_activo", None) == "grupo":
+            pacientes = [
+                p for _, (p, v) in getattr(self, "_grupo_checks", {}).items()
+                if v.get()
+            ]
+
+        restricciones = []
+        revisiones = []
+        for pac in pacientes:
+            restricciones.extend(pac.restricciones_alimentarias())
+            revisiones.extend(pac.restricciones_a_revisar())
+        return list(dict.fromkeys(restricciones)), list(dict.fromkeys(revisiones))
+
+    def _avisar_resultado_plantilla(self, resultado, revisiones):
+        mensajes = []
+        if resultado.conflictos:
+            lineas = [
+                f"• {c['dia']} / {c['tiempo']}: {c['platillo']} "
+                f"(contiene: {c['restriccion']})"
+                for c in resultado.conflictos[:20]
+            ]
+            if len(resultado.conflictos) > 20:
+                lineas.append(f"... y {len(resultado.conflictos) - 20} más")
+            mensajes.append(
+                "Se dejaron vacías estas celdas por alergias/no deseados:\n"
+                + "\n".join(lineas)
+            )
+        if resultado.agregados:
+            lineas = [
+                f"• {p.nombre} [{p.tiempo}]"
+                for p in resultado.agregados[:20]
+            ]
+            if len(resultado.agregados) > 20:
+                lineas.append(f"... y {len(resultado.agregados) - 20} más")
+            mensajes.append(
+                "Estos platillos no estaban en el catálogo y se agregaron:\n"
+                + "\n".join(lineas)
+            )
+        if revisiones:
+            mensajes.append(
+                "Revisa manualmente estas notas del paciente porque son ambiguas:\n"
+                + "\n".join(f"• {x}" for x in revisiones[:20])
+            )
+        if mensajes:
+            messagebox.showinfo("Plantilla cargada", "\n\n".join(mensajes))
 
     # ── helpers públicos para atajos ──────────────────────────────────────── #
     def limpiar_tabla_activa(self):
@@ -156,3 +208,8 @@ class TablaMixin:
     # ════════════════════════════════════════════════════════════════════════ #
     #  PANEL CATÁLOGO                                                          #
     # ════════════════════════════════════════════════════════════════════════ #
+
+
+def _orden_plantilla(nombre):
+    m = re.search(r"(\d+)", nombre)
+    return (int(m.group(1)) if m else 9999, nombre.lower())

@@ -6,6 +6,7 @@ from typing import Dict, List
 
 from nutridietas import config
 from nutridietas.herramientas import extractor_planes_alimenticios as extractor
+from nutridietas.nucleo import detector_ingredientes
 from nutridietas.nucleo import utilidades as U
 from nutridietas.nucleo.modelos import Ingrediente, Platillo
 
@@ -19,9 +20,10 @@ except ImportError:  # pragma: no cover
 class ResultadoPlantillaWord:
     celdas: Dict[str, List[dict]]
     agregados: List[Platillo] = field(default_factory=list)
+    conflictos: List[dict] = field(default_factory=list)
 
 
-def cargar(ruta, catalogo) -> ResultadoPlantillaWord:
+def cargar(ruta, catalogo, restricciones=None) -> ResultadoPlantillaWord:
     """Lee una plantilla .docx, llena celdas y agrega faltantes al catálogo."""
     if Document is None:
         raise RuntimeError("Falta python-docx para leer plantillas Word.")
@@ -36,6 +38,8 @@ def cargar(ruta, catalogo) -> ResultadoPlantillaWord:
     celdas = {dia: [{} for _ in config.COLUMNAS] for dia in config.DIAS}
 
     agregados = []
+    conflictos = []
+    restricciones = restricciones or []
     claves_catalogo = set()
     for p in catalogo.platillos:
         claves_catalogo.update(_claves_platillo(p.nombre, p.tiempo))
@@ -51,6 +55,18 @@ def cargar(ruta, catalogo) -> ResultadoPlantillaWord:
                 continue
 
             datos = _datos_celda(row.cells[celda_idx])
+            conflicto = _conflicto_celda(datos, col["tiempo"], restricciones)
+            if conflicto:
+                conflictos.append({
+                    "dia": dia,
+                    "tiempo": col["titulo"],
+                    "platillo": datos.get("titulo", ""),
+                    "restriccion": conflicto.restriccion,
+                    "encontrado_en": conflicto.encontrado_en,
+                })
+                celdas[dia][ci] = {}
+                continue
+
             celdas[dia][ci] = datos
             for platillo in _platillos_celda(row.cells[celda_idx], col["tiempo"], datos):
                 claves = _claves_platillo(platillo.nombre, platillo.tiempo)
@@ -63,7 +79,7 @@ def cargar(ruta, catalogo) -> ResultadoPlantillaWord:
     if agregados:
         catalogo.guardar()
 
-    return ResultadoPlantillaWord(celdas=celdas, agregados=agregados)
+    return ResultadoPlantillaWord(celdas=celdas, agregados=agregados, conflictos=conflictos)
 
 
 def _buscar_tabla_dieta(doc):
@@ -167,6 +183,20 @@ def _platillos_celda(cell, tiempo, datos):
             continue
         platillos.append(_platillo_desde_dict(p, tiempo))
     return platillos
+
+
+def _conflicto_celda(datos, tiempo, restricciones):
+    if not datos or not datos.get("titulo") or not restricciones:
+        return None
+    platillo = Platillo(
+        id="plantilla_tmp",
+        nombre=datos.get("titulo", ""),
+        tiempo=tiempo,
+        ingredientes=[_ingrediente_desde_texto(i) for i in datos.get("ingredientes", [])],
+        video=datos.get("video", False),
+        nota=datos.get("nota"),
+    )
+    return detector_ingredientes.detectar_conflicto_platillo(platillo, restricciones)
 
 
 def _platillo_desde_dict(datos, tiempo):

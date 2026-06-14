@@ -34,6 +34,7 @@ class PanelConfigMixin:
         lf=ttk.LabelFrame(f,text="Rutas",padding=10); lf.pack(fill="x",padx=26,pady=(0,12))
         campo(lf,"Carpeta de pacientes:",lambda:config.CARPETA_PACIENTES,lambda v:setattr(config,"CARPETA_PACIENTES",v))
         campo(lf,"Carpeta de salidas:",lambda:config.CARPETA_SALIDAS,lambda v:setattr(config,"CARPETA_SALIDAS",v))
+        campo(lf,"Carpeta de plantillas:",lambda:getattr(config,"CARPETA_PLANTILLAS",os.path.join(config.RAIZ_PROYECTO,"plantillas")),lambda v:setattr(config,"CARPETA_PLANTILLAS",v))
         campo(lf,"Logo (PNG):",lambda:config.RUTA_LOGO,lambda v:setattr(config,"RUTA_LOGO",v),es_dir=False)
         lf2=ttk.LabelFrame(f,text="Firma",padding=10); lf2.pack(fill="x",padx=26,pady=(0,12))
         self._var_firma=tk.StringVar(value=config.FIRMA)

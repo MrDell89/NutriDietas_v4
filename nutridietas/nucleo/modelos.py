@@ -89,6 +89,13 @@ class Paciente:
             self.alergias,
         )
 
+    def restricciones_a_revisar(self) -> List[str]:
+        """Comentarios ambiguos que deben revisarse manualmente."""
+        return detector_ingredientes.preparar_revisiones(
+            self.no_deseados,
+            self.alergias,
+        )
+
 
 # --------------------------------------------------------------------------- #
 @dataclass

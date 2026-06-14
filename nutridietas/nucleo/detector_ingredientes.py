@@ -34,6 +34,28 @@ PREFIJOS_RESTRICCION = (
     "evita",
 )
 
+MARCADORES_REVISION = (
+    "pero",
+    "casi",
+    "poquito",
+    "poco",
+    "solo",
+    "solamente",
+    "unicamente",
+    "únicamente",
+    "en licuado",
+    "en licuados",
+    "en jugo",
+    "en jugos",
+    "a veces",
+)
+
+PATRONES_NO = (
+    r"^(?P<item>.+?)\s+no(?:\s+le\s+gusta.*)?$",
+    r"^no\s+(?:le\s+gusta\s+|tolera\s+|quiere\s+|come\s+)?(?P<item>.+)$",
+    r"^(?P<item>.+?)\s+no\s*$",
+)
+
 
 @dataclass
 class ConflictoIngrediente:
@@ -43,12 +65,12 @@ class ConflictoIngrediente:
 
 
 def preparar_restricciones(*valores) -> List[str]:
-    """Normaliza entradas de disgustos/alergias en una lista limpia."""
+    """Normaliza entradas claras de disgustos/alergias en una lista limpia."""
     resultado = []
     vistos = set()
     for valor in valores:
         for item in _aplanar(valor):
-            item = _limpiar_restriccion(item)
+            item = _restriccion_para_excluir(item)
             if not item:
                 continue
             clave = U.normalizar(item)
@@ -56,6 +78,24 @@ def preparar_restricciones(*valores) -> List[str]:
                 continue
             vistos.add(clave)
             resultado.append(item)
+    return resultado
+
+
+def preparar_revisiones(*valores) -> List[str]:
+    """Devuelve notas ambiguas que conviene revisar manualmente."""
+    resultado = []
+    vistos = set()
+    for valor in valores:
+        for item in _aplanar(valor):
+            if _restriccion_para_excluir(item):
+                continue
+            item = _limpiar_restriccion(item)
+            clave = U.normalizar(item)
+            if not item or clave in DESCARTAR_RESTRICCIONES or clave in vistos:
+                continue
+            if _requiere_revision(item):
+                vistos.add(clave)
+                resultado.append(item)
     return resultado
 
 
@@ -120,6 +160,49 @@ def _limpiar_restriccion(texto) -> str:
             limpio = limpio.strip(" .\t:-")
             break
     return limpio
+
+
+def _restriccion_para_excluir(texto) -> Optional[str]:
+    limpio = _limpiar_restriccion(texto)
+    clave = U.normalizar(limpio)
+    if not limpio or clave in DESCARTAR_RESTRICCIONES:
+        return None
+
+    original = re.sub(r"\s+", " ", str(texto)).strip(" .\t:-")
+    normalizado_original = U.normalizar(original)
+    if normalizado_original.startswith((
+        "alergico a ", "alergica a ", "alergia a ",
+        "intolerante a ", "intolerancia a ",
+        "no tolera ", "no le gusta ", "no le agradan ", "evita ",
+    )):
+        return limpio
+
+    for patron in PATRONES_NO:
+        m = re.match(patron, clave)
+        if not m:
+            continue
+        item = _limpiar_restriccion(m.group("item"))
+        item = _quitar_cola_comentario(item)
+        if item and U.normalizar(item) not in DESCARTAR_RESTRICCIONES:
+            return item
+
+    if _requiere_revision(limpio):
+        return None
+    return limpio
+
+
+def _requiere_revision(texto) -> bool:
+    normalizado = U.normalizar(texto)
+    return any(m in normalizado for m in MARCADORES_REVISION)
+
+
+def _quitar_cola_comentario(texto):
+    normalizado = U.normalizar(texto)
+    for marcador in (" 2 veces", " varias veces", " casi", " poquito", " poco"):
+        idx = normalizado.find(marcador)
+        if idx != -1:
+            return texto[:idx].strip(" .\t:-")
+    return texto
 
 
 def _tokens(texto) -> List[str]:

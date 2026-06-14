@@ -59,3 +59,17 @@ def test_cargar_word_llena_celdas_y_agrega_faltantes(tmp_path):
 
     catalogo_recargado = Catalogo(ruta=str(tmp_path / "catalogo.json"))
     assert any(p.nombre == "Jicama rayada" for p in catalogo_recargado.platillos)
+
+
+def test_cargar_word_deja_vacia_celda_con_restriccion(tmp_path):
+    catalogo = Catalogo(ruta=str(tmp_path / "catalogo.json"))
+
+    resultado = plantillas_word.cargar(
+        str(_crear_docx(tmp_path)),
+        catalogo,
+        restricciones=["pollo"],
+    )
+
+    assert resultado.celdas["Lunes"][2] == {}
+    assert resultado.conflictos[0]["dia"] == "Lunes"
+    assert resultado.conflictos[0]["restriccion"] == "pollo"

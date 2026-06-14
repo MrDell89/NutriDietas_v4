@@ -40,3 +40,15 @@ def test_detecta_conflicto_en_ingrediente():
 def test_paciente_combina_disgustos_y_alergias():
     paciente = Paciente("Ana", no_deseados=["pollo"], alergias="camarón, nuez")
     assert paciente.restricciones_alimentarias() == ["pollo", "camarón", "nuez"]
+
+
+def test_no_excluye_comentario_ambiguo_y_lo_marca_para_revision():
+    paciente = Paciente("Ana", no_deseados=["Papaya pero en licuados sí"])
+    assert paciente.restricciones_alimentarias() == []
+    assert paciente.restricciones_a_revisar() == ["Papaya pero en licuados sí"]
+
+
+def test_frase_con_no_si_excluye_ingrediente():
+    paciente = Paciente("Ana", no_deseados=["Papaya no le gusta 2 veces"])
+    assert paciente.restricciones_alimentarias() == ["papaya"]
+    assert paciente.restricciones_a_revisar() == []
