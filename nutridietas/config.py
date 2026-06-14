@@ -24,26 +24,32 @@ import sys
 #   CARPETA_PACIENTES = r"C:\Users\Juan\OneDrive\Pacientes"
 DIR_BASE = os.path.dirname(os.path.abspath(__file__))           # carpeta del paquete
 if getattr(sys, "frozen", False):
-    # App compilada con PyInstaller: los datos viven junto al .exe.
-    RAIZ_PROYECTO = os.path.dirname(sys.executable)
+    # App compilada con PyInstaller (modo carpeta):
+    #   - RAIZ_RECURSOS: datos empaquetados (catalogo, recursos, plantillas).
+    #   - RAIZ_USUARIO : datos editables del usuario, junto al .exe.
+    RAIZ_RECURSOS = getattr(sys, "_MEIPASS", os.path.dirname(sys.executable))
+    RAIZ_USUARIO = os.path.dirname(sys.executable)
 else:
-    RAIZ_PROYECTO = os.path.dirname(DIR_BASE)                    # raiz del repositorio
-CARPETA_PACIENTES = os.path.join(RAIZ_PROYECTO, "Pacientes")
+    RAIZ_RECURSOS = os.path.dirname(DIR_BASE)                    # raiz del repositorio
+    RAIZ_USUARIO = RAIZ_RECURSOS
+# Alias historico (mismo valor que la raiz de recursos en modo desarrollo).
+RAIZ_PROYECTO = RAIZ_RECURSOS
 
-# Carpeta donde se guardan las dietas generadas por la app.
-CARPETA_SALIDAS = os.path.join(RAIZ_PROYECTO, "salidas")
+# --- Datos del usuario (editables; junto al .exe en modo compilado) ---
+CARPETA_PACIENTES = os.path.join(RAIZ_USUARIO, "Pacientes")
+CARPETA_SALIDAS = os.path.join(RAIZ_USUARIO, "salidas")
 
-# Recursos (logo, etc.)
-CARPETA_RECURSOS = os.path.join(RAIZ_PROYECTO, "recursos")
+# --- Recursos empaquetados (logo, icono) ---
+CARPETA_RECURSOS = os.path.join(RAIZ_RECURSOS, "recursos")
 RUTA_LOGO = os.path.join(CARPETA_RECURSOS, "logo.png")
 # Icono de la aplicacion (ventana y .exe compilado).
 RUTA_ICONO = os.path.join(CARPETA_RECURSOS, "icono.ico")
 
 # Catalogo de platillos (base de datos en JSON).
-RUTA_CATALOGO = os.path.join(RAIZ_PROYECTO, "datos", "catalogo_platos.json")
+RUTA_CATALOGO = os.path.join(RAIZ_RECURSOS, "datos", "catalogo_platos.json")
 
 # Carpeta donde se guardan/leen plantillas de dietas.
-CARPETA_PLANTILLAS = os.path.join(RAIZ_PROYECTO, "plantillas")
+CARPETA_PLANTILLAS = os.path.join(RAIZ_RECURSOS, "plantillas")
 
 # Firma que aparece al pie de cada dieta.
 FIRMA = "Lic. Nutrición. Juan Pablo Espino"
