@@ -40,6 +40,7 @@ class NutriApp(PanelPacientesMixin, PanelIndividualMixin, PanelGrupoMixin,
         self.root.title("NutriDietas — Lic. Juan Pablo Espino")
         self.root.geometry("1280x780"); self.root.minsize(960, 620)
         self.root.configure(bg=C_BG)
+        self._aplicar_icono()
 
         self.catalogo   = Catalogo()
         self.pacientes  = []
@@ -65,6 +66,31 @@ class NutriApp(PanelPacientesMixin, PanelIndividualMixin, PanelGrupoMixin,
             messagebox.showerror("Error al iniciar",
                 f"{err}\n\nEl programa intentará continuar.\n"
                 f"Revisa la consola para el detalle completo.")
+
+    # ── ICONO ─────────────────────────────────────────────────────────────── #
+    def _aplicar_icono(self):
+        """Pone el icono de la app en la ventana (barra de título / taskbar).
+
+        Usa el .ico en Windows; si falla, intenta el PNG como respaldo. Nunca
+        es fatal: si no hay icono, la app sigue funcionando igual.
+        """
+        import logging
+        log = logging.getLogger(__name__)
+        try:
+            if os.path.exists(config.RUTA_ICONO):
+                self.root.iconbitmap(config.RUTA_ICONO)
+                return
+        except Exception:
+            log.warning("No se pudo aplicar el .ico: %s",
+                        config.RUTA_ICONO, exc_info=True)
+        # Respaldo: PNG vía iconphoto (multiplataforma)
+        png = os.path.join(config.CARPETA_RECURSOS, "icono_1024.png")
+        try:
+            if os.path.exists(png):
+                self._icono_img = tk.PhotoImage(file=png)
+                self.root.iconphoto(True, self._icono_img)
+        except Exception:
+            log.warning("No se pudo aplicar el icono PNG: %s", png, exc_info=True)
 
     # ── ESTILOS ───────────────────────────────────────────────────────────── #
     def _setup_estilos(self):

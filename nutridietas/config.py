@@ -13,6 +13,7 @@ de los modulos.
 """
 
 import os
+import sys
 
 # --------------------------------------------------------------------------- #
 #  RUTAS
@@ -22,7 +23,11 @@ import os
 # cambiarse a la ruta real de OneDrive del nutriologo, por ejemplo:
 #   CARPETA_PACIENTES = r"C:\Users\Juan\OneDrive\Pacientes"
 DIR_BASE = os.path.dirname(os.path.abspath(__file__))           # carpeta del paquete
-RAIZ_PROYECTO = os.path.dirname(DIR_BASE)                        # raiz del repositorio
+if getattr(sys, "frozen", False):
+    # App compilada con PyInstaller: los datos viven junto al .exe.
+    RAIZ_PROYECTO = os.path.dirname(sys.executable)
+else:
+    RAIZ_PROYECTO = os.path.dirname(DIR_BASE)                    # raiz del repositorio
 CARPETA_PACIENTES = os.path.join(RAIZ_PROYECTO, "Pacientes")
 
 # Carpeta donde se guardan las dietas generadas por la app.
@@ -31,9 +36,14 @@ CARPETA_SALIDAS = os.path.join(RAIZ_PROYECTO, "salidas")
 # Recursos (logo, etc.)
 CARPETA_RECURSOS = os.path.join(RAIZ_PROYECTO, "recursos")
 RUTA_LOGO = os.path.join(CARPETA_RECURSOS, "logo.png")
+# Icono de la aplicacion (ventana y .exe compilado).
+RUTA_ICONO = os.path.join(CARPETA_RECURSOS, "icono.ico")
 
 # Catalogo de platillos (base de datos en JSON).
 RUTA_CATALOGO = os.path.join(RAIZ_PROYECTO, "datos", "catalogo_platos.json")
+
+# Carpeta donde se guardan/leen plantillas de dietas.
+CARPETA_PLANTILLAS = os.path.join(RAIZ_PROYECTO, "plantillas")
 
 # Firma que aparece al pie de cada dieta.
 FIRMA = "Lic. Nutrición. Juan Pablo Espino"

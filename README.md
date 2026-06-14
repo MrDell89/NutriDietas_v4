@@ -170,6 +170,30 @@ Todo lo visual y las rutas están en `nutridietas/config.py`:
 - Fuente (`FUENTE_PRINCIPAL = "Century Gothic"`).
 - Anchos de columna, márgenes, tamaños de letra.
 - Firma del nutriólogo (`FIRMA`).
+- Icono de la app (`RUTA_ICONO` → `recursos/icono.ico`).
+
+## 8. Compilar a ejecutable (.exe)
+
+El icono de la marca está en `recursos/` (`icono.svg` fuente, `icono_1024.png`
+y `icono.ico` multitamaño). Para generar el ejecutable con su icono:
+
+```bash
+pip install -r requirements-dev.txt   # incluye pyinstaller
+pyinstaller NutriDietas.spec
+```
+
+El resultado queda en `dist/NutriDietas/NutriDietas.exe`. Las carpetas
+`datos/`, `recursos/` y `plantillas/` se copian junto al `.exe` para que el
+catálogo, el logo y las plantillas sigan siendo editables. `config.py` detecta
+si la app está compilada y busca esos datos al lado del ejecutable.
+
+> Para regenerar el `.ico` desde un PNG nuevo:
+> ```python
+> from PIL import Image
+> Image.open("recursos/icono_1024.png").convert("RGBA").save(
+>     "recursos/icono.ico",
+>     sizes=[(16,16),(32,32),(48,48),(64,64),(128,128),(256,256)])
+> ```
 
 ---
 

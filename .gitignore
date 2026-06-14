@@ -11,6 +11,10 @@ dist/
 .coverage
 htmlcov/
 
+# ── Compilado (PyInstaller) ─────────────────────────────────────────────── #
+build/
+dist/
+
 # ── Entornos virtuales ──────────────────────────────────────────────────── #
 .venv/
 venv/
