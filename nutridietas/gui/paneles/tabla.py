@@ -21,21 +21,29 @@ from nutridietas.gui.tema import (C_GREEN, C_DARK, C_HOVER, C_ACTIVE, C_BG, C_WH
 
 class TablaMixin:
     def _cargar_plantilla(self, tabla: "TablaDieta"):
-        """Carga una plantilla JSON de plan semanal en la tabla indicada."""
+        """Carga una plantilla JSON o Word de plan semanal en la tabla indicada."""
         carpeta_plantillas = os.path.join(os.path.dirname(__file__), "plantillas")
         os.makedirs(carpeta_plantillas, exist_ok=True)
 
-        # buscar JSON en la carpeta de plantillas
-        archivos = [f for f in os.listdir(carpeta_plantillas) if f.endswith(".json")]
+        # buscar plantillas en la carpeta
+        archivos = [
+            f for f in os.listdir(carpeta_plantillas)
+            if f.lower().endswith((".json", ".docx"))
+        ]
 
         if not archivos:
             if messagebox.askyesno(
                 "Sin plantillas",
                 f"No hay plantillas en:\n{carpeta_plantillas}\n\n"
-                "¿Deseas seleccionar un archivo JSON manualmente?"):
+                "¿Deseas seleccionar un archivo manualmente?"):
                 ruta = filedialog.askopenfilename(
                     title="Abrir plantilla de dieta",
-                    filetypes=[("JSON", "*.json"), ("Todos", "*")])
+                    filetypes=[
+                        ("Plantillas", "*.json *.docx"),
+                        ("Word", "*.docx"),
+                        ("JSON", "*.json"),
+                        ("Todos", "*"),
+                    ])
                 if not ruta: return
                 self._aplicar_plantilla(tabla, ruta)
             return
@@ -74,12 +82,39 @@ class TablaMixin:
                        self._aplicar_plantilla(tabla,
                            filedialog.askopenfilename(
                                title="Abrir plantilla",
-                               filetypes=[("JSON","*.json"),("Todos","*")]) or "")]
+                               filetypes=[
+                                   ("Plantillas","*.json *.docx"),
+                                   ("Word","*.docx"),
+                                   ("JSON","*.json"),
+                                   ("Todos","*"),
+                               ]) or "")]
                    ).pack(side="left", padx=4)
 
     def _aplicar_plantilla(self, tabla, ruta):
         if not ruta or not os.path.exists(ruta): return
         try:
+            if ruta.lower().endswith(".docx"):
+                from nutridietas.nucleo import plantillas_word
+                resultado = plantillas_word.cargar(ruta, self.catalogo)
+                tabla.refrescar_catalogo(self.catalogo)
+                tabla.set_celdas(resultado.celdas)
+                nombre = os.path.basename(ruta)
+                self.set_status(f"✔ Plantilla Word '{nombre}' cargada en la tabla.")
+                if resultado.agregados:
+                    resumen = "\n".join(
+                        f"• {p.nombre} [{p.tiempo}]"
+                        for p in resultado.agregados[:20]
+                    )
+                    extra = "" if len(resultado.agregados) <= 20 else (
+                        f"\n... y {len(resultado.agregados) - 20} más"
+                    )
+                    messagebox.showinfo(
+                        "Platillos agregados al catálogo",
+                        "Estos platillos no estaban en el catálogo y se agregaron:\n\n"
+                        f"{resumen}{extra}",
+                    )
+                return
+
             with open(ruta, "r", encoding="utf-8") as f:
                 data = json.load(f)
             celdas = data.get("celdas", data)  # acepta wrapper o dict directo
