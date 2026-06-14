@@ -1,6 +1,7 @@
 # -*- coding: utf-8 -*-
 """Panel de dieta en grupo de la GUI."""
 
+import copy
 import os, sys, threading, subprocess, json
 import tkinter as tk
 from tkinter import ttk, messagebox, filedialog, scrolledtext
@@ -18,9 +19,15 @@ from nutridietas.gui.tema import (C_GREEN, C_DARK, C_HOVER, C_ACTIVE, C_BG, C_WH
                       C_BORDER, C_TEXT, C_MUTED, C_ERROR, C_SIDEBAR, C_ACCENT,
                       FT_TITLE, FT_H3, FT_BODY, FT_SMALL, FT_BTN, FT_NAV, FT_MONO)
 
+_GRUPO_BASE = "Grupo base"
+
 
 class PanelGrupoMixin:
     def _panel_grupo(self):
+        self._grupo_overrides = {}
+        self._grupo_base_celdas = None
+        self._grupo_edicion_actual = _GRUPO_BASE
+
         f = tk.Frame(self.content, bg=C_BG)
         hdr = tk.Frame(f, bg=C_WHITE, pady=8); hdr.pack(fill="x",padx=16,pady=(14,0))
         tk.Label(hdr, text="👫  Dieta en Grupo", font=FT_TITLE,
@@ -89,7 +96,17 @@ class PanelGrupoMixin:
                    command=self._autocompletar_tabla_gr).pack(side="left",padx=4)
         ttk.Button(tb_top2, text="📂  Cargar plantilla", style="Outline.TButton",
                    command=lambda: self._cargar_plantilla(self._tabla_gr)).pack(side="left",padx=4)
-        tk.Label(tb_top2, text="Mismo platillo para todos, porciones individuales al generar.",
+        ttk.Button(tb_top2, text="💾  Guardar ajuste", style="Outline.TButton",
+                   command=self._guardar_edicion_actual_grupo).pack(side="left",padx=4)
+        tk.Label(tb_top2, text="Editar para:", bg=C_BG, fg=C_TEXT, font=FT_SMALL).pack(side="left",padx=(12,3))
+        self._var_edicion_grupo = tk.StringVar(value=_GRUPO_BASE)
+        self._combo_edicion_grupo = ttk.Combobox(
+            tb_top2, textvariable=self._var_edicion_grupo,
+            state="readonly", width=24, values=[_GRUPO_BASE],
+        )
+        self._combo_edicion_grupo.pack(side="left", padx=4)
+        self._combo_edicion_grupo.bind("<<ComboboxSelected>>", self._cambiar_edicion_grupo)
+        tk.Label(tb_top2, text="Base compartida o ajuste individual.",
                  bg=C_BG, fg=C_MUTED, font=FT_SMALL).pack(side="right",padx=4)
 
         self._tabla_gr = TablaDieta(tab_tg, self.catalogo, no_deseados=[], factor=1.0)
@@ -158,6 +175,8 @@ class PanelGrupoMixin:
                         width=6,format="%.1f").pack(side="left")
             tk.Label(row,text="× porción",bg=C_BG,fg=C_MUTED,font=FT_SMALL).pack(side="left",padx=5)
         nd_union = list(union)
+        self._nd_union_gr = nd_union
+        self._sincronizar_selector_edicion_grupo()
         self._tabla_gr.refrescar_catalogo(no_deseados=nd_union)
         self.set_status(f"Grupo comparado — {len(grupo)} pacientes")
 
@@ -196,6 +215,11 @@ class PanelGrupoMixin:
                 else: fila.append({})
             celdas_ed[dia]=fila
         self._tabla_gr.set_celdas(celdas_ed)
+        self._grupo_base_celdas = copy.deepcopy(celdas_ed)
+        self._grupo_overrides.clear()
+        self._grupo_edicion_actual = _GRUPO_BASE
+        self._var_edicion_grupo.set(_GRUPO_BASE)
+        self._sincronizar_selector_edicion_grupo()
         self.set_status("✔ Tabla de grupo autocompletada — puedes ajustar antes de generar.")
 
     def generar_grupo(self, fmt="pdf"):
@@ -207,7 +231,8 @@ class PanelGrupoMixin:
         try: num=int(self._spin_plan_gr.get()); col2=self._var_col2_gr.get()
         except: messagebox.showerror("Error","Número de plan inválido."); return
 
-        celdas_manual=self._tabla_gr.get_celdas()
+        self._guardar_edicion_actual_grupo(silencioso=True)
+        celdas_manual=self._grupo_base_celdas or self._tabla_gr.get_celdas()
         tiene_contenido=any(d for fila in celdas_manual.values() for d in fila if d)
 
         self._btn_gen_grupo.config(state="disabled")
@@ -226,18 +251,14 @@ class PanelGrupoMixin:
                     if pac.carpeta and os.path.isdir(pac.carpeta):
                         destino=os.path.join(pac.carpeta,nombre_base)
                     if tiene_contenido:
-                        # misma tabla, factor individual
+                        # tabla base del grupo, con posibles ajustes por paciente
+                        celdas_origen = self._grupo_overrides.get(pac.nombre, celdas_manual)
                         celdas_pac = {}
                         for dia in config.DIAS:
                             fila_pac=[]
-                            for ci,datos in enumerate(celdas_manual.get(dia,[])):
+                            for ci,datos in enumerate(celdas_origen.get(dia,[])):
                                 if not datos: fila_pac.append({})
                                 else:
-                                    from nutridietas.nucleo.modelos import Platillo,Ingrediente
-                                    ings_nuevos=[]
-                                    p_tmp=Platillo(id="tmp",nombre=datos.get("titulo",""),
-                                                   tiempo=config.COLUMNAS[ci]["tiempo"])
-                                    raw_ings=datos.get("ingredientes",[])
                                     # re-renderizar con factor del paciente
                                     platillo_orig=next(
                                         (x for x in self.catalogo.platillos
@@ -279,6 +300,65 @@ class PanelGrupoMixin:
         resumen="\n".join(f"• {n}: {os.path.basename(r)}" for n,r in rutas)
         self.set_status(f"✔ {len(rutas)} dietas generadas")
         messagebox.showinfo("Grupo generado",f"Se generaron {len(rutas)} dietas:\n\n{resumen}")
+
+    def _sincronizar_selector_edicion_grupo(self):
+        opciones = [_GRUPO_BASE] + [
+            p.nombre for _, (p, _var) in getattr(self, "_grupo_factores", {}).items()
+        ]
+        try:
+            self._combo_edicion_grupo["values"] = opciones
+        except AttributeError:
+            return
+        actual = self._var_edicion_grupo.get() or _GRUPO_BASE
+        if actual not in opciones:
+            actual = _GRUPO_BASE
+            self._var_edicion_grupo.set(actual)
+        self._grupo_edicion_actual = actual
+
+    def _guardar_edicion_actual_grupo(self, silencioso=False):
+        if not hasattr(self, "_tabla_gr"):
+            return
+        nombre = getattr(self, "_grupo_edicion_actual", _GRUPO_BASE)
+        datos = copy.deepcopy(self._tabla_gr.get_celdas())
+        if nombre == _GRUPO_BASE:
+            self._grupo_base_celdas = datos
+        else:
+            self._grupo_overrides[nombre] = datos
+        if not silencioso:
+            self.set_status(f"✔ Ajuste guardado: {nombre}")
+
+    def _cambiar_edicion_grupo(self, _=None):
+        anterior = getattr(self, "_grupo_edicion_actual", _GRUPO_BASE)
+        nuevo = self._var_edicion_grupo.get() or _GRUPO_BASE
+        if nuevo == anterior:
+            return
+
+        self._guardar_edicion_actual_grupo(silencioso=True)
+        base = self._grupo_base_celdas or self._tabla_gr.get_celdas()
+        datos = self._grupo_overrides.get(nuevo, base) if nuevo != _GRUPO_BASE else base
+        self._grupo_edicion_actual = nuevo
+        self._tabla_gr.set_celdas(copy.deepcopy(datos))
+        self._aplicar_contexto_tabla_grupo(nuevo)
+        self.set_status(f"Editando tabla de grupo para: {nuevo}")
+
+    def _aplicar_contexto_tabla_grupo(self, nombre):
+        if nombre == _GRUPO_BASE:
+            nd = list(getattr(self, "_nd_union_gr", []))
+            self._tabla_gr.refrescar_catalogo(no_deseados=nd, factor=1.0)
+            return
+
+        item = getattr(self, "_grupo_factores", {}).get(nombre)
+        if not item:
+            return
+        pac, var = item
+        try:
+            factor = float(var.get())
+        except Exception:
+            factor = pac.factor_porcion
+        self._tabla_gr.refrescar_catalogo(
+            no_deseados=pac.restricciones_alimentarias(),
+            factor=factor,
+        )
 
     # ── buscador en grupo ─────────────────────────────────────────────────── #
     def _filtrar_checks_grupo(self):

@@ -99,6 +99,7 @@ def _celda_contenido(celda_obj, factor=1.0):
         return [Paragraph("", ST_ING)]
 
     p = celda_obj.platillo
+    factor = getattr(celda_obj, "factor", factor)
     titulo = p.nombre + (" (Video)" if p.video else "")
     parrafos = [Paragraph(titulo, ST_PLATILLO)]
 
@@ -210,8 +211,7 @@ def generar(plan, ruta_salida=None):
         celdas_dia = plan.celdas.get(dia, [])
         for i in range(len(COLS)):
             celda_obj = celdas_dia[i] if i < len(celdas_dia) else None
-            factor = plan.paciente.factor_porcion if plan.paciente else 1.0
-            fila.append(_celda_contenido(celda_obj, factor))
+            fila.append(_celda_contenido(celda_obj))
         rows.append(fila)
 
     col_widths = [COL_DIA, COL_DES, COL_COL1, COL_COM, COL_COL2, COL_CEN]
