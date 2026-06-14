@@ -32,26 +32,31 @@ class Catalogo:
         with open(self.ruta, "r", encoding="utf-8") as f:
             data = json.load(f)
         self.platillos = []
-        ids_vistos     = set()   # deduplicación: evita IDs repetidos
-        nombres_vistos = set()   # deduplicación: evita nombres repetidos
+        ids_vistos    = set()   # deduplicación: evita IDs repetidos
+        claves_vistas = set()   # deduplicación: evita (nombre, tiempo) repetidos
         for idx, p in enumerate(data.get("platillos", [])):
             nombre = p.get("nombre", "").strip()
             if not nombre:
                 continue   # entrada sin nombre → saltar
+            tiempo = p.get("tiempo", "comida")
             pid    = p.get("id", "").strip()
             if not pid:
                 # generar ID desde el nombre si está vacío
                 from utilidades import normalizar
                 pid = normalizar(nombre).replace(" ", "_")[:60] or f"platillo_{idx}"
-            if nombre.lower() in nombres_vistos:
-                continue   # nombre duplicado → saltar silenciosamente
+            # Un mismo nombre puede existir en distintos tiempos (p.ej. un
+            # platillo que sirve para comida y cena), por eso la clave incluye
+            # el tiempo. Solo se descarta el duplicado exacto (nombre + tiempo).
+            clave = (nombre.lower(), tiempo)
+            if clave in claves_vistas:
+                continue   # duplicado exacto → saltar silenciosamente
             # garantizar ID único (nunca vacío, nunca repetido)
             pid_u, cnt = pid, 0
             while not pid_u or pid_u in ids_vistos:
                 cnt += 1
                 pid_u = f"{pid}_{cnt}" if pid else f"platillo_{idx}_{cnt}"
             ids_vistos.add(pid_u)
-            nombres_vistos.add(nombre.lower())
+            claves_vistas.add(clave)
             ings = [
                 Ingrediente(
                     nombre=i["nombre"],
@@ -65,7 +70,7 @@ class Catalogo:
                 Platillo(
                     id    = pid_u,
                     nombre= nombre,
-                    tiempo= p.get("tiempo", "comida"),
+                    tiempo= tiempo,
                     ingredientes = ings,
                     video = p.get("video", False),
                     nota  = p.get("nota"),
