@@ -2,27 +2,41 @@
 # Build reproducible de NutriDietas con PyInstaller.
 #
 #   pip install pyinstaller
-#   pyinstaller NutriDietas.spec
+#   pyinstaller NutriDietas.spec --clean --noconfirm
 #
-# Genera dist/NutriDietas/NutriDietas.exe (modo carpeta) con el icono y con
-# datos/, recursos/ y plantillas/ al lado del .exe para que el nutriologo
-# pueda editarlos (catalogo, logo, plantillas).
+# Genera dist/NutriDietas/NutriDietas.exe (modo carpeta). IMPORTANTE: la app
+# se ejecuta desde dist/, NO desde build/ (build es intermedia).
+#
+# Las dependencias de terceros (python-docx, reportlab, Pillow) se incluyen
+# completas con collect_all para evitar modulos o datos faltantes.
+
+from PyInstaller.utils.hooks import collect_all
+
+datas = [
+    ('datos', 'datos'),
+    ('recursos', 'recursos'),
+    ('plantillas', 'plantillas'),
+]
+binaries = []
+hiddenimports = []
+
+for _paquete in ('docx', 'reportlab', 'PIL'):
+    _d, _b, _h = collect_all(_paquete)
+    datas += _d
+    binaries += _b
+    hiddenimports += _h
 
 block_cipher = None
 
 a = Analysis(
     ['gui.pyw'],
     pathex=[],
-    binaries=[],
-    datas=[
-        ('datos', 'datos'),
-        ('recursos', 'recursos'),
-        ('plantillas', 'plantillas'),
-    ],
-    hiddenimports=[],
+    binaries=binaries,
+    datas=datas,
+    hiddenimports=hiddenimports,
     hookspath=[],
     runtime_hooks=[],
-    excludes=[],
+    excludes=['pygame'],
     win_no_prefer_redirects=False,
     win_private_assemblies=False,
     cipher=block_cipher,
@@ -39,7 +53,7 @@ exe = EXE(
     debug=False,
     bootloader_ignore_signals=False,
     strip=False,
-    upx=True,
+    upx=False,
     console=False,               # app de ventana, sin consola
     icon='recursos/icono.ico',   # icono del .exe
 )
@@ -49,7 +63,7 @@ coll = COLLECT(
     a.binaries,
     a.datas,
     strip=False,
-    upx=True,
+    upx=False,
     upx_exclude=[],
     name='NutriDietas',
 )
