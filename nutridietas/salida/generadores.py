@@ -11,9 +11,9 @@ extensión del archivo. Ambos generadores comparten la misma firma
 por lo que aquí solo se elige cuál usar según el formato pedido.
 """
 
-import generador_docx
-import generador_pdf
-import planes
+from nutridietas.salida import generador_docx
+from nutridietas.salida import generador_pdf
+from nutridietas.nucleo import planes
 
 FORMATOS = ("docx", "pdf")
 

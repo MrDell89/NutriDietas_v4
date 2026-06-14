@@ -16,7 +16,7 @@ dataclasses (clases de datos sencillas):
 from dataclasses import dataclass, field
 from typing import List, Optional, Dict
 
-import utilidades as U
+from nutridietas.nucleo import utilidades as U
 
 
 # --------------------------------------------------------------------------- #

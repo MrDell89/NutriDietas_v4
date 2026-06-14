@@ -9,9 +9,9 @@ paciente SI pueda comer (es decir, que no contenga ninguno de sus alimentos
 no deseados). Va rotando entre los platillos disponibles para dar variedad.
 """
 
-import config
-from modelos import PlanSemanal, CeldaDieta
-from catalogo import Catalogo
+from nutridietas import config
+from nutridietas.nucleo.modelos import PlanSemanal, CeldaDieta
+from nutridietas.nucleo.catalogo import Catalogo
 
 
 def construir(paciente, catalogo: Catalogo, numero_plan=None,

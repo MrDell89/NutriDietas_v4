@@ -13,7 +13,7 @@ Cada celda permite:
   - Botón "Comida libre" para domingo
 
 Uso:
-    from tabla_dieta import TablaDieta
+    from nutridietas.gui.tabla_dieta import TablaDieta
     t = TablaDieta(parent, catalogo, no_deseados=[...], factor=1.0)
     t.pack(fill="both", expand=True)
     # obtener datos:
@@ -28,7 +28,7 @@ import tkinter as tk
 from tkinter import ttk, messagebox
 from typing import List, Dict, Optional
 
-import config
+from nutridietas import config
 
 # colores tomados de la paleta central de config (con prefijo '#' para Tkinter)
 _VERDE     = config.ui(config.COLOR_VERDE_ENCABEZADO)
@@ -130,7 +130,7 @@ class _CeldaEditor(tk.Frame):
 
     # ── poblar combo ─────────────────────────────────────────────── #
     def _poblar_combo(self):
-        from catalogo import Catalogo
+        from nutridietas.nucleo.catalogo import Catalogo
         aptos = self.catalogo.aptos_para(self._tiempo, self.no_deseados)
         nombres = ["(vacío)"] + [p.nombre for p in aptos]
         self._combo["values"] = nombres

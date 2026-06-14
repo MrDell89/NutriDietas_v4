@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 """Tests de modelos.py: render de ingredientes, aptitud de platillos y plan."""
 
-from modelos import Ingrediente, Platillo, Paciente, CeldaDieta, PlanSemanal
+from nutridietas.nucleo.modelos import Ingrediente, Platillo, Paciente, CeldaDieta, PlanSemanal
 
 
 # ── Ingrediente.render ──────────────────────────────────────────────────────

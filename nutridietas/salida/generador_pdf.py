@@ -26,7 +26,7 @@ from reportlab.platypus import (SimpleDocTemplate, Table, TableStyle,
 from reportlab.platypus.flowables import KeepTogether
 from reportlab.lib.utils import ImageReader
 
-import config
+from nutridietas import config
 
 log = logging.getLogger(__name__)
 
@@ -266,7 +266,7 @@ def generar_desde_celdas_manuales(paciente, celdas_manual,
     El armado del plan vive en planes.plan_desde_celdas_manual (único lugar
     compartido); aquí solo se delega y se genera el PDF.
     """
-    import planes
+    from nutridietas.nucleo import planes
     plan = planes.plan_desde_celdas_manual(paciente, celdas_manual,
                                            numero_plan, notas=notas)
     return generar(plan, ruta_salida=ruta_salida)

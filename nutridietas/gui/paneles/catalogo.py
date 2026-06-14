@@ -5,16 +5,16 @@ import os, sys, threading, subprocess, json
 import tkinter as tk
 from tkinter import ttk, messagebox, filedialog, scrolledtext
 
-import config
-import pacientes as gp
-from catalogo import Catalogo
-from modelos import Platillo, Ingrediente, PlanSemanal, CeldaDieta
-import dieta_individual as di
-import dieta_grupal as dgrupo
-import generadores
-import planes
-from tabla_dieta import TablaDieta
-from gui_tema import (C_GREEN, C_DARK, C_HOVER, C_ACTIVE, C_BG, C_WHITE,
+from nutridietas import config
+from nutridietas.nucleo import pacientes as gp
+from nutridietas.nucleo.catalogo import Catalogo
+from nutridietas.nucleo.modelos import Platillo, Ingrediente, PlanSemanal, CeldaDieta
+from nutridietas.nucleo import dieta_individual as di
+from nutridietas.nucleo import dieta_grupal as dgrupo
+from nutridietas.salida import generadores
+from nutridietas.nucleo import planes
+from nutridietas.gui.tabla_dieta import TablaDieta
+from nutridietas.gui.tema import (C_GREEN, C_DARK, C_HOVER, C_ACTIVE, C_BG, C_WHITE,
                       C_BORDER, C_TEXT, C_MUTED, C_ERROR, C_SIDEBAR, C_ACCENT,
                       FT_TITLE, FT_H3, FT_BODY, FT_SMALL, FT_BTN, FT_NAV, FT_MONO)
 
@@ -117,7 +117,7 @@ class PanelCatalogoMixin:
         """
         # Verificar que el extractor esté disponible
         try:
-            import extractor_planes_alimenticios as _ext
+            from nutridietas.herramientas import extractor_planes_alimenticios as _ext
         except ImportError:
             messagebox.showerror(
                 "Módulo no encontrado",
@@ -223,7 +223,7 @@ class PanelCatalogoMixin:
                 agregados = 0
                 for i in sel:
                     p = todos[i]
-                    from modelos import Platillo as _Pl, Ingrediente as _Ing
+                    from nutridietas.nucleo.modelos import Platillo as _Pl, Ingrediente as _Ing
                     ings = [_Ing(nombre=ig["nombre"],
                                  cantidad=ig.get("cantidad"),
                                  unidad=ig.get("unidad",""))

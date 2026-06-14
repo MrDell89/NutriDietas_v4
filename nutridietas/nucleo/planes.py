@@ -16,8 +16,8 @@ Formato de entrada (celdas_manual):
     Un "titulo" == "comida libre" produce una celda especial de comida libre.
 """
 
-import config
-from modelos import PlanSemanal, CeldaDieta, Platillo, Ingrediente
+from nutridietas import config
+from nutridietas.nucleo.modelos import PlanSemanal, CeldaDieta, Platillo, Ingrediente
 
 
 def plan_desde_celdas_manual(paciente, celdas_manual, numero_plan, notas=None):

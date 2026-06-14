@@ -14,8 +14,8 @@ import json
 import os
 from typing import List
 
-import config
-from modelos import Platillo, Ingrediente
+from nutridietas import config
+from nutridietas.nucleo.modelos import Platillo, Ingrediente
 
 
 class Catalogo:
@@ -42,7 +42,7 @@ class Catalogo:
             pid    = p.get("id", "").strip()
             if not pid:
                 # generar ID desde el nombre si está vacío
-                from utilidades import normalizar
+                from nutridietas.nucleo.utilidades import normalizar
                 pid = normalizar(nombre).replace(" ", "_")[:60] or f"platillo_{idx}"
             # Un mismo nombre puede existir en distintos tiempos (p.ej. un
             # platillo que sirve para comida y cena), por eso la clave incluye
@@ -126,6 +126,6 @@ class Catalogo:
         self.platillos.append(platillo)
 
     def buscar(self, texto) -> List[Platillo]:
-        from utilidades import normalizar
+        from nutridietas.nucleo.utilidades import normalizar
         t = normalizar(texto)
         return [p for p in self.platillos if t in normalizar(p.nombre)]

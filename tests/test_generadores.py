@@ -1,8 +1,8 @@
 # -*- coding: utf-8 -*-
 """Tests de generadores.py: fachada que elige el formato de salida."""
 
-import generadores
-from modelos import Paciente
+from nutridietas.salida import generadores
+from nutridietas.nucleo.modelos import Paciente
 
 
 def test_extension():

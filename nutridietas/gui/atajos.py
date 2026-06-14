@@ -22,11 +22,11 @@ import threading
 import tkinter as tk
 from tkinter import ttk, messagebox, filedialog
 
-import config
-import pacientes as gp
-from catalogo import Catalogo
-import dieta_individual as di
-import generador_docx as gen
+from nutridietas import config
+from nutridietas.nucleo import pacientes as gp
+from nutridietas.nucleo.catalogo import Catalogo
+from nutridietas.nucleo import dieta_individual as di
+from nutridietas.salida import generador_docx as gen
 
 
 # ═══════════════════════════════════════════════════════════════════════════ #

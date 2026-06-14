@@ -3,7 +3,7 @@
 
 import json
 
-from catalogo import Catalogo
+from nutridietas.nucleo.catalogo import Catalogo
 
 
 def _escribir_catalogo(tmp_path, platillos):

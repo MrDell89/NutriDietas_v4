@@ -19,10 +19,10 @@ Funciones:
     menú y porciones individualizadas.
 """
 
-import config
-import utilidades as U
-from modelos import PlanSemanal, CeldaDieta
-from catalogo import Catalogo
+from nutridietas import config
+from nutridietas.nucleo import utilidades as U
+from nutridietas.nucleo.modelos import PlanSemanal, CeldaDieta
+from nutridietas.nucleo.catalogo import Catalogo
 
 
 # --------------------------------------------------------------------------- #

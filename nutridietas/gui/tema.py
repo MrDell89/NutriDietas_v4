@@ -4,7 +4,7 @@
 Única fuente de la apariencia para todos los módulos gui_*.py.
 """
 
-import config
+from nutridietas import config
 
 C_GREEN   = config.ui(config.COLOR_VERDE_ENCABEZADO)
 C_DARK    = config.ui(config.COLOR_VERDE_TITULO)

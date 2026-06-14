@@ -21,18 +21,19 @@ import os
 # Por defecto se usa la carpeta "Pacientes" junto a este archivo, pero puede
 # cambiarse a la ruta real de OneDrive del nutriologo, por ejemplo:
 #   CARPETA_PACIENTES = r"C:\Users\Juan\OneDrive\Pacientes"
-DIR_BASE = os.path.dirname(os.path.abspath(__file__))
-CARPETA_PACIENTES = os.path.join(DIR_BASE, "Pacientes")
+DIR_BASE = os.path.dirname(os.path.abspath(__file__))           # carpeta del paquete
+RAIZ_PROYECTO = os.path.dirname(DIR_BASE)                        # raiz del repositorio
+CARPETA_PACIENTES = os.path.join(RAIZ_PROYECTO, "Pacientes")
 
 # Carpeta donde se guardan las dietas generadas por la app.
-CARPETA_SALIDAS = os.path.join(DIR_BASE, "salidas")
+CARPETA_SALIDAS = os.path.join(RAIZ_PROYECTO, "salidas")
 
 # Recursos (logo, etc.)
-CARPETA_RECURSOS = os.path.join(DIR_BASE, "recursos")
+CARPETA_RECURSOS = os.path.join(RAIZ_PROYECTO, "recursos")
 RUTA_LOGO = os.path.join(CARPETA_RECURSOS, "logo.png")
 
 # Catalogo de platillos (base de datos en JSON).
-RUTA_CATALOGO = os.path.join(DIR_BASE, "datos", "catalogo_platos.json")
+RUTA_CATALOGO = os.path.join(RAIZ_PROYECTO, "datos", "catalogo_platos.json")
 
 # Firma que aparece al pie de cada dieta.
 FIRMA = "Lic. Nutrición. Juan Pablo Espino"

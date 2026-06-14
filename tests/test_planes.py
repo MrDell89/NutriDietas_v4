@@ -1,9 +1,9 @@
 # -*- coding: utf-8 -*-
 """Tests de planes.py: construcción del plan desde celdas del editor."""
 
-import config
-import planes
-from modelos import Paciente
+from nutridietas import config
+from nutridietas.nucleo import planes
+from nutridietas.nucleo.modelos import Paciente
 
 
 def _celdas_una(dia, ci, datos):

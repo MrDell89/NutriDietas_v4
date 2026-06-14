@@ -3,7 +3,7 @@
 
 import pytest
 
-import utilidades as U
+from nutridietas.nucleo import utilidades as U
 
 
 # ── normalizar ──────────────────────────────────────────────────────────────

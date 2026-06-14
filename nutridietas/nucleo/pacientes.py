@@ -22,9 +22,9 @@ import os
 import re
 from typing import List
 
-import config
-import utilidades as U
-from modelos import Paciente
+from nutridietas import config
+from nutridietas.nucleo import utilidades as U
+from nutridietas.nucleo.modelos import Paciente
 
 log = logging.getLogger(__name__)
 

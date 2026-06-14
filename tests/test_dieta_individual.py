@@ -1,10 +1,10 @@
 # -*- coding: utf-8 -*-
 """Tests de dieta_individual.py: armado del plan semanal individual."""
 
-import config
-import dieta_individual as di
-from catalogo import Catalogo
-from modelos import Platillo, Paciente, Ingrediente
+from nutridietas import config
+from nutridietas.nucleo import dieta_individual as di
+from nutridietas.nucleo.catalogo import Catalogo
+from nutridietas.nucleo.modelos import Platillo, Paciente, Ingrediente
 
 
 def _catalogo():

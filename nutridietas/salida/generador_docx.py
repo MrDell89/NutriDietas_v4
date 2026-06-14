@@ -29,7 +29,7 @@ from docx.enum.section import WD_ORIENT
 from docx.oxml.ns import qn
 from docx.oxml import OxmlElement
 
-import config
+from nutridietas import config
 
 log = logging.getLogger(__name__)
 

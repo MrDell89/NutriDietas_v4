@@ -1,10 +1,10 @@
 # -*- coding: utf-8 -*-
 """Tests de dieta_grupal.py: mismo menú para el grupo, porciones distintas."""
 
-import config
-import dieta_grupal as dg
-from catalogo import Catalogo
-from modelos import Platillo, Paciente, Ingrediente
+from nutridietas import config
+from nutridietas.nucleo import dieta_grupal as dg
+from nutridietas.nucleo.catalogo import Catalogo
+from nutridietas.nucleo.modelos import Platillo, Paciente, Ingrediente
 
 
 def _catalogo():
