@@ -6,6 +6,11 @@ __pycache__/
 build/
 dist/
 
+# ── Tests ───────────────────────────────────────────────────────────────── #
+.pytest_cache/
+.coverage
+htmlcov/
+
 # ── Entornos virtuales ──────────────────────────────────────────────────── #
 .venv/
 venv/
