@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1024" height="1024" viewBox="0 0 1024 1024" role="img" aria-label="NutriDietas app icon">
+  <defs>
+    <linearGradient id="bg" x1="180" y1="120" x2="844" y2="904" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#072F25"/>
+      <stop offset="1" stop-color="#0B5C46"/>
+    </linearGradient>
+    <clipPath id="squircleClip">
+      <rect x="64" y="64" width="896" height="896" rx="208" ry="208"/>
+    </clipPath>
+  </defs>
+
+  <!-- Transparent outside rounded corners -->
+  <g clip-path="url(#squircleClip)">
+    <rect x="64" y="64" width="896" height="896" rx="208" ry="208" fill="url(#bg)"/>
+  </g>
+
+  <!-- Fork -->
+  <g fill="#FFFFFF">
+    <rect x="248" y="392" width="30" height="300" rx="15"/>
+    <rect x="220" y="292" width="18" height="132" rx="9"/>
+    <rect x="248" y="292" width="18" height="132" rx="9"/>
+    <rect x="276" y="292" width="18" height="132" rx="9"/>
+    <rect x="304" y="292" width="18" height="132" rx="9"/>
+    <path d="M220 404 C220 448 244 478 263 478 C282 478 322 448 322 404 Z"/>
+  </g>
+
+  <!-- Knife -->
+  <g fill="#FFFFFF">
+    <path d="M773 288 C806 308 812 378 802 438 C795 484 785 520 785 580 L785 692 C785 713 754 713 754 692 L754 305 C754 292 762 283 773 288 Z"/>
+  </g>
+
+  <!-- Plate -->
+  <circle cx="512" cy="512" r="215" fill="#FFFFFF"/>
+  <circle cx="512" cy="512" r="175" fill="none" stroke="#DDE7E9" stroke-width="16"/>
+  <circle cx="512" cy="512" r="215" fill="none" stroke="#FFFFFF" stroke-width="10"/>
+
+  <!-- Leaf -->
+  <path d="M456 626 C395 552 430 444 584 386 C644 472 626 584 506 642 C489 650 470 646 456 626 Z" fill="#1AA27E"/>
+  <path d="M462 628 C493 555 535 488 603 419" fill="none" stroke="#FFFFFF" stroke-width="15" stroke-linecap="round"/>
+  <path d="M502 554 L454 494" fill="none" stroke="#FFFFFF" stroke-width="13" stroke-linecap="round"/>
+  <path d="M530 512 L596 492" fill="none" stroke="#FFFFFF" stroke-width="13" stroke-linecap="round"/>
+</svg>

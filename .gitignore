@@ -1,0 +1,39 @@
+# ── Python ──────────────────────────────────────────────────────────────── #
+__pycache__/
+*.py[cod]
+*.egg-info/
+.eggs/
+build/
+dist/
+
+# ── Tests ───────────────────────────────────────────────────────────────── #
+.pytest_cache/
+.coverage
+htmlcov/
+
+# ── Compilado (PyInstaller) ─────────────────────────────────────────────── #
+build/
+dist/
+
+# ── Entornos virtuales ──────────────────────────────────────────────────── #
+.venv/
+venv/
+env/
+
+# ── Salidas generadas por la app ────────────────────────────────────────── #
+salidas/
+
+# ── Temporales de Word/Office ───────────────────────────────────────────── #
+~$*.docx
+~$*.doc
+*.tmp
+
+# ── Datos sensibles de pacientes (PII / datos de salud) ─────────────────── #
+# No versionar carpetas de pacientes reales. Usa una carpeta de demo aparte.
+Pacientes/
+
+# ── Editor / SO ─────────────────────────────────────────────────────────── #
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db

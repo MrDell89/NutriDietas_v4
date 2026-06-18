@@ -1,0 +1,24 @@
+[project]
+name = "nutridietas"
+version = "0.4.0"
+description = "Generador de dietas en Word/PDF con el formato del Lic. Juan Pablo Espino."
+requires-python = ">=3.9"
+dependencies = [
+    "python-docx>=1.1.0",
+    "reportlab>=4.0.0",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=8.0"]
+
+[project.scripts]
+nutridietas = "nutridietas.cli.menu:ejecutar"
+
+[project.gui-scripts]
+nutridietas-gui = "nutridietas.gui.app:main"
+
+[tool.setuptools.packages.find]
+include = ["nutridietas*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

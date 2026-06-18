@@ -1,0 +1,6 @@
+# Dependencias solo para desarrollo / tests.
+# Instalar con:  pip install -r requirements-dev.txt
+-r requirements.txt
+pytest>=8.0
+pyinstaller>=6.0
+pillow>=10.0
